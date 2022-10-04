@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400;600&display=swap");
 body {
   display: flex;
@@ -20,6 +21,57 @@ a {
 .page {
   max-width: 1200px;
   min-width: 320px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #bdbdbd;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #efefef;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidenav a:hover {
+  color: #004c8c;
+  transition: 0.5s;
+}
+
+.sidenav.active {
+  left: 0;
+}
+
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #004c8c;
+  margin: 6px 0;
 }
 
 .header {
@@ -123,6 +175,7 @@ a {
   font-size: 0.8rem;
   font-weight: 200;
   padding: 0.5rem;
+  color: black;
 }
 .card--content {
   border-left: 1px solid rgb(133, 133, 133);
@@ -131,6 +184,8 @@ a {
 .card--techno {
   padding: 0.5rem 0;
   font-weight: 200;
+  display: flex;
+  gap: 0.5rem;
 }
 .card--span {
   background-color: green;
@@ -146,6 +201,7 @@ a {
   margin-top: 0.5rem;
   padding: 0.6rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
