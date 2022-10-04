@@ -13,8 +13,8 @@ P {
 }
 
 a {
-  color: white;
   font-weight: 200;
+  font-size: 14px;
 }
 
 .page {
@@ -28,7 +28,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(138, 211, 138);
+  background-color: rgb(237, 237, 237);
   text-align: center;
 }
 
@@ -40,11 +40,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightgray;
   padding: 2rem;
   margin: 0 auto;
   max-width: 100%;
-  border-radius: 1rem;
   margin-bottom: 2rem;
 }
 .profil--name {
@@ -98,7 +96,6 @@ a {
   width: 250px;
   padding: 1rem;
   height: auto;
-  background-color: rgb(192, 194, 195);
   /*     &:last-child{
           background-color: red;
           margin-right: auto;
@@ -114,6 +111,7 @@ a {
   padding: 0.5rem 0 0.5rem 0.5rem;
   text-transform: uppercase;
   border-left: 5px solid rgb(133, 133, 133);
+  color: rgb(133, 133, 133);
 }
 .card--picture :first-child {
   width: 100%;
@@ -147,7 +145,6 @@ a {
 .card--footer {
   margin-top: 0.5rem;
   padding: 0.6rem;
-  background-color: rgb(99, 99, 99);
   display: flex;
   gap: 1rem;
 }
@@ -158,6 +155,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(138, 211, 138);
+  background-color: rgb(237, 237, 237);
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
