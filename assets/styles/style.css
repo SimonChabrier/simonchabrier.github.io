@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400;600&display=swap");
 body {
   display: flex;
-  align-items: center;
   justify-content: center;
   font-family: "Inter Tight", sans-serif;
   padding: 1rem;
-  background-color: rgb(171, 169, 169);
+}
+
+P {
+  line-height: 1.2rem;
+  font-size: 1rem;
+  font-weight: 200;
 }
 
 a {
@@ -13,27 +17,50 @@ a {
   font-weight: 200;
 }
 
-.main {
+.page {
+  max-width: 1200px;
+  min-width: 320px;
+}
+
+.header {
+  height: 50px;
   width: 100%;
-  height: auto;
-  background-color: rgb(0, 0, 0);
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(138, 211, 138);
+  text-align: center;
+}
+
+.main {
+  padding: 2rem 0;
 }
 
 .profil {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(106, 105, 105);
+  background-color: lightgray;
   padding: 2rem;
   margin: 0 auto;
-  max-width: 500px;
-  border-radius: 10%;
-  box-shadow: 0px 0px 27px 6px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.profil--name {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.profil--title {
+  margin-top: 1rem;
+}
+.profil--subtitle {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .profil--name {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .profil--picture {
@@ -44,7 +71,7 @@ a {
 }
 
 .profil--title {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 1.2rem;
   margin-bottom: 0;
@@ -53,7 +80,7 @@ a {
 }
 
 .profil--subtitle {
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-size: 1rem;
   font-style: italic;
@@ -62,32 +89,42 @@ a {
 
 .cards {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .card {
   width: 250px;
   padding: 1rem;
-  border-radius: 1rem;
   height: auto;
   background-color: rgb(192, 194, 195);
+  /*     &:last-child{
+          background-color: red;
+          margin-right: auto;
+      } */
 }
 .card--header {
   color: white;
 }
 .card--title {
+  font-size: 1.2rem;
   font-weight: 400;
-  margin: 0 0 1rem 0;
-}
-.card--date {
-  padding: 0.5rem 0;
-  font-weight: 200;
-  padding: 0.5rem;
+  margin: 0 0 0.7rem 0;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  text-transform: uppercase;
+  border-left: 5px solid rgb(133, 133, 133);
 }
 .card--picture :first-child {
   width: 100%;
   border-radius: 1rem;
   box-shadow: 0px 0px 27px 6px rgba(255, 255, 255, 0.3);
+}
+.card--date {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 0.5rem;
 }
 .card--content {
   border-left: 1px solid rgb(133, 133, 133);
@@ -96,6 +133,12 @@ a {
 .card--techno {
   padding: 0.5rem 0;
   font-weight: 200;
+}
+.card--span {
+  background-color: green;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.5rem;
 }
 .card--text p {
   margin: 0;
@@ -107,4 +150,14 @@ a {
   background-color: rgb(99, 99, 99);
   display: flex;
   gap: 1rem;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(138, 211, 138);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
