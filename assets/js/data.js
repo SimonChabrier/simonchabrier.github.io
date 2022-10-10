@@ -9,9 +9,9 @@ const data = [
                 1 : 'PHP', 
                 2 : 'HTML',
                 3 : 'CSS',
-                4 : 'Bootstrap',
+                4 : 'Bootstrap5',
             }],
-        description : "Simple MVC framework made with PHP, HTML and CSS. User can register, login, logout, create, read, update and delete posts. This project was made for my studies.",
+        description : "Simple MVC app. User can register, login, logout, create, read, update and delete posts. This project was made for my studies to learn PHP fondamentals.",
         web : 
         [{
             1 : '', 
