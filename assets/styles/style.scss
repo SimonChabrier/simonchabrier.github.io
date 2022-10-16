@@ -164,7 +164,7 @@ a{
 
 //projec card item
 .card{
-    width: 250px;
+    max-width: 300px;
     padding: 1rem;
     height: auto;
 
@@ -212,6 +212,7 @@ a{
         font-weight: 200;
         display: flex;
         gap: 0.5rem;
+        flex-wrap: wrap;
     }
 
     &--span{

@@ -145,7 +145,7 @@ a {
 }
 
 .card {
-  width: 250px;
+  max-width: 300px;
   padding: 1rem;
   height: auto;
   /*     &:last-child{
@@ -186,6 +186,7 @@ a {
   font-weight: 200;
   display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 .card--span {
   background-color: green;

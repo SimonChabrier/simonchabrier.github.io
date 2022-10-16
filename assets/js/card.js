@@ -16,7 +16,6 @@ const card = {
             // template
             const cardTemplate = document.getElementById("cardTemplate").content.cloneNode(true);
 
-            console.log(cardTemplate);
             cardTemplate.getElementById('title').innerText = `${projet.title}`;
             cardTemplate.querySelector('img').src = `${projet.picture}`;
             cardTemplate.getElementById('date').textContent = `${projet.date}`;
@@ -33,11 +32,13 @@ const card = {
 
             projet.web.forEach(site => {
                 for (let key in site) { 
+                    if(site[key] != null){
                     let link = document.createElement('a');
                     link.href = `${site[key]}`;
-                    link.innerText = `${site[key]}`;
+                    link.innerText = `${key}`;
                     cardTemplate.getElementById('web').appendChild(link)
                     } 
+                    }
                 });
 
             displayProjectCard.appendChild(cardTemplate);
