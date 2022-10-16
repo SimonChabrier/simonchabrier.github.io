@@ -214,4 +214,12 @@ a {
   justify-content: center;
   background-color: rgb(237, 237, 237);
   text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    max-width: 100%;
+    padding: 1rem;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
