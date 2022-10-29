@@ -3,28 +3,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400;600&display=swap');
 
-body{
+body { 
+    width: 70%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     font-family: 'Inter Tight', sans-serif;
-    padding: 1rem;
+    background-color: rgb(26, 26, 26);
 }
 
-P{
+P { 
     line-height: 1.2rem;
     font-size: 1rem;
     font-weight: 200;
 }
 
-a{
+a {
     font-weight: 200;
     font-size: 14px;
 }
 
 //all contents
 .page{
-    max-width: 1200px;
+    width: 100%;
     min-width: 320px;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 2rem;
 }
 
 //* Sidenav menu 
@@ -154,6 +159,7 @@ a{
     font-weight: 400;
 }
 
+//search bloc 
 .search {
 
     display: flex;
@@ -188,6 +194,7 @@ a{
     }
 }
 
+//result search bloc 
 .count{
 
     display: flex;
@@ -205,6 +212,7 @@ a{
         }
 }
 
+//tags bloc 
 .tags{
 
     display: flex;
@@ -353,7 +361,15 @@ a{
 
 @media only screen and (max-width: 767px) {
   
- .card{
+.page{
+    border-radius: 0;
+}
+
+.count--message {
+    font-size: 1.5rem;
+}
+
+ .card {
     
     max-width: 100%;
     padding: 1rem;
