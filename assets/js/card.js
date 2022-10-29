@@ -4,51 +4,54 @@ const card = {
     init:function () 
     {
         console.log('init');
-        card.fetchData(data);
-        card.handleReload();
+        card.fetchData(data);   
     },
 
     fetchData:function (projects)
     {   
+        card.inputReset();
+        
+        
         projects.forEach(project => {
-                // target
-                const cardsContainer = document.getElementById("cards--init");
-                // template
-                const cardTemplate = document.getElementById("cardTemplate").content.cloneNode(true);
 
-                cardTemplate.getElementById('title').innerText = `${project.title}`;
-                cardTemplate.querySelector('img').src = `${project.picture}`;
-                cardTemplate.getElementById('date').textContent = `${project.date}`;
-                cardTemplate.getElementById('text').innerText = `${project.description}`;
+            const cardsContainer = document.getElementById("cards--init");
+            const cardTemplate = document.getElementById("cardTemplate").content.cloneNode(true);
 
-                project.techno.forEach(techno => {
-                        for (let key in techno) 
-                        { 
-                            if(techno[key] != '')
-                            {
-                                let span = document.createElement('span');
-                                span.textContent = `${techno[key]}`;
-                                card.setSpanColor(span, techno[key]);
-                                cardTemplate.getElementById('techno').appendChild(span)
-                            } 
-                        }
-                    });
+            cardTemplate.getElementById('title').innerText = `${project.title}`;
+            cardTemplate.querySelector('img').src = `${project.picture}`;
+            cardTemplate.getElementById('date').textContent = `${project.date}`;
+            cardTemplate.getElementById('text').innerText = `${project.description}`;
 
-                project.web.forEach(site => {
-                        for (let key in site) 
-                        { 
-                            if(site[key] != null)
-                            {
-                                let link = document.createElement('a');
-                                link.href = `${site[key]}`;
-                                link.innerText = `${key}`;
-                                cardTemplate.getElementById('web').appendChild(link)
-                            } 
-                        }
-                    });
+            project.techno.forEach(techno => {
+                    for (let key in techno) 
+                    { 
+                        if(techno[key] != '')
+                        {
+                            let span = document.createElement('span');
+                            span.textContent = `${techno[key]}`;
+                            card.setSpanColor(span, techno[key]);
+                            cardTemplate.getElementById('techno').appendChild(span)
+                        } 
+                    }
+                });
 
-                    cardsContainer.appendChild(cardTemplate);
-            });
+            project.web.forEach(site => {
+                    for (let key in site) 
+                    { 
+                        if(site[key] != null)
+                        {
+                            let link = document.createElement('a');
+                            link.href = `${site[key]}`;
+                            link.innerText = `${key}`;
+                            cardTemplate.getElementById('web').appendChild(link)
+                        } 
+                    }
+                });
+
+                cardsContainer.appendChild(cardTemplate);
+        });
+
+        card.countDisplayProject();
     },
 
     setSpanColor:function (span, techno)
@@ -80,9 +83,31 @@ const card = {
                 span.classList.add('card--span');
             }
 
-    },    
+    },  
     
-    handleReload: function() 
+    countDisplayProject:function (){
+
+        let projects = document.querySelectorAll('.card');
+        let count = projects.length;
+        let div = document.getElementById('count');
+        let count_message = document.getElementById('count--message');
+
+        div.style.display = 'none';
+
+        if (count != 0){ 
+            div.style.display = 'block';
+            count == 1 ? count_message.innerText = `${count} projet trouvé` : count_message.innerText = `${count} projets enregistrés`;
+        }
+
+        div.appendChild(count_message);
+    },
+
+    resetCountMessage:function (){
+        let count_message = document.getElementById('count--message');
+        count_message.innerText = '';
+    },
+
+    inputReset: function() 
     {
         const resetButton = document.getElementById("reset_btn");
         const searchInput = document.getElementById("search_input");

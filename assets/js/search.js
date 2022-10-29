@@ -2,13 +2,14 @@ const search = {
 
 init: function() 
 {   
-    search.search();
+    search.searchInTechnoTags();
     console.log('search init');
 },
 
-search: function() 
+searchInTechnoTags: function() 
 {   
     const searchInput = document.getElementById('search_input');
+    
     searchInput.addEventListener('keyup', (e) => {
     let search_value = e.target.value;
     search.dislayResults(search_value);
@@ -17,7 +18,6 @@ search: function()
 
 dislayResults: function(search_value) 
 {   
-
     let results = [];
 
     projet_techno = data.forEach(project => { project
@@ -27,19 +27,23 @@ dislayResults: function(search_value)
                 if(techno[key].toLowerCase() == (search_value.toLowerCase()))
                 {
                     results.push(project);
-                } 
+                }
             } 
         });
     });
 
     card.resetCards();
+    card.resetCountMessage();
     card.fetchData(results);
 
     if (search_value == ""){
         card.resetCards();
+        card.resetCountMessage();
         card.fetchData(data);
-    }
+    }   
 },   
+
+
 
 }
 
