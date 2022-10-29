@@ -76,6 +76,12 @@ fetchResults:function(result){
 },
 
 
+reset : function() 
+{
+    const cardsContainer = document.getElementById("cards");
+    cardsContainer.innerHTML = '';
+},
+
 }
 
 document.addEventListener('DOMContentLoaded', search.init);
