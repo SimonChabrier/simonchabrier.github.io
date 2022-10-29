@@ -6,7 +6,7 @@ const data = [
         date : 'Octobre 2022',
         techno : 
             [{
-                1 : 'PHP', 
+                1 : '', 
                 2 : 'HTML',
                 3 : 'CSS',
                 4 : 'Bootstrap5',
