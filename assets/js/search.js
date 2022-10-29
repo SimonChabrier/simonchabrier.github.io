@@ -36,18 +36,10 @@ dislayResults: function(search_value)
     card.fetchData(results);
 
     if (search_value == ""){
-        search.resetSearchResults();
         card.resetCards();
         card.fetchData(data);
     }
 },   
-
-
-resetSearchResults : function() 
-{
-    const resultContainer = document.getElementById("search--results");
-    resultContainer.innerHTML = '';
-},
 
 }
 
