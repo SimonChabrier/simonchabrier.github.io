@@ -216,27 +216,20 @@ a{
 .cards {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 10px;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
-    border-radius: .5rem;
- 
+    gap: 2rem;
 }
 
 //projec card item
 .card{
-    max-width: 300px;
+    width: 300px;
     padding: 1rem;
-    height: auto;
-
-/*     &:last-child{
-        background-color: red;
-        margin-right: auto;
-    } */
+    border-radius: .5rem;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
       
     &--header{
         color: white;
-        //background-color: rgb(210, 210, 223);
     }
 
     &--title{
@@ -245,26 +238,26 @@ a{
         margin: 0 0 .7rem 0;
         padding: .5rem 0 .5rem .5rem;
         text-transform: uppercase;
-        border-left: 5px solid rgb(133, 133, 133);
         color: rgb(133, 133, 133);
     }
 
-    &--picture :first-child {
-        width: 100%;
-        border-radius: 1rem;
-        box-shadow: 0px 0px 27px 6px rgba(255,255,255,0.3);
+    &--picture > img{
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+        //border-radius: .5rem;
+        //box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
+
     }
 
     &--date{
-        padding:  .5rem 0;
         font-size: .8rem;
         font-weight: 200;
-        padding: .5rem;
+        padding: 1rem 0 1rem .5rem;
         color: black;
     }
 
     &--content{
-        border-left: 1px solid rgb(133, 133, 133);
         padding: .5rem;
     }
 
@@ -281,7 +274,38 @@ a{
         padding: .5rem;
         color: white;
         border-radius: .5rem;
+        font-size: .8rem;
+        text-transform: lowercase;
     }
+
+    &--span--php{
+        background-color: rgb(0, 0, 0);
+    }
+
+    &--span--html{
+        background-color: rgb(135, 29, 29);
+    }
+
+    &--span--css{
+        background-color: rgb(75, 135, 29);
+    }
+
+    &--span--bootstrap5{
+        background-color: rgb(16, 21, 173);
+    }
+
+    &--span--altorouter{
+        background-color: rgb(141, 173, 16);
+    }
+
+    &--span--plates{
+        background-color: rgb(173, 16, 113);
+    }
+
+    &--span--symfonyrouter{
+        background-color: rgb(173, 92, 16);
+    }
+
 
     &--text p{
         margin: 0;
