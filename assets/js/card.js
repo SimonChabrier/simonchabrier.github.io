@@ -48,11 +48,13 @@ const card = {
     handleReload: function() 
     {
         const resetButton = document.getElementById("reset_btn");
-
+        const searchInput = document.getElementById("search_input");
+        
         resetButton.addEventListener("click", () => {
-        search.resetSearchResults();  
-        card.resetCards();    
-        card.fetchData(data);
+            searchInput.value = "";
+            search.resetSearchResults();  
+            card.resetCards();    
+            card.fetchData(data);
         });
 
     },
