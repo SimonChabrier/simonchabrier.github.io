@@ -4,13 +4,13 @@ const card = {
     init:function () 
     {
         console.log('init');
-        card.fetchData(data);   
+        card.constructCards(data);   
     },
 
-    fetchData:function (projects)
+    constructCards:function (projects, search_value)
     {   
-        card.inputReset();
-        
+        card.constructTechnoTagsList();
+        search.inputReset();
         
         projects.forEach(project => {
 
@@ -51,11 +51,13 @@ const card = {
                 cardsContainer.appendChild(cardTemplate);
         });
 
-        card.countDisplayProject();
+        let count = projects.length;
+        card.countDisplayProject(count, search_value);
     },
 
     setSpanColor:function (span, techno)
     {   
+
         switch (techno) {
             
             case 'PHP':
@@ -82,24 +84,19 @@ const card = {
             default:
                 span.classList.add('card--span');
             }
-
     },  
     
-    countDisplayProject:function (){
+    countDisplayProject:function (count, search_value){
 
-        let projects = document.querySelectorAll('.card');
-        let count = projects.length;
-        let div = document.getElementById('count');
-        let count_message = document.getElementById('count--message');
+        let divElement = document.getElementById('count');
+        divElement.classList.remove('count--block');
+        let countDisplay = document.getElementById('count--message');
 
-        div.style.display = 'none';
-
-        if (count != 0){ 
-            div.style.display = 'block';
-            count == 1 ? count_message.innerText = `${count} projet trouvé` : count_message.innerText = `${count} projets trouvés`;
-        }
-
-        div.appendChild(count_message);
+        if(search_value != undefined){
+            count > 1 ? countDisplay.textContent = countDisplay.textContent = `${count} résultats pour la recherche ${search_value}` : countDisplay.textContent = `${count} résultat pour la recherche ${search_value}`;
+            divElement.classList.add('count--block');
+            divElement.appendChild(countDisplay);     
+        } 
     },
 
     resetCountMessage:function (){
@@ -107,24 +104,43 @@ const card = {
         count_message.innerText = '';
     },
 
-    inputReset: function() 
-    {
-        const resetButton = document.getElementById("reset_btn");
-        const searchInput = document.getElementById("search_input");
-        
-        resetButton.addEventListener("click", () => {
-            searchInput.value = "";
-            card.resetCards();    
-            card.fetchData(data);
-        });
-
-    },
-
     resetCards : function() 
     {
         const cardsContainer = document.getElementById("cards--init");
         cardsContainer.innerHTML = '';
     },
+
+    constructTechnoTagsList:function () 
+    {   
+        const technos = [];
+
+        const technoContainer = document.getElementById("tags");
+
+        for (let i = 0; i < data.length; i++) 
+        {
+            data[i].techno.forEach(techno => {
+                for (let key in techno) 
+                { 
+                    if(techno[key] != '')
+                    {
+                        technos.push(techno[key]);
+                    } 
+                }
+            });
+        };
+
+        const filterDuplicateTechno = [...new Set(technos)];
+
+        filterDuplicateTechno.forEach(techno => {
+
+            let techBtn = document.createElement('button');
+            techBtn.textContent = `${techno}`;
+            techBtn.classList.add('tags--btn');       
+            techBtn.setAttribute('id', `${techno.replace(/\s/g, '').toLowerCase()}`);
+            technoContainer.appendChild(techBtn);
+
+        });  
+    }
 }    
 
 window.addEventListener('DOMContentLoaded', card.init);
