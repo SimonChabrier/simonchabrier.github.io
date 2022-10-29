@@ -22,28 +22,65 @@ const card = {
                 cardTemplate.getElementById('text').innerText = `${project.description}`;
 
                 project.techno.forEach(techno => {
-                    for (let key in techno) { 
-                        let span = document.createElement('span');
-                        span.textContent = `${techno[key]}`;
-                        span.className = "card--span"
-                        cardTemplate.getElementById('techno').appendChild(span)
-                        } 
+                        for (let key in techno) 
+                        { 
+                            if(techno[key] != '')
+                            {
+                                let span = document.createElement('span');
+                                span.textContent = `${techno[key]}`;
+                                card.setSpanColor(span, techno[key]);
+                                cardTemplate.getElementById('techno').appendChild(span)
+                            } 
+                        }
                     });
 
                 project.web.forEach(site => {
-                    for (let key in site) { 
-                        if(site[key] != null){
-                        let link = document.createElement('a');
-                        link.href = `${site[key]}`;
-                        link.innerText = `${key}`;
-                        cardTemplate.getElementById('web').appendChild(link)
-                        } 
+                        for (let key in site) 
+                        { 
+                            if(site[key] != null)
+                            {
+                                let link = document.createElement('a');
+                                link.href = `${site[key]}`;
+                                link.innerText = `${key}`;
+                                cardTemplate.getElementById('web').appendChild(link)
+                            } 
                         }
                     });
 
                     cardsContainer.appendChild(cardTemplate);
             });
     },
+
+    setSpanColor:function (span, techno)
+    {   
+        switch (techno) {
+            
+            case 'PHP':
+                span.classList.add('card--span', 'card--span--php');
+                break;
+            case 'HTML':
+                span.classList.add('card--span', 'card--span--html');
+                break;
+            case 'CSS':
+                span.classList.add('card--span', 'card--span--css');
+                break;
+            case 'Bootstrap5':
+                span.classList.add('card--span', 'card--span--bootstrap5');
+                break;
+            case 'Alto Router':
+                span.classList.add('card--span', 'card--span--altorouter');
+                break;
+            case 'Plates':
+                span.classList.add('card--span', 'card--span--plates');
+                break;
+            case 'Symfony Router':
+                span.classList.add('card--span', 'card--span--symfonyrouter');
+                break;
+            default:
+                span.classList.add('card--span');
+            }
+
+    },    
     
     handleReload: function() 
     {
@@ -59,10 +96,10 @@ const card = {
     },
 
     resetCards : function() 
-{
-    const cardsContainer = document.getElementById("cards--init");
-    cardsContainer.innerHTML = '';
-},
+    {
+        const cardsContainer = document.getElementById("cards--init");
+        cardsContainer.innerHTML = '';
+    },
 }    
 
 window.addEventListener('DOMContentLoaded', card.init);
