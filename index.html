@@ -7,6 +7,7 @@
     <script src="./assets/js/menu.js"></script>
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/card.js"></script>
+    <script src="./assets/js/search.js"></script>
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>Simon Chabrier - PortFolio</title>
@@ -44,7 +45,16 @@
         <a href="https://oclock.io/formations/alternance" target="_blank" rel="noopener noreferrer">Ecole : O'Clock</a>
     </div>
 
+    <div class="search">
+        <input id="search_input" type="text" class="search--input" name="search" placeholder="rechercher">
+        <button id="reset_btn" class="reset--btn">Reset</button>
+    </div>
+
     <div class="cards" id="cards">
+       <!-- append Cards here  -->
+    </div>
+
+
         <template id="cardTemplate">
                 <div class="card" id="card">
                     <div class="card--header">
@@ -69,7 +79,7 @@
                     </div>
                 </div>
         </template>
-    </div>
+ 
 
 
 </div><!-- end main -->
