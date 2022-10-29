@@ -52,7 +52,6 @@ const card = {
         
         resetButton.addEventListener("click", () => {
             searchInput.value = "";
-            search.resetSearchResults();  
             card.resetCards();    
             card.fetchData(data);
         });
