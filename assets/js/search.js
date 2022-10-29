@@ -29,7 +29,7 @@ searchResults: function(search_value)
     });
 
     if (search_value == ""){
-        search.reset();
+        search.resetSearch();
         card.fetchData();
     }
 },   
@@ -38,10 +38,11 @@ fetchResults:function(result){
 
         let results = [result];
         console.log(result);
+        card.resetCards();
 
         results.forEach(project => {
             // target
-            const cardsContainer = document.getElementById("cards");
+            const cardsContainer = document.getElementById("search--results");
             // template
             const cardTemplate = document.getElementById("cardTemplate").content.cloneNode(true);
 
@@ -76,10 +77,10 @@ fetchResults:function(result){
 },
 
 
-reset : function() 
+resetSearch : function() 
 {
-    const cardsContainer = document.getElementById("cards");
-    cardsContainer.innerHTML = '';
+    const resultContainer = document.getElementById("search--results");
+    resultContainer.innerHTML = '';
 },
 
 }
