@@ -293,7 +293,7 @@ a {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1600px) {
   .page {
     border-radius: 0;
   }
@@ -303,12 +303,11 @@ a {
     align-items: center;
   }
   .profil--left {
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
+    position: relative;
+    left: 0;
   }
   .profil--right {
-    min-width: 100%;
+    width: 100%;
     text-align: center;
     margin: 0;
   }
@@ -316,7 +315,7 @@ a {
     text-align: justify;
   }
   .profil--picture {
-    width: 100%;
+    width: 250px;
     margin: 0;
   }
   .count--message {
