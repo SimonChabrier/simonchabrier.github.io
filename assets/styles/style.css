@@ -89,14 +89,17 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
+  padding: 3rem 0 3rem 0;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
 }
 .profil--left {
   display: flex;
   position: absolute;
-  left: 25%;
+  left: 13%;
 }
 .profil--right {
-  width: 30%;
+  width: 50%;
   padding: 1rem;
   background: white;
   margin-left: 20%;
@@ -122,8 +125,14 @@ a {
 .profil--li:last-child {
   padding-left: 1rem;
 }
+.profil--li--cv {
+  line-height: 1.7rem;
+}
+.profil--check-icon {
+  padding-right: 1rem;
+}
 .profil--picture {
-  width: 350px;
+  width: 385px;
   border-radius: 50%;
 }
 

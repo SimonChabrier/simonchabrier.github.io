@@ -100,20 +100,22 @@ a {
     align-items: center;
     justify-content: center;
     position: relative;
-  
+    padding: 3rem 0 3rem 0;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
+    border-radius: .5rem;
+
     &--left{
         display: flex;
         position: absolute;
-        left: 25%;
+        left: 13%;
     }
 
     &--right{
-        width: 30%;
+        width: 50%;
         padding: 1rem;
         background: white;
         margin-left: 20%;
         z-index: 1;
-        
     }
     
     &--name{
@@ -142,8 +144,16 @@ a {
         padding-left: 1rem;
     }
 
+    &--li--cv {
+        line-height: 1.7rem;
+    }
+
+    &--check-icon{
+        padding-right: 1rem;
+    }
+
     &--picture{
-        width: 350px;
+        width: 385px;
         border-radius: 50%;
     }
 }
