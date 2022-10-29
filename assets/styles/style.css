@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400;600&display=swap");
 body {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   font-family: "Inter Tight", sans-serif;
-  padding: 1rem;
+  background-color: rgb(26, 26, 26);
 }
 
 P {
@@ -19,8 +21,11 @@ a {
 }
 
 .page {
-  max-width: 1200px;
+  width: 100%;
   min-width: 320px;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
 }
 
 .sidenav {
@@ -306,6 +311,12 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+  .page {
+    border-radius: 0;
+  }
+  .count--message {
+    font-size: 1.5rem;
+  }
   .card {
     max-width: 100%;
     padding: 1rem;

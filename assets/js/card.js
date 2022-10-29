@@ -96,7 +96,7 @@ const card = {
 
         if (count != 0){ 
             div.style.display = 'block';
-            count == 1 ? count_message.innerText = `${count} projet trouvé` : count_message.innerText = `${count} projets enregistrés`;
+            count == 1 ? count_message.innerText = `${count} projet trouvé` : count_message.innerText = `${count} projets trouvés`;
         }
 
         div.appendChild(count_message);
