@@ -20,7 +20,7 @@ P {
 
 a {
     font-weight: 200;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 //all contents
@@ -96,57 +96,58 @@ a {
 //portrait
 .profil{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 100%;
     margin-bottom: 2rem;
-    border-radius: .5rem;
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    &--left{
+        display: flex;
+        position: absolute;
+        left: 25%;
+    }
+
+    &--right{
+        width: 30%;
+        padding: 1rem;
+        background: white;
+        margin-left: 20%;
+        z-index: 1;
+        
+    }
     
     &--name{
         font-size: 1.7rem;
-        margin-bottom: 1rem;
+        padding-bottom: 1rem;
     }
 
     &--title{
-        margin-top:1rem;
+        font-size: 1.3rem;
+        padding-bottom: .5rem;
     }
 
     &--subtitle{
-        margin-top:.5rem;
-        margin-bottom:.5rem;
+        font-size: 1rem;
+    }
+
+    &--ul{
+        padding: 1rem 0;
+    }
+
+    &--li{
+        display: inline;        
+    }
+
+    &--li:last-child{
+        padding-left: 1rem;
+    }
+
+    &--picture{
+        width: 350px;
+        border-radius: 50%;
     }
 }
 
-.profil--name{
-    color: rgb(0, 0, 0);
-}
-
-.profil--picture{
-    max-width: 200px;
-    border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0px 0px 27px 6px rgba(255,255,255,0.3);
-}
-
-.profil--title{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.profil--subtitle{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: 400;
-}
 
 //search bloc 
 .search {
@@ -259,9 +260,6 @@ a {
         width: 300px;
         height: 250px;
         object-fit: cover;
-        //border-radius: .5rem;
-        //box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
-
     }
 
     &--date{
@@ -348,17 +346,45 @@ a {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   
 .page{
     border-radius: 0;
+}
+
+.profil{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--left{
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    &--right{
+        min-width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    &--right--description{
+        text-align: justify;
+    }
+
+    &--picture{
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .count--message {
     font-size: 1.5rem;
 }
 
- .card {
+.card {
     
     max-width: 100%;
     padding: 1rem;
