@@ -32,7 +32,7 @@ a {
   height: 100%;
   width: 320px;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: -320px;
   background-color: #bdbdbd;
@@ -116,14 +116,11 @@ a {
 .profil--subtitle {
   font-size: 1rem;
 }
-.profil--ul {
+.profil--ul--web {
   padding: 1rem 0;
 }
-.profil--li {
-  display: inline;
-}
-.profil--li:last-child {
-  padding-left: 1rem;
+.profil--li--web:last-child {
+  margin-top: 0.7rem;
 }
 .profil--li--cv {
   line-height: 1.7rem;
@@ -316,12 +313,28 @@ a {
     left: 0;
   }
   .profil--right {
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  .profil--right--description {
-    text-align: justify;
+  .profil--ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .profil--li--cv {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .profil--check-icon {
+    padding-top: 3px;
   }
   .profil--picture {
     width: 250px;
