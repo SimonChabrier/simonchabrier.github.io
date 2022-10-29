@@ -1,18 +1,16 @@
 
-
 const card = {
 
     init:function () 
     {
         console.log('init');
-        card.fetchData();
-        //reset results to original full display
+        card.fetchData(data);
         card.handleReload();
     },
 
-    fetchData:function ()
+    fetchData:function (projects)
     {   
-            data.forEach(project => {
+        projects.forEach(project => {
                 // target
                 const cardsContainer = document.getElementById("cards--init");
                 // template
