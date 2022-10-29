@@ -37,7 +37,7 @@ a {
     height: 100%;
     width: 320px;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: -320px;
     background-color: vars.$primaryGray;
@@ -132,17 +132,13 @@ a {
         font-size: 1rem;
     }
 
-    &--ul{
+    &--ul--web{
         padding: 1rem 0;
     }
 
-    &--li{
-        display: inline;        
-    }
-
-    &--li:last-child{
-        padding-left: 1rem;
-    }
+    &--li--web:last-child{
+        margin-top: .7rem;
+     }
 
     &--li--cv {
         line-height: 1.7rem;
@@ -374,13 +370,31 @@ a {
     }
 
     &--right{
-        width: 100%;
+        width: 90%;
         text-align: center;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
-    &--right--description{
-        text-align: justify;
+    &--ul{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    &--li--cv{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    &--check-icon{
+        padding-top: 3px;
     }
 
     &--picture{
