@@ -5,11 +5,12 @@ const card = {
     {
         console.log('init');
         card.constructCards(data);   
+        card.constructTechnoTagsList();
+        card.handleFilterByTechnoTag();
     },
 
     constructCards:function (projects, search_value)
     {   
-        card.constructTechnoTagsList();
         search.inputReset();
         
         projects.forEach(project => {
@@ -136,11 +137,25 @@ const card = {
             let techBtn = document.createElement('button');
             techBtn.textContent = `${techno}`;
             techBtn.classList.add('tags--btn');       
-            techBtn.setAttribute('id', `${techno.replace(/\s/g, '').toLowerCase()}`);
+            //techBtn.setAttribute('id', `${techno.replace(/\s/g, '').toLowerCase()}`);
+            techBtn.setAttribute('id', `${techno.toLowerCase()}`);
             technoContainer.appendChild(techBtn);
 
         });  
+    },
+
+    handleFilterByTechnoTag:function ()
+    {   
+        const tags = document.querySelectorAll('.tags--btn');
+        tags.forEach(tag => {
+            tag.addEventListener('click', function(event){
+                let btn = event.target;
+                card.resetCards();
+                search.dislayResults(btn.id)
+            });
+        });
+    }    
+
     }
-}    
 
 window.addEventListener('DOMContentLoaded', card.init);
