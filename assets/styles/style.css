@@ -170,6 +170,28 @@ a {
   cursor: pointer;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.tags--btn {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: 100;
+  outline: none;
+  background-color: rgb(229, 134, 19);
+  color: white;
+  cursor: pointer;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
