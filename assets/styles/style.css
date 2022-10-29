@@ -165,13 +165,16 @@ a {
 }
 
 .count {
-  display: flex;
+  display: none;
   justify-content: center;
   gap: 0.5rem;
   padding: 2rem;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   margin-bottom: 2rem;
+}
+.count--block {
+  display: block;
 }
 .count--message {
   font-size: 2rem;
