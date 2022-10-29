@@ -11,73 +11,39 @@ search: function()
     const searchInput = document.getElementById('search_input');
     searchInput.addEventListener('keyup', (e) => {
     let search_value = e.target.value;
-    search.searchResults(search_value);
+    search.dislayResults(search_value);
     });  
 },    
 
-searchResults: function(search_value) 
+dislayResults: function(search_value) 
 {   
-    $projet_techno = data.forEach(project => { project
+
+    let results = [];
+
+    projet_techno = data.forEach(project => { project
         project.techno.forEach(techno => {
             for (let key in techno) 
             { 
-                if(techno[key].toLowerCase() == (search_value.toLowerCase())){
-                    search.fetchResults(project);
+                if(techno[key].toLowerCase() == (search_value.toLowerCase()))
+                {
+                    results.push(project);
                 } 
             } 
         });
     });
 
+    card.resetCards();
+    card.fetchData(results);
+
     if (search_value == ""){
-        search.resetSearch();
-        card.fetchData();
+        search.resetSearchResults();
+        card.resetCards();
+        card.fetchData(data);
     }
 },   
 
-fetchResults:function(result){
 
-        let results = [result];
-        console.log(result);
-        card.resetCards();
-
-        results.forEach(project => {
-            // target
-            const cardsContainer = document.getElementById("search--results");
-            // template
-            const cardTemplate = document.getElementById("cardTemplate").content.cloneNode(true);
-
-            cardTemplate.getElementById('title').innerText = `${project.title}`;
-            cardTemplate.querySelector('img').src = `${project.picture}`;
-            cardTemplate.getElementById('date').textContent = `${project.date}`;
-            cardTemplate.getElementById('text').innerText = `${project.description}`;
-
-            project.techno.forEach(techno => {
-                for (let key in techno) { 
-                    let span = document.createElement('span');
-                    span.textContent = `${techno[key]}`;
-                    span.className = "card--span"
-                    cardTemplate.getElementById('techno').appendChild(span)
-                    } 
-                });
-
-            project.web.forEach(site => {
-                for (let key in site) { 
-                    if(site[key] != null){
-                    let link = document.createElement('a');
-                    link.href = `${site[key]}`;
-                    link.innerText = `${key}`;
-                    cardTemplate.getElementById('web').appendChild(link)
-                    } 
-                    }
-                });
-
-                cardsContainer.appendChild(cardTemplate);
-        });
-
-},
-
-
-resetSearch : function() 
+resetSearchResults : function() 
 {
     const resultContainer = document.getElementById("search--results");
     resultContainer.innerHTML = '';
