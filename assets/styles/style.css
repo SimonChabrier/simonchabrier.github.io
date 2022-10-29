@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400;600&display=swap");
 body {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -30,11 +30,11 @@ a {
 
 .sidenav {
   height: 100%;
-  width: 250px;
+  width: 320px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: -250px;
+  left: -320px;
   background-color: #bdbdbd;
   padding-top: 60px;
   transition: left 0.5s ease;
@@ -77,16 +77,6 @@ a {
   height: 5px;
   background-color: #004c8c;
   margin: 6px 0;
-}
-
-.header {
-  height: 50px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(237, 237, 237);
-  text-align: center;
 }
 
 .main {
