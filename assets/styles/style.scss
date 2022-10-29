@@ -346,7 +346,7 @@ a {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1600px) {
   
 .page{
     border-radius: 0;
@@ -359,13 +359,12 @@ a {
     align-items: center;
 
     &--left{
-        width: 100%;
-        padding: 1rem;
-        text-align: center;
+        position: relative;
+        left: 0;
     }
 
     &--right{
-        min-width: 100%;
+        width: 100%;
         text-align: center;
         margin: 0;
     }
@@ -375,7 +374,7 @@ a {
     }
 
     &--picture{
-        width: 100%;
+        width: 250px;
         margin: 0;
     }
 }
