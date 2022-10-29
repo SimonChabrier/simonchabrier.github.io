@@ -14,7 +14,7 @@ const card = {
     {   
             data.forEach(project => {
                 // target
-                const cardsContainer = document.getElementById("cards");
+                const cardsContainer = document.getElementById("cards--init");
                 // template
                 const cardTemplate = document.getElementById("cardTemplate").content.cloneNode(true);
 
@@ -53,11 +53,18 @@ const card = {
         const resetButton = document.getElementById("reset_btn");
 
         resetButton.addEventListener("click", () => {
-        search.reset();    
+        search.resetSearch();    
+        card.resetCards();    
         card.fetchData();
         });
 
     },
+
+    resetCards : function() 
+{
+    const cardsContainer = document.getElementById("cards--init");
+    cardsContainer.innerHTML = '';
+},
 }    
 
 window.addEventListener('DOMContentLoaded', card.init);
