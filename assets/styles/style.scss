@@ -108,6 +108,8 @@ a{
     margin: 0 auto;
     max-width: 100%;
     margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
 
 
     &--name{
@@ -153,12 +155,49 @@ a{
     font-weight: 400;
 }
 
+.search {
+
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: 2rem;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+
+    &--input{
+        width: 70%;
+        padding: .5rem;
+        border: rgb(19, 100, 229) 0.1rem solid;
+        border-radius: 0.4rem;
+        font-size: 1rem;
+        font-weight: 200;
+        outline: none;
+    }
+
+    &--reset--btn{
+        width: 30%;
+        padding: .5rem;
+        border: none;
+        border-radius: 0.4rem;
+        font-size: 1rem;
+        font-weight: 100;
+        outline: none;
+        background-color: rgb(19, 100, 229);
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
 //projects container
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
+    border-radius: .5rem;
  
 }
 
