@@ -5,70 +5,78 @@ init: function()
     console.log('Search init');
 },
 
-handlesearchInDescription: function() 
+allListeners: function() 
 {   
-    const searchInput = document.getElementById('search_input');
-    searchInput.addEventListener('keyup', (event) => {
-        event.target.value.length >= 2 ? card.resetCardsDiv() + card.resetCountMessage() + search.searchInDescription(event.target.value) : card.resetCardsDiv() + card.resetCountMessage() + card.setCardTemplate(allProjects);
-    });  
-},    
+    document.getElementById('search_input').addEventListener('input', function(e){
+        search.handleSearch();
+    });
 
-searchInDescription: function(inputValue)
+    document.getElementById('tags').addEventListener('input', () => {
+        search.handleSearch();
+    });
+
+},
+
+getSelectdTags: function() 
+{   
+    let tags = [];
+
+    document.querySelectorAll('.tags--checkbox').forEach(checkbox => {
+        if(checkbox.checked){
+            tags.push(checkbox.id);
+        }
+    });
+
+    return tags;
+},
+
+getInputValue: function()
 {
-    let projects = [];
-
-    allProjects.forEach( project => { 
-        project.description.toLowerCase().includes(inputValue.toLowerCase()) ? projects.push(project) : null; 
-    });
-    
-    card.setCardTemplate(projects, inputValue);
+    let input = document.getElementById('search_input').value;
+    return input;
 },
 
-handleFilterByCheckedTechnoTag:function ()
+handleSearch: function()
 {   
-    const tags = [];
+    const results = [];
+    const tags = search.getSelectdTags();
+    const searchInput = search.getInputValue().toLowerCase();
 
-    document.querySelectorAll('.tags--checkbox').forEach(tagCheckBox => {
-        tagCheckBox.addEventListener('change', (event) => {
-            event.target = !event.target.checked ? event.target.removeAttribute('checked') + tags.pop(event.target.id) : event.target.setAttribute('checked', true) + tags.push(event.target.id);;
-            search.filterByCheckedTag(tags);
-        });
-    }); 
-},  
-
-filterByCheckedTag: function(tags) 
-{    
-    const projects = [];
-
-    allProjects.forEach(project => {
-        project.techno.forEach(techno => {
-            for (let key in techno) 
-            {   
-                if (tags.find(tag => tag == techno[key].toLowerCase()))
-                {
-                    projects.push(project);
-                }
-            }
-        });
-    });
-
-    console.log(tags);
-
-    const filterDuplicateProjectFind = [...new Set(projects)];
-    card.resetCardsDiv();
-    card.setCardTemplate(filterDuplicateProjectFind, tags);
-},   
-
-handleInputReset: function() 
-{   
-    document.getElementById("reset_btn").addEventListener("click", () => {
-        document.getElementById("search_input").value = "";
-        document.getElementById("count--message").innerHTML = "";
-        card.resetCardsDiv();    
+    if (results.length == 0 && searchInput == '') 
+    {   
         card.setCardTemplate(allProjects);
-    });
-},
+    } 
+    
+    if (tags.length > 0 || searchInput != '') 
+    {
 
+        allProjects.forEach(project => {
+
+            if(tags.length > 0)
+            {
+                project.techno.forEach(techno => {
+                    for (let key in techno) 
+                    { 
+                        if(tags.includes(techno[key].toLowerCase()))
+                        {
+                            results.push(project);
+                        }
+                    }
+                });
+            }
+
+            if(searchInput.length > 2 && project.description.toLowerCase().includes(searchInput))
+            {
+                results.push(project);
+            }
+
+        });
+
+            const filteredResults = [...new Set(results)];
+            card.setCardTemplate(filteredResults);
+            card.countDisplayProject(filteredResults.length, tags, searchInput);   
+    } 
+},
 
 }
 
