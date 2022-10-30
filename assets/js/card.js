@@ -136,7 +136,8 @@ const card = {
 
             let techBtn = document.createElement('button');
             techBtn.textContent = `${techno}`;
-            techBtn.classList.add('tags--btn');       
+            techBtn.classList.add('tags--btn');    
+            card.setSpanColor(techBtn, techno);   
             //techBtn.setAttribute('id', `${techno.replace(/\s/g, '').toLowerCase()}`);
             techBtn.setAttribute('id', `${techno.toLowerCase()}`);
             technoContainer.appendChild(techBtn);
