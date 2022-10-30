@@ -4,9 +4,11 @@ init: function()
 {   
     console.log('Main init');
     
-    card.setCardTemplate(allProjects);
+    
     card.setTagsList(allProjects);
+    search.handleSearch();
     search.allListeners();
+    
 },
 
 }
