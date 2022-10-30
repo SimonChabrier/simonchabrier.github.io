@@ -4,12 +4,12 @@ const card = {
     init:function () 
     {
         console.log('init');
-        card.constructCards(data);   
-        card.constructTechnoTagsList();
+        card.setCardTemplate(data);   
+        card.setTagsList();
         card.handleFilterByTechnoTag();
     },
 
-    constructCards:function (projects, search_value)
+    setCardTemplate:function (projects, search_value)
     {   
         search.inputReset();
         
@@ -87,31 +87,7 @@ const card = {
             }
     },  
     
-    countDisplayProject:function (count, search_value){
-
-        let divElement = document.getElementById('count');
-        divElement.classList.remove('count--block');
-        let countDisplay = document.getElementById('count--message');
-
-        if(search_value != undefined){            
-            count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
-            divElement.classList.add('count--block');
-            divElement.appendChild(countDisplay);     
-        } 
-    },
-
-    resetCountMessage:function (){
-        let count_message = document.getElementById('count--message');
-        count_message.innerText = '';
-    },
-
-    resetCards : function() 
-    {
-        const cardsContainer = document.getElementById("cards--init");
-        cardsContainer.innerHTML = '';
-    },
-
-    constructTechnoTagsList:function () 
+    setTagsList:function () 
     {   
         const technos = [];
 
@@ -144,19 +120,40 @@ const card = {
         });  
     },
 
+    countDisplayProject:function (count, search_value){
+
+        let divElement = document.getElementById('count');
+        divElement.classList.remove('count--block');
+        let countDisplay = document.getElementById('count--message');
+
+        if(search_value != undefined){            
+            count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
+            divElement.classList.add('count--block');
+            divElement.appendChild(countDisplay);     
+        } 
+    },
+
+    resetCountMessage:function (){
+        let count_message = document.getElementById('count--message');
+        count_message.innerText = '';
+    },
+
+    resetCardsDiv : function() 
+    {
+        const cardsContainer = document.getElementById("cards--init");
+        cardsContainer.innerHTML = '';
+    },
+
     handleFilterByTechnoTag:function ()
     {   
         const selectedTags = [];
-
         const tags = document.querySelectorAll('.tags--btn');
 
         tags.forEach(tag => {
             tag.addEventListener('click', function(event){
-                let btn = event.target;
-                selectedTags.push(btn.id);
-                const selectedTagsUnique = [...new Set(selectedTags)];
-                card.resetCards();
-                search.dislayResults(selectedTagsUnique)
+                selectedTags.push(event.target.id);
+                card.resetCardsDiv();
+                search.dislayResults([...new Set(selectedTags)])
             });
         }); 
     }    
