@@ -7,7 +7,7 @@ init: function()
 
 allListeners: function() 
 {   
-    document.getElementById('search_input').addEventListener('input', function(e){
+    document.getElementById('search_input').addEventListener('input', () => {
         search.handleSearch();
     });
 
@@ -15,9 +15,16 @@ allListeners: function()
         search.handleSearch();
     });
 
-    document.getElementById('reset_btn').addEventListener('click', function(e){
+    document.getElementById('reset_btn').addEventListener('click', () => {
         search.handleResetBtn();
     });
+
+    let buttons = document.getElementsByClassName('tags--btn');
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', event => {
+            search.handleTagsBtn(event.target.id);
+        }
+    )};
 
 },
 
@@ -91,6 +98,13 @@ handleResetBtn: function()
     });
     card.setCardTemplate(allProjects);
 },
+
+handleTagsBtn: function(event)
+{   
+    let checkbox = document.getElementById(event);
+    checkbox.checked = !checkbox.checked;
+    search.handleSearch();
+}
 
 }
 

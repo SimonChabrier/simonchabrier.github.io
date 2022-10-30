@@ -112,11 +112,12 @@ const card = {
             checkBox.classList.add('tags--checkbox');
             technoContainer.appendChild(checkBox);
 
-            let techSpan = document.createElement('span');
-            techSpan.textContent = `${techno}`;
-            techSpan.classList.add('tags--btn');    
-            card.setSpanColor(techSpan, techno);   
-            technoContainer.appendChild(techSpan);
+            let techBtn = document.createElement('button');
+            techBtn.textContent = `${techno}`;
+            techBtn.id = techno.toLowerCase();
+            techBtn.classList.add('tags--btn');    
+            card.setSpanColor(techBtn, techno);   
+            technoContainer.appendChild(techBtn);
 
         });  
     },
