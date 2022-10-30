@@ -146,18 +146,18 @@ const card = {
 
     handleFilterByTechnoTag:function ()
     {   
-        const selectedTags = [];
+        const clickedTags = [];
         const tags = document.querySelectorAll('.tags--btn');
 
         tags.forEach(tag => {
             tag.addEventListener('click', function(event){
-                selectedTags.push(event.target.id);
+                clickedTags.push(event.target.id);
                 card.resetCardsDiv();
-                search.dislayResults([...new Set(selectedTags)])
+                search.findProjectByClickedTag(clickedTags)
             });
         }); 
-    }    
+    },   
 
-    }
+}
 
 window.addEventListener('DOMContentLoaded', card.init);
