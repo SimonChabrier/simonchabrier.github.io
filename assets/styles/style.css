@@ -197,11 +197,8 @@ a {
   border: none;
   border-radius: 0.4rem;
   font-size: 1rem;
-  font-weight: 100;
   outline: none;
-  background-color: rgb(229, 134, 19);
   color: white;
-  cursor: pointer;
 }
 .tags--checkbox {
   width: 20px;
@@ -255,11 +252,6 @@ a {
   flex-wrap: wrap;
 }
 .card--span {
-  background-color: green;
-  padding: 0.5rem;
-  color: white;
-  border-radius: 0.5rem;
-  font-size: 0.8rem;
   text-transform: lowercase;
 }
 .card--span--php {
