@@ -30,7 +30,7 @@ handleFilterByTechnoTag:function ()
 
     document.querySelectorAll('.tags--checkbox').forEach(tagCheckBox => {
         tagCheckBox.addEventListener('click', (event) => {
-            tags.push(event.target.id);
+            event.target = !event.target.checked ? event.target.removeAttribute('checked') + tags.pop(event.target.id) : event.target.setAttribute('checked', true) + tags.push(event.target.id);;
             search.filterByCheckedTag(tags);
         });
     }); 
@@ -39,13 +39,12 @@ handleFilterByTechnoTag:function ()
 filterByCheckedTag: function(tags) 
 {    
     const projects = [];
-    const uniqueTags = [...new Set(tags)];
 
     allProjects.forEach(project => {
         project.techno.forEach(techno => {
             for (let key in techno) 
             {   
-                if (uniqueTags.find(tag => tag == techno[key].toLowerCase()))
+                if (tags.find(tag => tag == techno[key].toLowerCase()))
                 {
                     projects.push(project);
                 }
@@ -55,7 +54,7 @@ filterByCheckedTag: function(tags)
 
     const uniqueProjects = [...new Set(projects)];
     card.resetCardsDiv();
-    card.setCardTemplate(uniqueProjects, uniqueTags);
+    card.setCardTemplate(uniqueProjects, tags);
 },   
 
 handleInputReset: function() 
