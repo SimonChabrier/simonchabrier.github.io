@@ -106,18 +106,23 @@ const card = {
 
         filterDuplicateTechno.forEach(techno => {
 
+            let tagContainer = document.createElement('section');
+            tagContainer.classList.add('tags--container');
+
             let checkBox = document.createElement('input');
             checkBox.type = 'checkbox';
             checkBox.id = techno.toLowerCase();
             checkBox.classList.add('tags--checkbox');
-            technoContainer.appendChild(checkBox);
+            tagContainer.appendChild(checkBox);
+            technoContainer.appendChild(tagContainer);
 
             let techBtn = document.createElement('button');
             techBtn.textContent = `${techno}`;
             techBtn.id = techno.toLowerCase();
             techBtn.classList.add('tags--btn');    
             card.setSpanColor(techBtn, techno);   
-            technoContainer.appendChild(techBtn);
+            tagContainer.appendChild(techBtn);
+            technoContainer.appendChild(tagContainer);
 
         });  
     },
