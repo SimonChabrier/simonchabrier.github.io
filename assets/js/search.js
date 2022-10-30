@@ -42,33 +42,39 @@ handleSearch: function()
     const tags = search.getSelectdTags();
     const searchInput = search.getInputValue().toLowerCase();
 
-    if (results.length == 0 && searchInput == '') {
+    if (results.length == 0 && searchInput == '') 
+    {
         card.setCardTemplate(allProjects);
-        console.log('no search');
-    }
+    } 
+    
+    if (tags.length > 0 || searchInput != '') 
+    {
 
-    allProjects.forEach(project => {
+        allProjects.forEach(project => {
 
-        if(tags.length > 0){
-            project.techno.forEach(techno => {
-                for (let key in techno) 
-                { 
-                    if(tags.includes(techno[key].toLowerCase())){
-                        results.push(project);
+            if(tags.length > 0)
+            {
+                project.techno.forEach(techno => {
+                    for (let key in techno) 
+                    { 
+                        if(tags.includes(techno[key].toLowerCase()))
+                        {
+                            results.push(project);
+                        }
                     }
-                }
-            });
-        }
+                });
+            }
 
-        if(searchInput.length > 2 && project.description.toLowerCase().includes(searchInput)){
-                        results.push(project);
-        }
+            if(searchInput.length > 2 && project.description.toLowerCase().includes(searchInput))
+            {
+                results.push(project);
+            }
 
-    });
+        });
 
-    const filteredResults = [...new Set(results)];
-
-    console.log(filteredResults);
+            const filteredResults = [...new Set(results)];
+            card.setCardTemplate(filteredResults);   
+    } 
 },
 
 }
