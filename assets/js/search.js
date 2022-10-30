@@ -29,7 +29,7 @@ handleFilterByCheckedTechnoTag:function ()
     const tags = [];
 
     document.querySelectorAll('.tags--checkbox').forEach(tagCheckBox => {
-        tagCheckBox.addEventListener('click', (event) => {
+        tagCheckBox.addEventListener('change', (event) => {
             event.target = !event.target.checked ? event.target.removeAttribute('checked') + tags.pop(event.target.id) : event.target.setAttribute('checked', true) + tags.push(event.target.id);;
             search.filterByCheckedTag(tags);
         });
@@ -51,6 +51,8 @@ filterByCheckedTag: function(tags)
             }
         });
     });
+
+    console.log(tags);
 
     const filterDuplicateProjectFind = [...new Set(projects)];
     card.resetCardsDiv();
