@@ -93,8 +93,8 @@ const card = {
         divElement.classList.remove('count--block');
         let countDisplay = document.getElementById('count--message');
 
-        if(search_value != undefined){
-            count > 1 ? countDisplay.textContent = countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
+        if(search_value != undefined){            
+            count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
             divElement.classList.add('count--block');
             divElement.appendChild(countDisplay);     
         } 
@@ -138,7 +138,6 @@ const card = {
             techBtn.textContent = `${techno}`;
             techBtn.classList.add('tags--btn');    
             card.setSpanColor(techBtn, techno);   
-            //techBtn.setAttribute('id', `${techno.replace(/\s/g, '').toLowerCase()}`);
             techBtn.setAttribute('id', `${techno.toLowerCase()}`);
             technoContainer.appendChild(techBtn);
 
@@ -147,15 +146,21 @@ const card = {
 
     handleFilterByTechnoTag:function ()
     {   
+        const selectedTags = [];
+
         const tags = document.querySelectorAll('.tags--btn');
 
         tags.forEach(tag => {
             tag.addEventListener('click', function(event){
                 let btn = event.target;
+                selectedTags.push(btn.id);
+                const selectedTagsUnique = [...new Set(selectedTags)];
                 card.resetCards();
-                search.dislayResults(btn.id)
+                search.dislayResults(selectedTagsUnique)
             });
         });
+
+        
     }    
 
     }
