@@ -1,7 +1,7 @@
 const menu = {
 
     init:function(){
-        console.log('appInit');
+        console.log('Side Menu init');
         menu.addAllEventLIsteners();
     },
 

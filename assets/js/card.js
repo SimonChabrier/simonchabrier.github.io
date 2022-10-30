@@ -3,16 +3,11 @@ const card = {
 
     init:function () 
     {
-        console.log('init');
-        card.setCardTemplate(data);   
-        card.setTagsList();
-        card.handleFilterByTechnoTag();
+        console.log('Card init');   
     },
 
     setCardTemplate:function (projects, search_value)
     {   
-        search.inputReset();
-        
         projects.forEach(project => {
 
             const cardsContainer = document.getElementById("cards--init");
@@ -93,9 +88,9 @@ const card = {
 
         const technoContainer = document.getElementById("tags");
 
-        for (let i = 0; i < data.length; i++) 
+        for (let i = 0; i < allProjects.length; i++) 
         {
-            data[i].techno.forEach(techno => {
+            allProjects[i].techno.forEach(techno => {
                 for (let key in techno) 
                 { 
                     if(techno[key] != '')
@@ -110,53 +105,47 @@ const card = {
 
         filterDuplicateTechno.forEach(techno => {
 
-            let techBtn = document.createElement('button');
-            techBtn.textContent = `${techno}`;
-            techBtn.classList.add('tags--btn');    
-            card.setSpanColor(techBtn, techno);   
-            techBtn.setAttribute('id', `${techno.toLowerCase()}`);
-            technoContainer.appendChild(techBtn);
+            let techSpan = document.createElement('span');
+            let checkBox = document.createElement('input');
+
+            checkBox.type = 'checkbox';
+            checkBox.id = techno.toLowerCase();
+            checkBox.classList.add('tags--checkbox');
+            technoContainer.appendChild(checkBox);
+
+            techSpan.textContent = `${techno}`;
+            techSpan.classList.add('tags--btn');    
+            card.setSpanColor(techSpan, techno);   
+            techSpan.setAttribute('id', techno.toLowerCase());
+            technoContainer.appendChild(techSpan);
 
         });  
     },
 
     countDisplayProject:function (count, search_value){
 
-        let divElement = document.getElementById('count');
-        divElement.classList.remove('count--block');
+        let countDiv = document.getElementById('count');
+        countDiv.classList.remove('count--block');
+        
         let countDisplay = document.getElementById('count--message');
 
         if(search_value != undefined){            
             count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
-            divElement.classList.add('count--block');
-            divElement.appendChild(countDisplay);     
+            countDiv.classList.add('count--block');
+            countDiv.appendChild(countDisplay);     
         } 
     },
 
     resetCountMessage:function (){
-        let count_message = document.getElementById('count--message');
-        count_message.innerText = '';
+        document.getElementById('count--message').innerText = '';;
     },
 
     resetCardsDiv : function() 
     {
-        const cardsContainer = document.getElementById("cards--init");
-        cardsContainer.innerHTML = '';
+        document.getElementById("cards--init").innerHTML = '';
     },
 
-    handleFilterByTechnoTag:function ()
-    {   
-        const clickedTags = [];
-        const tags = document.querySelectorAll('.tags--btn');
-
-        tags.forEach(tag => {
-            tag.addEventListener('click', function(event){
-                clickedTags.push(event.target.id);
-                card.resetCardsDiv();
-                search.findProjectByClickedTag(clickedTags)
-            });
-        }); 
-    },   
+     
 
 }
 

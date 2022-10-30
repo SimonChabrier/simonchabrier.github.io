@@ -2,37 +2,46 @@ const search = {
 
 init: function() 
 {   
-    search.handleInputSearchInDescription();
-    console.log('search init');
+    console.log('Search init');
 },
 
-handleInputSearchInDescription: function() 
+handlesearchInDescription: function() 
 {   
     const searchInput = document.getElementById('search_input');
     searchInput.addEventListener('keyup', (event) => {
-        event.target.value.length >= 2 ? card.resetCardsDiv() + card.resetCountMessage() + search.searchInDescription(event.target.value) : card.resetCardsDiv() + card.resetCountMessage() + card.setCardTemplate(data);
+        event.target.value.length >= 2 ? card.resetCardsDiv() + card.resetCountMessage() + search.searchInDescription(event.target.value) : card.resetCardsDiv() + card.resetCountMessage() + card.setCardTemplate(allProjects);
     });  
 },    
 
-searchInDescription: function(search_value)
+searchInDescription: function(inputValue)
 {
     let projects = [];
 
-    data.forEach( project => { 
-        project.description.toLowerCase().includes(search_value.toLowerCase()) ? projects.push(project) : null; 
+    allProjects.forEach( project => { 
+        project.description.toLowerCase().includes(inputValue.toLowerCase()) ? projects.push(project) : null; 
     });
     
-    card.setCardTemplate(projects, search_value);
+    card.setCardTemplate(projects, inputValue);
 },
 
-
-findProjectByClickedTag: function(clickedTags) 
+handleFilterByTechnoTag:function ()
 {   
+    const tags = [];
 
+    document.querySelectorAll('.tags--checkbox').forEach(tagCheckBox => {
+        tagCheckBox.addEventListener('click', (event) => {
+            tags.push(event.target.id);
+            search.filterByCheckedTag(tags);
+        });
+    }); 
+},  
+
+filterByCheckedTag: function(tags) 
+{    
     const projects = [];
-    const uniqueTags = [...new Set(clickedTags)];
+    const uniqueTags = [...new Set(tags)];
 
-    data.forEach(project => {
+    allProjects.forEach(project => {
         project.techno.forEach(techno => {
             for (let key in techno) 
             {   
@@ -45,21 +54,18 @@ findProjectByClickedTag: function(clickedTags)
     });
 
     const uniqueProjects = [...new Set(projects)];
-    
+    card.resetCardsDiv();
     card.setCardTemplate(uniqueProjects, uniqueTags);
 },   
 
-inputReset: function() 
-{
-    const resetButton = document.getElementById("reset_btn");
-    const searchInput = document.getElementById("search_input");
-    
-    resetButton.addEventListener("click", () => {
-        searchInput.value = "";
+handleInputReset: function() 
+{   
+    document.getElementById("reset_btn").addEventListener("click", () => {
+        document.getElementById("search_input").value = "";
+        document.getElementById("count--message").innerHTML = "";
         card.resetCardsDiv();    
-        card.setCardTemplate(data);
+        card.setCardTemplate(allProjects);
     });
-
 },
 
 
