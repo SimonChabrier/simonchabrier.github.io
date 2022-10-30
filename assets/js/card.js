@@ -158,9 +158,7 @@ const card = {
                 card.resetCards();
                 search.dislayResults(selectedTagsUnique)
             });
-        });
-
-        
+        }); 
     }    
 
     }
