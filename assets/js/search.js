@@ -15,6 +15,10 @@ allListeners: function()
         search.handleSearch();
     });
 
+    document.getElementById('reset_btn').addEventListener('click', function(e){
+        search.handleResetBtn();
+    });
+
 },
 
 getSelectdTags: function() 
@@ -76,6 +80,16 @@ handleSearch: function()
             card.setCardTemplate(filteredResults);
             card.countDisplayProject(filteredResults.length, tags, searchInput);   
     } 
+},
+
+handleResetBtn: function()
+{
+    document.getElementById('search_input').value = '';
+    document.getElementById('count--message').textContent = '';
+    document.querySelectorAll('.tags--checkbox').forEach(checkbox => {
+        checkbox.checked = false;
+    });
+    card.setCardTemplate(allProjects);
 },
 
 }
