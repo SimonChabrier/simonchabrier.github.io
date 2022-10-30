@@ -39,9 +39,13 @@ getInputValue: function()
 handleSearch: function()
 {   
     const results = [];
-
     const tags = search.getSelectdTags();
     const searchInput = search.getInputValue().toLowerCase();
+
+    if (results.length == 0 && searchInput == '') {
+        card.setCardTemplate(allProjects);
+        console.log('no search');
+    }
 
     allProjects.forEach(project => {
 
