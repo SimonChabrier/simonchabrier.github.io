@@ -94,7 +94,7 @@ const card = {
         let countDisplay = document.getElementById('count--message');
 
         if(search_value != undefined){
-            count > 1 ? countDisplay.textContent = countDisplay.textContent = `${count} résultats pour la recherche ${search_value}` : countDisplay.textContent = `${count} résultat pour la recherche ${search_value}`;
+            count > 1 ? countDisplay.textContent = countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
             divElement.classList.add('count--block');
             divElement.appendChild(countDisplay);     
         } 
@@ -147,6 +147,7 @@ const card = {
     handleFilterByTechnoTag:function ()
     {   
         const tags = document.querySelectorAll('.tags--btn');
+
         tags.forEach(tag => {
             tag.addEventListener('click', function(event){
                 let btn = event.target;

@@ -2,17 +2,34 @@ const search = {
 
 init: function() 
 {   
-    search.inputSearchInTechnoTags();
+    search.handleInputSearchInTechnoTags();
+    search.handleSearchInDescription();
     console.log('search init');
 },
 
-inputSearchInTechnoTags: function() 
+handleInputSearchInTechnoTags: function() 
 {   
     const searchInput = document.getElementById('search_input');
     searchInput.addEventListener('keyup', (event) => {
-        event.target.value.length >= 3 ? card.resetCards() + card.resetCountMessage() + search.dislayResults(event.target.value) : card.resetCards() + card.resetCountMessage() + card.constructCards(data);
+        //event.target.value.length >= 2 ? card.resetCards() + card.resetCountMessage() + search.dislayResults(event.target.value) : card.resetCards() + card.resetCountMessage() + card.constructCards(data);
+        event.target.value.length >= 2 ? card.resetCards() + card.resetCountMessage() + search.handleSearchInDescription(event.target.value) : card.resetCards() + card.resetCountMessage() + card.constructCards(data);
     });  
 },    
+
+handleSearchInDescription: function(search_value)
+{
+    let results = [];
+   
+    if(search_value)
+    {
+        projet_description = data.forEach(project => { 
+            project.description.toLowerCase().includes(search_value.toLowerCase()) ? results.push(project) : null; 
+        });
+    }
+
+    card.constructCards(results, search_value);
+
+},
 
 dislayResults: function(search_value) 
 {   
@@ -22,10 +39,7 @@ dislayResults: function(search_value)
         project.techno.forEach(techno => {
             for (let key in techno) 
             {   
-                if(techno[key].toLowerCase().includes(search_value.toLowerCase()))
-                {      
-                    results.push(project);
-                }
+                techno[key].toLowerCase().includes(search_value.toLowerCase()) ? results.push(project) : null;
             } 
         });
     });
