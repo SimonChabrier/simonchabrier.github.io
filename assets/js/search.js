@@ -24,7 +24,7 @@ searchInDescription: function(inputValue)
     card.setCardTemplate(projects, inputValue);
 },
 
-handleFilterByTechnoTag:function ()
+handleFilterByCheckedTechnoTag:function ()
 {   
     const tags = [];
 
@@ -52,9 +52,9 @@ filterByCheckedTag: function(tags)
         });
     });
 
-    const uniqueProjects = [...new Set(projects)];
+    const filterDuplicateProjectFind = [...new Set(projects)];
     card.resetCardsDiv();
-    card.setCardTemplate(uniqueProjects, tags);
+    card.setCardTemplate(filterDuplicateProjectFind, tags);
 },   
 
 handleInputReset: function() 
