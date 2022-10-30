@@ -121,22 +121,21 @@ const card = {
 
     countDisplayProject:function (count, tags, searchInput){
 
-        console.log(searchInput);
-        let countDiv = document.getElementById('count');
-        countDiv.classList.remove('count--block');
-        
-        let countDisplay = document.getElementById('count--message');
+        document.getElementById('count').classList.remove('count--block');
+        const countDisplay = document.getElementById('count--message');
 
-        if(searchInput != undefined){            
-            count > 1 ? countDisplay.textContent = `${count} résultats pour ${searchInput} + ${tags}` : countDisplay.textContent = `${count} résultat pour ${searchInput} ${tags}`;
-            countDiv.classList.add('count--block');
-            countDiv.appendChild(countDisplay);     
+
+        if(searchInput != undefined && tags != undefined)
+        {   
+            tags = tags.toString().replace(/,/g, " + ");
+            searchInput = searchInput.replace(/\s/g, " + ");
+
+            count > 1 ? countDisplay.textContent = `${count} projets pour ${searchInput} ${tags}` : countDisplay.textContent = `${count} projet pour  ${searchInput} ${tags}`;
+            document.getElementById('count').classList.add('count--block');
+            document.getElementById('count').appendChild(countDisplay);     
         } 
     },
 
-    resetCountMessage:function (){
-        document.getElementById('count--message').innerText = '';
-    },
 
     resetCardsDiv : function() 
     {
