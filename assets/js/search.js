@@ -43,7 +43,7 @@ handleSearch: function()
     const searchInput = search.getInputValue().toLowerCase();
 
     if (results.length == 0 && searchInput == '') 
-    {
+    {   
         card.setCardTemplate(allProjects);
     } 
     
@@ -73,7 +73,8 @@ handleSearch: function()
         });
 
             const filteredResults = [...new Set(results)];
-            card.setCardTemplate(filteredResults);   
+            card.setCardTemplate(filteredResults);
+            card.countDisplayProject(filteredResults.length, tags, searchInput);   
     } 
 },
 
