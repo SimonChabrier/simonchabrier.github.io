@@ -5,7 +5,7 @@ init: function()
     console.log('Main init');
     card.setCardTemplate(allProjects);   
     card.setTagsList();
-    search.handleFilterByTechnoTag();
+    search.handleFilterByCheckedTechnoTag();
     search.handlesearchInDescription();
     search.handleInputReset();
 },
