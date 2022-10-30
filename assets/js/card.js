@@ -6,8 +6,10 @@ const card = {
         console.log('Card init');   
     },
 
-    setCardTemplate:function (projects, search_value)
+    setCardTemplate:function (projects, tags, searchInput)
     {   
+        card.resetCardsDiv();
+
         projects.forEach(project => {
 
             const cardsContainer = document.getElementById("cards--init");
@@ -48,7 +50,7 @@ const card = {
         });
 
         let count = projects.length;
-        card.countDisplayProject(count, search_value);
+        card.countDisplayProject(count, tags, searchInput);
     },
 
     setSpanColor:function (span, techno)
@@ -117,19 +119,37 @@ const card = {
         });  
     },
 
-    countDisplayProject:function (count, search_value){
+    countDisplayProject:function (count, tags, searchInput){
 
-        console.log(typeof search_value);
-        let countDiv = document.getElementById('count');
-        countDiv.classList.remove('count--block');
+        const state = {
+            count: count,
+            searchInput: null,
+            tags : [],
+        }
+
+        typeof(searchInput) == 'string' ? state.searchInput = searchInput : state.searchInput = null;
+        typeof(searchInput) == 'object' ? state.tags = tags : state.tags = [];
+
+        // console.log(state.searchInput);
+        // console.log(state.tags);
+        // console.log(state.count);
+
+
+
+
+
+
+
+        //let countDiv = document.getElementById('count');
+        //countDiv.classList.remove('count--block');
         
-        let countDisplay = document.getElementById('count--message');
+        // let countDisplay = document.getElementById('count--message');
 
-        if(search_value != undefined && typeof search_value == 'string'){            
-            count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
-            countDiv.classList.add('count--block');
-            countDiv.appendChild(countDisplay);     
-        } 
+        // if(search_value != undefined && typeof search_value == 'string'){            
+        //     count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
+        //     countDiv.classList.add('count--block');
+        //     countDiv.appendChild(countDisplay);     
+        // } 
 
         // if(search_value != undefined && typeof search_value == 'object'){
         //     count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
@@ -137,10 +157,10 @@ const card = {
         //     countDiv.appendChild(countDisplay);    
         // }
 
-        if(count == 0 && typeof search_value == 'object'){
-            countDiv.classList.remove('count--block');
-            card.setCardTemplate(allProjects);    
-        }
+        // if(count == 0 && typeof search_value == 'object'){
+        //     countDiv.classList.remove('count--block');
+        //     card.setCardTemplate(allProjects);    
+        // }
 
     },
 
