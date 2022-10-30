@@ -128,7 +128,7 @@ const card = {
         let countDisplay = document.getElementById('count--message');
 
         if(searchInput != undefined){            
-            count > 1 ? countDisplay.textContent = `${count} résultats pour ${searchInput} ${tags}` : countDisplay.textContent = `${count} résultat pour ${searchInput} ${tags}`;
+            count > 1 ? countDisplay.textContent = `${count} résultats pour ${searchInput} + ${tags}` : countDisplay.textContent = `${count} résultat pour ${searchInput} ${tags}`;
             countDiv.classList.add('count--block');
             countDiv.appendChild(countDisplay);     
         } 
