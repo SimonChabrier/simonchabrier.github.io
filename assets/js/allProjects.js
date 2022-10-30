@@ -1,4 +1,6 @@
-const data = [
+console.log('allProjects init');
+
+const allProjects = [
     {
         id : '1',
         title : 'O\'Programme',
