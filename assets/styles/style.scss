@@ -308,11 +308,22 @@ a {
         font-size: 1rem;
         outline: none;
         color: white;
+    }
+
+    &--span--btn {
+        text-transform: lowercase;
+        padding: .5rem;
+        border: none;
+        border-radius: 0.4rem;
+        font-size: 1rem;
+        outline: none;
+        color: white;
         width: 200px;
     }
 
     &--span--php {
         background-color: hwb(0 0% 100%);
+        
     }
 
     &--span--html {
@@ -442,10 +453,6 @@ body {
     max-width: 100%;
     padding: 1rem;
     height: auto;
-
-    &--span {
-        width: 200px;
-    }
  }
 
 

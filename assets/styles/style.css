@@ -266,6 +266,15 @@ a {
   font-size: 1rem;
   outline: none;
   color: white;
+}
+.card--span--btn {
+  text-transform: lowercase;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  outline: none;
+  color: white;
   width: 200px;
 }
 .card--span--php {
@@ -374,8 +383,5 @@ a {
     max-width: 100%;
     padding: 1rem;
     height: auto;
-  }
-  .card--span {
-    width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */

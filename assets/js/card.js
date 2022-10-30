@@ -117,9 +117,9 @@ const card = {
             technoContainer.appendChild(tagContainer);
 
             let techBtn = document.createElement('button');
+            techBtn.classList.add('card--span--btn' , 'tags--btn');
             techBtn.textContent = `${techno}`;
             techBtn.id = techno.toLowerCase();
-            techBtn.classList.add('tags--btn');    
             card.setSpanColor(techBtn, techno);   
             tagContainer.appendChild(techBtn);
             technoContainer.appendChild(tagContainer);
