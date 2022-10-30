@@ -173,8 +173,6 @@ const card = {
         document.getElementById("cards--init").innerHTML = '';
     },
 
-     
-
 }
 
 window.addEventListener('DOMContentLoaded', card.init);

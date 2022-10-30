@@ -3,12 +3,9 @@ const mainInit = {
 init: function() 
 {   
     console.log('Main init');
-    
-    
-    card.setTagsList(allProjects);
+    card.setTagsList();
     search.handleSearch();
     search.allListeners();
-    
 },
 
 }
