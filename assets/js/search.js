@@ -2,59 +2,51 @@ const search = {
 
 init: function() 
 {   
-    search.handleInputSearchInTechnoTags();
-    search.handleSearchInDescription();
+    search.handleInputSearchInDescription();
     console.log('search init');
 },
 
-handleInputSearchInTechnoTags: function() 
+handleInputSearchInDescription: function() 
 {   
     const searchInput = document.getElementById('search_input');
     searchInput.addEventListener('keyup', (event) => {
-        event.target.value.length >= 2 ? card.resetCardsDiv() + card.resetCountMessage() + search.handleSearchInDescription(event.target.value) : card.resetCardsDiv() + card.resetCountMessage() + card.setCardTemplate(data);
+        event.target.value.length >= 2 ? card.resetCardsDiv() + card.resetCountMessage() + search.searchInDescription(event.target.value) : card.resetCardsDiv() + card.resetCountMessage() + card.setCardTemplate(data);
     });  
 },    
 
-handleSearchInDescription: function(search_value)
+searchInDescription: function(search_value)
 {
-    let results = [];
-   
-    if(search_value)
-    {
-        projet_description = data.forEach(project => { 
-            project.description.toLowerCase().includes(search_value.toLowerCase()) ? results.push(project) : null; 
-        });
-    }
+    let projects = [];
 
-    card.setCardTemplate(results, search_value);
-
+    data.forEach( project => { 
+        project.description.toLowerCase().includes(search_value.toLowerCase()) ? projects.push(project) : null; 
+    });
+    
+    card.setCardTemplate(projects, search_value);
 },
 
-//TODO gérer ici le filtre sur l'ensemble des tags sélectionnés
-dislayResults: function(search_value) 
+
+findProjectByClickedTag: function(clickedTags) 
 {   
-    let selectedTags = [];
-    let matchingProjects = [];
-    
-    search_value.forEach(tag => {
-        selectedTags.push(tag);
-    });
+
+    const projects = [];
+    const uniqueTags = [...new Set(clickedTags)];
 
     data.forEach(project => {
         project.techno.forEach(techno => {
             for (let key in techno) 
             {   
-                if (search_value.find(tag => tag == techno[key].toLowerCase()))
+                if (uniqueTags.find(tag => tag == techno[key].toLowerCase()))
                 {
-                    matchingProjects.push(project);
+                    projects.push(project);
                 }
             }
         });
     });
-    
-    filteredProjects = [...new Set(matchingProjects)];
 
-   card.setCardTemplate(filteredProjects, search_value);
+    const uniqueProjects = [...new Set(projects)];
+    
+    card.setCardTemplate(uniqueProjects, uniqueTags);
 },   
 
 inputReset: function() 
