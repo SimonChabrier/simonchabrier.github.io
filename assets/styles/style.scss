@@ -305,31 +305,31 @@ a {
     }
 
     &--span--php{
-        background-color: rgb(0, 0, 0);
+        background-color: hwb(0 0% 100%);
     }
 
     &--span--html{
-        background-color: rgb(135, 29, 29);
+        background-color: rgb(255, 143, 6);
     }
 
     &--span--css{
-        background-color: rgb(75, 135, 29);
+        background-color: rgb(48, 100, 8);
     }
 
     &--span--bootstrap5{
-        background-color: rgb(16, 21, 173);
+        background-color: rgb(42, 46, 147);
     }
 
     &--span--altorouter{
-        background-color: rgb(141, 173, 16);
+        background-color: rgb(16, 134, 173);
     }
 
     &--span--plates{
-        background-color: rgb(173, 16, 113);
+        background-color: rgb(94, 16, 173);
     }
 
     &--span--symfonyrouter{
-        background-color: rgb(173, 92, 16);
+        background-color: rgb(172, 22, 2);
     }
 
 

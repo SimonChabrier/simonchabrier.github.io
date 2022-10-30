@@ -6,8 +6,10 @@ const card = {
         console.log('Card init');   
     },
 
-    setCardTemplate:function (projects, search_value)
+    setCardTemplate:function (projects, tags, searchInput)
     {   
+        card.resetCardsDiv();
+
         projects.forEach(project => {
 
             const cardsContainer = document.getElementById("cards--init");
@@ -48,7 +50,7 @@ const card = {
         });
 
         let count = projects.length;
-        card.countDisplayProject(count, search_value);
+        card.countDisplayProject(count, tags, searchInput);
     },
 
     setSpanColor:function (span, techno)
@@ -88,15 +90,17 @@ const card = {
 
         const technoContainer = document.getElementById("tags");
 
-        for (let i = 0; i < allProjects.length; i++) 
-        {
-            allProjects[i].techno.forEach(techno => {
+        allProjects.forEach(project => {
+            project.techno.forEach(techno => {
                 for (let key in techno) 
                 { 
-                    technos.push(techno[key]);
+                    if(techno[key] != '')
+                    {
+                        technos.push(techno[key]);
+                    } 
                 }
             });
-        };
+        });
 
         const filterDuplicateTechno = [...new Set(technos)];
 
@@ -117,43 +121,28 @@ const card = {
         });  
     },
 
-    countDisplayProject:function (count, search_value){
+    countDisplayProject:function (count, tags, searchInput){
 
-        console.log(typeof search_value);
-        let countDiv = document.getElementById('count');
-        countDiv.classList.remove('count--block');
-        
-        let countDisplay = document.getElementById('count--message');
+        document.getElementById('count').classList.remove('count--block');
+        const countDisplay = document.getElementById('count--message');
 
-        if(search_value != undefined && typeof search_value == 'string'){            
-            count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
-            countDiv.classList.add('count--block');
-            countDiv.appendChild(countDisplay);     
+
+        if(searchInput != undefined && tags != undefined)
+        {   
+            tags = tags.toString().replace(/,/g, " + ");
+            searchInput = searchInput.replace(/\s/g, " + ");
+
+            count > 1 ? countDisplay.textContent = `${count} projets pour ${searchInput} ${tags}` : countDisplay.textContent = `${count} projet pour  ${searchInput} ${tags}`;
+            document.getElementById('count').classList.add('count--block');
+            document.getElementById('count').appendChild(countDisplay);     
         } 
-
-        // if(search_value != undefined && typeof search_value == 'object'){
-        //     count > 1 ? countDisplay.textContent = `${count} résultats pour ${search_value}` : countDisplay.textContent = `${count} résultat pour ${search_value}`;
-        //     countDiv.classList.add('count--block');
-        //     countDiv.appendChild(countDisplay);    
-        // }
-
-        if(count == 0 && typeof search_value == 'object'){
-            countDiv.classList.remove('count--block');
-            card.setCardTemplate(allProjects);    
-        }
-
     },
 
-    resetCountMessage:function (){
-        document.getElementById('count--message').innerText = '';;
-    },
 
     resetCardsDiv : function() 
     {
         document.getElementById("cards--init").innerHTML = '';
     },
-
-     
 
 }
 
