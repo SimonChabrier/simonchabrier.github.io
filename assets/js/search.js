@@ -11,7 +11,7 @@ handleInputSearchInTechnoTags: function()
 {   
     const searchInput = document.getElementById('search_input');
     searchInput.addEventListener('keyup', (event) => {
-        event.target.value.length >= 2 ? card.resetCards() + card.resetCountMessage() + search.handleSearchInDescription(event.target.value) : card.resetCards() + card.resetCountMessage() + card.constructCards(data);
+        event.target.value.length >= 2 ? card.resetCardsDiv() + card.resetCountMessage() + search.handleSearchInDescription(event.target.value) : card.resetCardsDiv() + card.resetCountMessage() + card.setCardTemplate(data);
     });  
 },    
 
@@ -26,7 +26,7 @@ handleSearchInDescription: function(search_value)
         });
     }
 
-    card.constructCards(results, search_value);
+    card.setCardTemplate(results, search_value);
 
 },
 
@@ -54,7 +54,7 @@ dislayResults: function(search_value)
     
     filteredProjects = [...new Set(matchingProjects)];
 
-   card.constructCards(filteredProjects, search_value);
+   card.setCardTemplate(filteredProjects, search_value);
 },   
 
 inputReset: function() 
@@ -64,8 +64,8 @@ inputReset: function()
     
     resetButton.addEventListener("click", () => {
         searchInput.value = "";
-        card.resetCards();    
-        card.constructCards(data);
+        card.resetCardsDiv();    
+        card.setCardTemplate(data);
     });
 
 },
