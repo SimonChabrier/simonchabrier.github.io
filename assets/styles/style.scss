@@ -88,13 +88,13 @@ a {
   }
 
 //main content
-.main{
+.main {
     //background-color: rgb(0, 0, 0);
     padding: 2rem 0;
 }
 
 //portrait
-.profil{
+.profil {
     display: flex;
     margin-bottom: 2rem;
     align-items: center;
@@ -104,13 +104,13 @@ a {
     box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
     border-radius: .5rem;
 
-    &--left{
+    &--left {
         display: flex;
         position: absolute;
         left: 13%;
     }
 
-    &--right{
+    &--right {
         width: 50%;
         padding: 1rem;
         background: white;
@@ -118,21 +118,21 @@ a {
         z-index: 1;
     }
     
-    &--name{
+    &--name {
         font-size: 1.7rem;
         padding-bottom: 1rem;
     }
 
-    &--title{
+    &--title {
         font-size: 1.3rem;
         padding-bottom: .5rem;
     }
 
-    &--subtitle{
+    &--subtitle {
         font-size: 1rem;
     }
 
-    &--ul--web{
+    &--ul--web {
         padding: 1rem 0;
     }
 
@@ -144,11 +144,11 @@ a {
         line-height: 1.7rem;
     }
 
-    &--check-icon{
+    &--check-icon {
         padding-right: 1rem;
     }
 
-    &--picture{
+    &--picture {
         width: 385px;
         border-radius: 50%;
     }
@@ -166,7 +166,7 @@ a {
     border-radius: .5rem;
     margin-bottom: 2rem;
 
-    &--input{
+    &--input {
         width: 70%;
         padding: .5rem;
         border: rgb(19, 100, 229) 0.1rem solid;
@@ -176,7 +176,7 @@ a {
         outline: none;
     }
 
-    &--reset--btn{
+    &--reset--btn {
         width: 30%;
         padding: .5rem;
         border: none;
@@ -191,7 +191,7 @@ a {
 }
 
 //result search bloc 
-.count{
+.count {
 
     display: none;
     justify-content: center;
@@ -201,11 +201,11 @@ a {
     border-radius: .5rem;
     margin-bottom: 2rem;
 
-    &--block{
+    &--block {
         display: block;
     }
 
-        &--message{
+        &--message {
             font-size: 2rem;
             font-weight: 200;
             text-align: center;
@@ -213,7 +213,7 @@ a {
 }
 
 //tags bloc 
-.tags{
+.tags {
 
     display: flex;
     flex-wrap: wrap;
@@ -224,7 +224,7 @@ a {
     border-radius: .5rem;
     margin-bottom: 2rem;
 
-    &--btn{
+    &--btn {
         padding: .5rem;
         border: none;
         border-radius: 0.4rem;
@@ -234,7 +234,7 @@ a {
         cursor: pointer;
     }
 
-    &--checkbox{
+    &--checkbox {
         width: 20px;
     }
 }
@@ -249,17 +249,17 @@ a {
 }
 
 //projec card item
-.card{
+.card {
     width: 300px;
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: inset 0 0 0 1px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.2);
       
-    &--header{
+    &--header {
         color: white;
     }
 
-    &--title{
+    &--title {
         font-size: 1.2rem;
         font-weight: 400;
         margin: 0 0 .7rem 0;
@@ -268,24 +268,24 @@ a {
         color: rgb(133, 133, 133);
     }
 
-    &--picture > img{
+    &--picture > img {
         width: 300px;
         height: 250px;
         object-fit: cover;
     }
 
-    &--date{
+    &--date {
         font-size: .8rem;
         font-weight: 200;
         padding: 1rem 0 1rem .5rem;
         color: black;
     }
 
-    &--content{
+    &--content {
         padding: .5rem;
     }
 
-    &--techno{
+    &--techno {
         padding:  .5rem 0;
         font-weight: 200;
         display: flex;
@@ -293,7 +293,7 @@ a {
         flex-wrap: wrap;
     }
 
-    &--span{
+    &--span {
         text-transform: lowercase;
         padding: .5rem;
         border: none;
@@ -303,41 +303,41 @@ a {
         color: white;
     }
 
-    &--span--php{
+    &--span--php {
         background-color: hwb(0 0% 100%);
     }
 
-    &--span--html{
+    &--span--html {
         background-color: rgb(255, 143, 6);
     }
 
-    &--span--css{
+    &--span--css {
         background-color: rgb(48, 100, 8);
     }
 
-    &--span--bootstrap5{
+    &--span--bootstrap5 {
         background-color: rgb(42, 46, 147);
     }
 
-    &--span--altorouter{
+    &--span--altorouter {
         background-color: rgb(16, 134, 173);
     }
 
-    &--span--plates{
+    &--span--plates {
         background-color: rgb(94, 16, 173);
     }
 
-    &--span--symfonyrouter{
+    &--span--symfonyrouter {
         background-color: rgb(172, 22, 2);
     }
 
 
-    &--text p{
+    &--text p {
         margin: 0;
         padding: .5rem 0;
     }
 
-    &--footer{
+    &--footer {
         margin-top: .5rem;
         padding:.6rem ;
         display: flex;
@@ -347,7 +347,7 @@ a {
 }
 
 // footer
-.footer{
+.footer {
     height: 50px;
     width: 100%;
     display: flex;
@@ -360,23 +360,27 @@ a {
 
 
 @media only screen and (max-width: 1600px) {
+
+body { 
+    width: 100%;
+}
   
-.page{
+.page {
     border-radius: 0;
 }
 
-.profil{
+.profil {
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    &--left{
+    &--left {
         position: relative;
         left: 0;
     }
 
-    &--right{
+    &--right {
         width: 90%;
         text-align: center;
         margin: 0;
@@ -385,7 +389,7 @@ a {
         gap: 0.5rem;
     }
 
-    &--ul{
+    &--ul {
         text-align: left;
         display: flex;
         flex-direction: column;
@@ -393,18 +397,18 @@ a {
         gap: 0.5rem;
     }
 
-    &--li--cv{
+    &--li--cv {
         display: flex;
         justify-content: center;
         gap: 1rem;
         padding-bottom: 1rem;
     }
 
-    &--check-icon{
+    &--check-icon {
         padding-top: 3px;
     }
 
-    &--picture{
+    &--picture {
         width: 250px;
         margin: 0;
     }

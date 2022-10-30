@@ -305,6 +305,9 @@ a {
 }
 
 @media only screen and (max-width: 1600px) {
+  body {
+    width: 100%;
+  }
   .page {
     border-radius: 0;
   }
