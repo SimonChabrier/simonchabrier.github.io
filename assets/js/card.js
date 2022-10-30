@@ -90,15 +90,17 @@ const card = {
 
         const technoContainer = document.getElementById("tags");
 
-        for (let i = 0; i < allProjects.length; i++) 
-        {
-            allProjects[i].techno.forEach(techno => {
+        allProjects.forEach(project => {
+            project.techno.forEach(techno => {
                 for (let key in techno) 
                 { 
-                    technos.push(techno[key]);
+                    if(techno[key] != '')
+                    {
+                        technos.push(techno[key]);
+                    } 
                 }
             });
-        };
+        });
 
         const filterDuplicateTechno = [...new Set(technos)];
 
