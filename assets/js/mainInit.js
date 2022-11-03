@@ -6,6 +6,7 @@ init: function()
     card.setTagsList();
     search.handleSearch();
     search.allListeners();
+    projects.fetchProjetsList();
 },
 
 }
