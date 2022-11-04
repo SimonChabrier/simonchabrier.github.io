@@ -4,9 +4,7 @@ init: function()
 {   
     console.log('Main init');
     projects.fetchProjectsList();
-    search.allListeners();
-    
-    
+    search.allListeners(); 
 },
 
 }
