@@ -1,14 +1,15 @@
 const projects = 
 {
     init: function() {
-        console.log("app init");
+        console.log("projects init");
     },
     
     state : {
         count : 0,
     },
 
-    fetchProjetsList: async function () {
+    // Fetch projects list
+    fetchProjectsList: async function () {
 
         const location = window.location.origin;
         const endPoint = '/api';
@@ -29,11 +30,10 @@ const projects =
             console.log(error);
         }
 
-        console.log(data);
+        card.setCardTemplate(data);
+        card.setTagsList(data);
+        search.allListeners(data);
     },
-
-    
-
  };
 
 // Call init() on DOMContentLoaded

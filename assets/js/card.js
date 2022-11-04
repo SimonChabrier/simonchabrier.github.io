@@ -8,19 +8,21 @@ const card = {
 
     setCardTemplate:function (projects, tags, searchInput)
     {   
+        
         card.resetCardsDiv();
-
+        
         projects.forEach(project => {
-
+    
             const cardsContainer = document.getElementById("cards--init");
             const cardTemplate = document.getElementById("cardTemplate").content.cloneNode(true);
+            const path = 'http://127.0.0.1:8000/public/asssets/media/'; 
 
             cardTemplate.getElementById('title').innerText = `${project.title}`;
-            cardTemplate.querySelector('img').src = `${project.picture}`;
+            cardTemplate.querySelector('img').src = `${path + project.picture}`;
             cardTemplate.getElementById('date').textContent = `${project.date}`;
-            cardTemplate.getElementById('text').innerText = `${project.description}`;
+            cardTemplate.getElementById('text').innerText = `${project.desciption}`;
 
-            project.techno.forEach(techno => {
+            project.technos.forEach(techno => {
                     for (let key in techno) 
                     { 
                         if(techno[key] != '')
@@ -33,7 +35,7 @@ const card = {
                     }
                 });
 
-            project.web.forEach(site => {
+            project.links.forEach(site => {
                     for (let key in site) 
                     { 
                         if(site[key] != null)
@@ -56,27 +58,29 @@ const card = {
     setSpanColor:function (span, techno)
     {   
 
+        techno = techno.toLowerCase();
+
         switch (techno) {
             
-            case 'PHP':
+            case 'php':
                 span.classList.add('card--span', 'card--span--php');
                 break;
-            case 'HTML':
+            case 'html':
                 span.classList.add('card--span', 'card--span--html');
                 break;
-            case 'CSS':
+            case 'css':
                 span.classList.add('card--span', 'card--span--css');
                 break;
-            case 'Bootstrap5':
+            case 'bootstrap5':
                 span.classList.add('card--span', 'card--span--bootstrap5');
                 break;
-            case 'Alto Router':
+            case 'alto router':
                 span.classList.add('card--span', 'card--span--altorouter');
                 break;
-            case 'Plates':
+            case 'plates':
                 span.classList.add('card--span', 'card--span--plates');
                 break;
-            case 'Symfony Router':
+            case 'symfony router':
                 span.classList.add('card--span', 'card--span--symfonyrouter');
                 break;
             default:
@@ -84,20 +88,23 @@ const card = {
             }
     },  
     
-    setTagsList:function () 
+    setTagsList:function (projects) 
     {   
-        const technos = [];
+        console.log('setTagsList');
 
+        const technos = [];
         const technoContainer = document.getElementById("tags");
 
-        allProjects.forEach(project => {
-            project.techno.forEach(techno => {
-                for (let key in techno) 
-                { 
+        projects.forEach(project => {
+
+            project.technos.forEach(techno => {
+
+                for (let key in techno)
+                {
                     if(techno[key] != '')
                     {
                         technos.push(techno[key]);
-                    } 
+                    }
                 }
             });
         });
@@ -143,7 +150,6 @@ const card = {
             document.getElementById('count').appendChild(countDisplay);     
         } 
     },
-
 
     resetCardsDiv : function() 
     {

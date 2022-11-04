@@ -8,11 +8,11 @@ init: function()
 allListeners: function() 
 {   
     document.getElementById('search_input').addEventListener('input', () => {
-        search.handleSearch();
+        search.handleSearch(data);
     });
 
-    document.getElementById('tags').addEventListener('input', () => {
-        search.handleSearch();
+    document.getElementById('tags').addEventListener('click', () => {
+        search.handleSearch(data);
     });
 
     document.getElementById('reset_btn').addEventListener('click', () => {
@@ -47,7 +47,7 @@ getInputValue: function()
     return input;
 },
 
-handleSearch: function()
+handleSearch: function(allProjects)
 {   
     const results = [];
     const tags = search.getSelectdTags();
@@ -57,15 +57,16 @@ handleSearch: function()
     {   
         card.setCardTemplate(allProjects);
     } 
-    
+
     if (tags.length > 0 || searchInput != '') 
-    {
+    {   
 
         allProjects.forEach(project => {
 
             if(tags.length > 0)
             {
-                project.techno.forEach(techno => {
+                project.technos.forEach(techno => {
+
                     for (let key in techno) 
                     { 
                         if(tags.includes(techno[key].toLowerCase()))
@@ -76,7 +77,7 @@ handleSearch: function()
                 });
             }
 
-            if(searchInput.length > 2 && project.description.toLowerCase().includes(searchInput))
+            if(searchInput.length > 2 && project.desciption.toLowerCase().includes(searchInput))
             {
                 results.push(project);
             }

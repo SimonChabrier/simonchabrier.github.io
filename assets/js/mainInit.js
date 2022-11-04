@@ -3,10 +3,10 @@ const mainInit = {
 init: function() 
 {   
     console.log('Main init');
-    card.setTagsList();
-    search.handleSearch();
+    projects.fetchProjectsList();
     search.allListeners();
-    projects.fetchProjetsList();
+    
+    
 },
 
 }
