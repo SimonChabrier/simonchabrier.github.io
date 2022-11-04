@@ -16,7 +16,7 @@ allListeners: function()
     });
 
     document.getElementById('reset_btn').addEventListener('click', () => {
-        search.handleResetBtn();
+        search.handleResetBtn(data);
     });
 
     let buttons = document.getElementsByClassName('tags--btn');
@@ -90,21 +90,20 @@ handleSearch: function(allProjects)
     } 
 },
 
-handleResetBtn: function()
+handleResetBtn: function(projects)
 {
     document.getElementById('search_input').value = '';
     document.getElementById('count--message').textContent = '';
     document.querySelectorAll('.tags--checkbox').forEach(checkbox => {
         checkbox.checked = false;
     });
-    card.setCardTemplate(allProjects);
+    card.setCardTemplate(projects);
 },
 
 handleTagsBtn: function(event)
 {   
     let checkbox = document.getElementById(event);
     checkbox.checked = !checkbox.checked;
-    search.handleSearch();
 }
 
 }

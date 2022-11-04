@@ -32,7 +32,7 @@ const projects =
 
         card.setCardTemplate(data);
         card.setTagsList(data);
-        search.allListeners(data);
+        search.allListeners();
     },
  };
 
