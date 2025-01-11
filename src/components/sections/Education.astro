@@ -1,14 +1,14 @@
 ---
 import Section from "../Section.astro";
 
-import { Education } from "@cv";
+import { education } from "@cv";
 import { certificates } from "@cv";
 ---
 
 <Section className={Astro.props.className} title="Formations">
 	<ul class="space-y-4 py-3 print:space-y-0">
 		{
-			Education.map(({ institution, startDate, endDate, area, url }) => {
+			education.map(({ institution, startDate, endDate, area, url }) => {
 				const startYear = new Date(startDate).getFullYear();
 				const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actual";
 				const years = `${startYear} - ${endYear}`;
