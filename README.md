@@ -7,3 +7,4 @@ Cv github page avec Astro
 - `pnpm build` pour générer le site statique
 
 - Création du dossier .github/workflows pour le déploiement automatique sur github pages...
+- WorkFlow de déploiement automatique sur github pages Astro : https://docs.astro.build/en/guides/deploy/github/
