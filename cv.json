@@ -87,23 +87,10 @@
         "Déploiement du CMS de l'entreprise sur un serveur de production",
         "Design front-end en respectant les maquettes fournies",
         "Développement et implémentation de fonctionnalités sur mesure dans le coeur du CMS custom de l'entreprise",
-        "Eg, annuaire des contaacts avec système de recherche et de filtres",
+        "Eg, annuaire des contacts avec système de recherche et de filtres",
         "..."
       ],
       "skills": [
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Local Coding Club",
-      "position": "Volunteer",
-      "url": "https://codingclub.com/",
-      "startDate": "2021-01-01",
-      "endDate": "2022-01-01",
-      "summary": "Helped organize coding workshops and mentored new members.",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
       ]
     }
   ],
