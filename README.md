@@ -1,7 +1,5 @@
-## Visit my projects portfolio:
+Cv github page avec Astro 
 
-https://simonchabrier.github.io/
+- thème utilisé : https://github.com/Smilesharks/dev-portfolio
 
-Use:
-
-https://pages.github.com/
+- `pnpm dev` pour lancer le serveur de développement

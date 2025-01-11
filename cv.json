@@ -1,0 +1,516 @@
+{
+  "basics": {
+    "name": "Simon Chabrier",
+    "label": "Développeur Full Stack Junior",
+    "image": "/avatar.jpg",
+    "email": "simonchabrier@gmail.com",
+    "phone": "06 63 24 45 87",
+    "url": "https://www.linkedin.com/in/simon-chabrier/",
+    "summary": "Développeur Full Stack Junior passionné, je me spécialise en continu dans la création, la sécurisation et l'optimisation de sites et d'applications web. Avec une expertise sur Symfony, Vue.js dans une approche éco-responsable, je conçois des solutions performantes et sécurisées. Formé en gestion de projet Agile, je suis un communicant qui apprécie le  partage de connaissance et la formation continue. A titre personnel, je déploie et héberge mes applications personnelles sur mon propre serveur Ubuntu que j'ai entièrement configuré et sécurisé. Cette approche me permet de continuellement tester, fiabiliser et sécuriser les performances de chaque projet.",
+    "theme": "default",
+    "location": {
+      "address": "168 Quai Baudin",
+      "postalCode": "47000",
+      "city": "Agen",
+      "countryCode": "FR",
+      "region": "France"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Simon Chabrier",
+        "url": "https://www.linkedin.com/in/simon-chabrier/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Simon Chabrier",
+        "url": "https://github.com/SimonChabrier"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Libre Sens",
+      "position": "Développeur Full Stack Junior",
+      "location_type": "Sur site",
+      "location": "Agen, France",
+      "url": "https://libresens.com/",
+      "startDate": "01/02/2024",
+      "endDate": null,
+      "summary": "Conception et développement de sites web et d'applications web",
+      "highlights": [
+        "Improved website performance by optimizing code"
+      ],
+      "responsibilities": [
+        "Utilisation de la méthode Agile pour la gestion de projets en équipe avec des cycles de développement Scrum.",
+        "Collaboration avec les équipes back-end pour la création de fonctionnalités et la résolution de bugs.",
+        "Travail sur la conception et l'optimisation de sites web et d'applications web à l'aide de Symfony, Vue.js, et d'autres technologies front-end et back-end.",
+        "Participation à l'intégration des API REST, Mercure et des événements en temps réel avec Server-Sent Events.",
+        "Gestion de la performance web et optimisation des processus d'accessibilité, en respectant les standards Opquast."
+      ],
+      "achievements": [
+        "Conception et développement d'applications Web sur mesure en fonction des besoins clients.",
+        "Eg, module de réservation avec confirmation SMS",
+        "Eg, module de gestion documentaire avec un niveau de sécurité et de permissions avancé",
+        "Eg, réalisation de cartes interactives avec des données dynamiques",
+        "..." 
+      ],
+      "skills": [
+        "Symfony 7.*",
+        "JavaScript - Vue.js - Stimulus - Webpack",
+        "Git & GitHub",
+        "CI/CD - GitHub Actions",
+        "Plesk",
+        "Agile & Scrum",
+        "Trello & Teams",
+        "REST APIs - Mercure - Server-Sent Events",
+        "Web Performance Optimization",
+        "Opquast Standards"
+      ]
+    },
+    {
+      "name": "Libre Sens",
+      "position": "Développeur Full Stack Junior (contrat pro.)",
+      "location_type": "Sur site",
+      "location": "Agen, France",
+      "url": "https://libresens.com/",
+      "startDate": "03/10/2022",
+      "endDate": "31/01/2024",
+      "summary": "Conception et développement de fontionnalités PHP et JavaScript",
+      "highlights": [
+        "Improved website performance by optimizing code"
+      ],
+      "responsibilities": [
+        "Travail en collaboration avec mon tuteur pédagogique et l'équipe technique pour la création de fonctionnalités implémentées sur le CMS custom de l'entreprise en veillant au respect du cahier des charges et des normes de sécurité et de performance."
+      ],
+      "achievements": [
+        "Déploiement du CMS de l'entreprise sur un serveur de production",
+        "Design front-end en respectant les maquettes fournies",
+        "Développement et implémentation de fonctionnalités sur mesure dans le coeur du CMS custom de l'entreprise",
+        "Eg, annuaire des contaacts avec système de recherche et de filtres",
+        "..."
+      ],
+      "skills": [
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Local Coding Club",
+      "position": "Volunteer",
+      "url": "https://codingclub.com/",
+      "startDate": "2021-01-01",
+      "endDate": "2022-01-01",
+      "summary": "Helped organize coding workshops and mentored new members.",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "Education": [
+    {
+      "institution": "O'Clock",
+      "url": "https://oclock.io/",
+      "area": "Centre de formation",
+      "studyType": "Titre Professionnel niveau VI RNCP31678 : Concepteur Développeur d'Applications.",
+      "startDate": "03-10-2022",
+      "endDate": "01-01-2024",
+      "score": "Obtenu",
+      "courses": [
+        "NodeJs / Express",
+        "Dart / Flutter",
+        "UMl / Merise / Design Patterns"
+      ]
+    },
+    {
+      "institution": "O'Clock",
+      "url": "https://oclock.io/",
+      "area": "Centre de formation",
+      "studyType": "Titre Professionnel niveau V RNCP37674 : Développeur Web et Web Mobile.",
+      "startDate": "01-07-2021",
+      "endDate": "01-06-2022",
+      "score": "Obtenu",
+      "courses": [
+        "Spécialisation Symfony",
+        "Html",
+        "Css",
+        "Php",
+        "Javascript"
+      ]
+    }
+  ],
+  "certificates": [
+        {
+      "name": "Titre Pro. Niveau VI - RNCP31678: Concepteur Développeur d'Applications.",
+      "date": "01-01-2024",
+      "issuer": "France Compétences",
+      "url": "https://www.francecompetences.fr/recherche/rncp/31678/"
+    },
+        {
+      "name": "Certification Opquast - Maîtrise de la qualité en projet web - Niveau Avancé (825/1000)",
+      "date": "15-06-2022",
+      "issuer": "Opquast",
+      "url": "https://www.opquast.com/"
+    },
+    {
+      "name": "Titre Pro. Niveau V - RNCP37674: Développeur Web et Web Mobile.",
+      "date": "01-06-2022",
+      "issuer": "France Compétences",
+      "url": "https://www.francecompetences.fr/recherche/rncp/37674/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Figma",
+      "level": "Intermédiaire",
+      "keywords": [
+        "Design",
+        "UI"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Avancé",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Avancé",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Avancé",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "level": "Avancé",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "VueJs",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "NodeJs",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Symfony",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "PHP Framework",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "Server"
+      ]
+    },
+    {
+      "name": "Twig",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "PHP Template Engine"
+      ]
+    },
+    {
+      "name": "Webpack",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Module Bundler"
+      ]
+    },
+    {
+      "name": "Plesk",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Server",
+        "Hosting"
+      ]
+    },
+    {
+      "name": "Agile",
+      "level": "Intermediate",
+      "keywords": [
+        "Project Management",
+        "Scrum",
+        "Kanban",
+        "Lean"
+      ]
+    },
+    {
+      "name": "Scrum",
+      "level": "Intermediate",
+      "keywords": [
+        "Project Management",
+        "Agile",
+        "Kanban",
+        "Lean"
+      ]
+    },
+    {
+      "name": "Trello",
+      "level": "Intermediate",
+      "keywords": [
+        "Project Management",
+        "Agile",
+        "Kanban",
+        "Lean"
+      ]
+    },
+    {
+      "name": "Teams",
+      "level": "Intermediate",
+      "keywords": [
+        "Project Management",
+        "Agile",
+        "Kanban",
+        "Lean"
+      ]
+    },
+    {
+      "name": "REST APIs",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "API",
+        "HTTP"
+      ]
+    },
+    {
+      "name": "Mercure",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "API",
+        "HTTP"
+      ]
+    },
+    {
+      "name": "Server-Sent Events",
+      "level": "Intermediate",
+      "keywords": [
+        "interactions",
+        "Web Development",
+        "Backend",
+        "API"]
+    },
+    {
+      "name": "Nuxt.js",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Anglais",
+      "fluency": "Niveau professionnel"
+    },
+    {
+      "language": "Espagnol",
+      "fluency": "Niveau professionnel"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": [
+        "AI",
+        "Machine Learning",
+        "Web Development",
+        "Open Source"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "reference": ""
+    }
+  ],
+  "projects": [
+        {
+      "name": "Chrono-Connect - Symfony 7.2 - EasyAdmin et Stimulus",
+      "isActive": false,
+      "description": "Réalisé en Entreprise, cette application web est un outil de gestion pour une Entreprise du domaine de l'Informatique.",
+      "highlights": [
+        "Gestion des Contacts et des Entreprises",
+        "Gestion des Produits et des Catégories (hiérarchie Doctrine Tree)",
+        "Gestion des Commandes clients",
+        "Gestion des prise en charge de matériel pour réparation",
+        "Gestion des interventions techniques",
+        "Gestion des notifications SMS instantanées ou async + 1h + 4h ou lendemain à 9h",
+        "Gestion de création de .pdf",
+        "Historisation des actions",
+        "Automatisation des tâches récurrentes",
+        "Gesiton avancée de la sécurité et des autorisations",
+        "Optimisation de l'accès aux données",
+        "Mise en place d'un OCR pour la reconnaissance de texte des documents scannés",
+        "Tâches asynchrones",
+        "..."
+      ],
+      "url": "https://ergo-up.fr/"
+    },
+    {
+      "name": "Ergo-Up - Appliaction PHP / JavaScript",
+      "isActive": true,
+      "description": "Réalisé en Entreprise dans le cadre de mon contrat de professionnalisation, ce projet est une application web de gestion et de suivi d'autonomie des résidents en EHPAD",
+      "highlights": [
+        "Apports des foncitonnalités dans le cpeurs du CMS custom de l'entreprise",
+        "Gestion des établissement, des soigants et des résidents",
+        "Gestion et administration du test de santé pour les résidents",
+        "Gestion de l'évaluation des soins et du personnel requis en fonction des résulats des tests",
+        "Gestion des équipements médicaux et personnel requis en fonction des résulats des tests",
+        "Gestion de la durée de validités des résultats des tests",
+        "Gestion de l'achat de test pour les particuliers",
+        "Statistiques et rapports sur les résultats des tests",
+        "Historisation et statistiques",
+        "..."
+      ],
+      "url": "https://ergo-up.fr/"
+    },
+    {
+      "name": "Plateforme de publication de contenu de type Articles de documentation - NodeJs & ExpressJs + VueJs",
+      "isActive": false,
+      "description": "Une SPA de publication de contenu de type articles, réalisée dans le cadre de recherches personnelles pour approfondir mes compétences avec Node.js et Express.js.",
+      "highlights": [
+        "Gestion de l'authentification et de la session en utilisant Passport.js",
+        "Utilisation du pattern Clean Architecture pour organiser le code en couches",
+        "Séparation entre le FrontEnd Vue.js et le BackEnd Express.js",
+        "Utilisation de l'ORM Sequelize pour la gestion des données",
+        "Gestion et utilisation de JWT pour les autorisations",
+        "Utilisation de Mercure pour les mises à jour en temps réel",
+        "Gestion de notifications par email",
+        "Configuration de Quill pour l'édition de contenu riche",
+        "..."
+      ],
+      "github": "https://github.com/SimonChabrier/ressourceManager"
+    },
+    {
+      "name": "50 Règles d'éco-conception web - Symfony 5.4 & VueJs 3",
+      "isActive": true,
+      "description": "SPA qui référence 50 règles d'éco-conception web, réalisé dans le cadre de recherches personnelles pour approfondir mes compétences avec VueJs utilisé en SPA et Symfony pour l'API REST.",
+      "highlights": [
+        "Filtre de recherche textuel sans rechargement de page",
+        "Filtre de recherche par Tags sans rechargement de page",
+        "Gestion d'une pagination dynamique",
+        "Developpement de composants réutilisables dans un thème général",
+        "Mix de l'environnement VueJs directement dans Symfony",
+        "COnfiguration de Webpack pour la compilation des assets",
+        "Gestion de l'API Controller avec Symfony pour une API REST légère et performante",
+        "Utilisation de Pinia pour la gestion de l'état global de l'application"
+      ],
+      "url": "https://ecoconception.simschab.cloud/#/api",
+      "github": "https://github.com/SimonChabrier/EcoConcept-Symfony5.4-VueJs3"
+    },
+    {
+      "name": "Gestionnaire de tâches - Symfony 5.4 & Javascript Vanilla",
+      "isActive": true,
+      "description": "Réalisé dans le cadre de recherches personnelles pour gérer mes tâches quotidiennes, ce projet est une application web de gestion de tâches classique et pleinement fonctionnelle.",
+      "highlights": [
+        "Back-end Symfony pour exposer une API REST",
+        "Front-end Javascript vanilla pour consommer l'API dans un environnement SPA léger",
+        "Drag and drop pour organiser les tâches",
+        "Gesiton des positions des tâches dasn les colonnes",
+        "Gestion du statu des tâches",
+        "..."
+      ],
+      "url": "https://js.simschab.cloud/trello/",
+      "github": "https://github.com/SimonChabrier/Trello-Front-End"
+    },
+    {
+      "name": "Application Web E-commerce - Symfony 5.4 & Twig",
+      "isActive": true,
+      "description": "Réalisé avec Symfony et Javascript dans le cadre de mes recherches personnelles, ce projet est une application web e-commerce classique et pleinement fonctionnelle.",
+      "highlights": [
+        "Organisation des produits par catégories",
+        "Filtres de recherche et de tri dynqamiques sans rechargement de page",
+        "Intégration de paiement sécurisé",
+        "Gestion du panier d'achat en session et en persistance",
+        "Gestion des stocks et des commandes",
+        "..."
+      ],
+      "url": "https://storeproject.simschab.cloud/",
+      "github": "https://github.com/SimonChabrier/StoreProject"
+    }
+  ]
+}
