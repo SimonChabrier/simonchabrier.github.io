@@ -2,7 +2,7 @@
   "basics": {
     "name": "Simon Chabrier",
     "label": "Développeur Full Stack Junior",
-    "image": "/avatar.jpg",
+    "image": "./avatar.jpg",
     "email": "simonchabrier@gmail.com",
     "phone": "06 63 24 45 87",
     "url": "https://www.linkedin.com/in/simon-chabrier/",
