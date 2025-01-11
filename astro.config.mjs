@@ -3,8 +3,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://simonchabrier.github.io/', // url du site
-  base: 'simonchabrier.github.io', // nom du repo
-  trailingSlash:'always', // pour les liens relatifs
+  site: 'https://simonchabrier.github.io/', // URL du site
+  base: '/', // racine du repository, car il s'agit d'un site personnel
+  trailingSlash: 'always', // Pour que toutes les URLs se terminent par un slash
   integrations: [tailwind()],
 });
