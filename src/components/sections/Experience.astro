@@ -76,7 +76,7 @@ const SKILLS_ICONS: Record<string, any> = {
               <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm" x-data="{ expanded: false }">
                 {summary && (
                   <div class="flex flex-col gap-1">
-                    <h4>Mission:</h4>
+                    <h4>Missions:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {Array.isArray(summary) ? (
                         summary.map(item => (
@@ -104,7 +104,7 @@ const SKILLS_ICONS: Record<string, any> = {
 
                 {achievements && (
                   <div class="flex flex-col gap-1">
-                    <h4>Réalisation:</h4>
+                    <h4>Réalisations:</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {achievements.map(achievement => (
                         <li>{achievement}</li>
