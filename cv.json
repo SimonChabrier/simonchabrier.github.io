@@ -35,37 +35,33 @@
       "location_type": "Sur site",
       "location": "Agen, France",
       "url": "https://libresens.com/",
-      "startDate": "01/02/2024",
+      "startDate": "01/02/24",
       "endDate": null,
-      "summary": "Conception et développement de sites web et d'applications web",
-      "highlights": [
-        "Improved website performance by optimizing code"
-      ],
+      "summary": "Concevoir et développer des applications web.",
       "responsibilities": [
-        "Utilisation de la méthode Agile pour la gestion de projets en équipe avec des cycles de développement Scrum.",
-        "Collaboration avec les équipes back-end pour la création de fonctionnalités et la résolution de bugs.",
-        "Travail sur la conception et l'optimisation de sites web et d'applications web à l'aide de Symfony, Vue.js, et d'autres technologies front-end et back-end.",
-        "Participation à l'intégration des API REST, Mercure et des événements en temps réel avec Server-Sent Events.",
-        "Gestion de la performance web et optimisation des processus d'accessibilité, en respectant les standards Opquast."
+        "En collaboration avec le Product Owner et l’équipe, autour de l’étude du cahier des charges, j'établis les documents de conception des applications et/ou fonctionnalités qui me sont assignés en veillant à analyser les risques et à détailler/planifier les différentes phases de livraison du MVP jusqu'au produit fini."
       ],
       "achievements": [
-        "Conception et développement d'applications Web sur mesure en fonction des besoins clients.",
-        "Eg, module de réservation avec confirmation SMS",
-        "Eg, module de gestion documentaire avec un niveau de sécurité et de permissions avancé",
-        "Eg, réalisation de cartes interactives avec des données dynamiques",
-        "..." 
+        "En charge de la refonte du CMS de l'entreprise.",
+        "Appplication Web de gestion et de suivi d'autonomie des résidents en EHPAD.",
+        "Application Web de type CRM pour une entreprise du domaine de l'informatique.",
+        "Module de gestion documentaire à haut niveau de permissions et de sécurité.",
+        "Module de réservation avec gestion de plage horaire, confirmaion SMS - 2FA.",
+        "Module de gestion d'Agences et de Franchisés avec historisation et statistiques.",
+        "Module de gestion d'offres d'emploi et candidatures dans le respect des normes RGPD.",  
+        "Module de carte de points d'intérêts catégoriséss avec recherche et filtres.",
+        "Module d'annuaire admistratif hiérarchisé à destination de groupes d'élus locaux.",
+        "et +"
       ],
       "skills": [
-        "Symfony 7.*",
-        "JavaScript - Vue.js - Stimulus - Webpack",
-        "Git & GitHub",
-        "CI/CD - GitHub Actions",
-        "Plesk",
-        "Agile & Scrum",
-        "Trello & Teams",
-        "REST APIs - Mercure - Server-Sent Events",
-        "Web Performance Optimization",
-        "Opquast Standards"
+        "Symfony 7.* - MariaDb - Doctrine - SQL - DQL - PHP 8.*", 
+        "Twig - TwigComponents & LiveComponents - EasyAdmin 4.*",
+        "JavaScript - UxTurbo - Stimulus - Webpack - Modules ES6",
+        "Git & GitHub - CI/CD",
+        "Agile/Scrum - Trello/Teams",
+        "REST APIs - SSE",
+        "VitrePress",
+        "Plesk - Nginx"
       ]
     },
     {
@@ -74,23 +70,28 @@
       "location_type": "Sur site",
       "location": "Agen, France",
       "url": "https://libresens.com/",
-      "startDate": "03/10/2022",
-      "endDate": "31/01/2024",
-      "summary": "Conception et développement de fontionnalités PHP et JavaScript",
-      "highlights": [
-        "Improved website performance by optimizing code"
-      ],
+      "startDate": "03/10/22",
+      "endDate": "31/01/24",
+      "summary": "Concevoir et développer des fontionnalités PHP et JavaScript",
       "responsibilities": [
-        "Travail en collaboration avec mon tuteur pédagogique et l'équipe technique pour la création de fonctionnalités implémentées sur le CMS custom de l'entreprise en veillant au respect du cahier des charges et des normes de sécurité et de performance."
+        "Supervisé en distanciel par mon tuteur pédagogique, en collaboration avec le Product Owner et l’équipe, autour de l’étude du cahier des charges, j'établis les documents de conception des applications et/ou fonctionnalités qui me sont assignés en veillant à analyser les risques et à détailler/planifier les différentes phases de livraison du MVP jusqu'au produit fini."
       ],
       "achievements": [
-        "Déploiement du CMS de l'entreprise sur un serveur de production",
-        "Design front-end en respectant les maquettes fournies",
-        "Développement et implémentation de fonctionnalités sur mesure dans le coeur du CMS custom de l'entreprise",
-        "Eg, annuaire des contacts avec système de recherche et de filtres",
-        "..."
+        "Création de modules PHP/JS implémetés dans le CMS de l'entreprise.",
+        "Refonte, optimisation et sécurisation de modules existants.",
+        "Design de thèmes en fonction des maquettes fournies par le service design/intégration.",
+        "Réalisation de modules sur mesure pour implémenter des fonctionnalités spécifiques à destination des clients.",
+        "Mise en production et suivi des performances et de la sécurité.",
+        "et +"
       ],
       "skills": [
+        "MariaDb - SQL - PHP 7.* et 8.*", 
+        "HTML - CSS",
+        "JavaScript - Custom ES6",
+        "Git & GitHub - CI/CD",
+        "Agile/Scrum - Trello/Teams",
+        "REST APIs",
+        "Plesk - Nginx"
       ]
     }
   ],
@@ -100,8 +101,8 @@
       "url": "https://oclock.io/",
       "area": "Centre de formation - CDA",
       "studyType": "Titre Professionnel niveau VI RNCP31678 : Concepteur Développeur d'Applications.",
-      "startDate": "03-10-2022",
-      "endDate": "01-01-2024",
+      "startDate": "03-10-22",
+      "endDate": "01-01-24",
       "score": "Obtenu",
       "courses": [
         "NodeJs / Express",
@@ -114,8 +115,8 @@
       "url": "https://oclock.io/",
       "area": "Centre de formation - DWWM",
       "studyType": "Titre Professionnel niveau V RNCP37674 : Développeur Web et Web Mobile.",
-      "startDate": "01-07-2021",
-      "endDate": "01-06-2022",
+      "startDate": "01-07-21",
+      "endDate": "01-06-22",
       "score": "Obtenu",
       "courses": [
         "Spécialisation Symfony",
@@ -129,19 +130,19 @@
   "certificates": [
         {
       "name": "Titre Pro. Niveau VI - RNCP31678: Concepteur Développeur d'Applications.",
-      "date": "01-01-2024",
+      "date": "01-01-24",
       "issuer": "France Compétences",
       "url": "https://www.francecompetences.fr/recherche/rncp/31678/"
     },
         {
       "name": "Certification Opquast - Maîtrise de la qualité en projet web - Niveau Avancé (825/1000)",
-      "date": "15-06-2022",
+      "date": "15-06-22",
       "issuer": "Opquast",
       "url": "https://www.opquast.com/"
     },
     {
       "name": "Titre Pro. Niveau V - RNCP37674: Développeur Web et Web Mobile.",
-      "date": "01-06-2022",
+      "date": "01-06-22",
       "issuer": "France Compétences",
       "url": "https://www.francecompetences.fr/recherche/rncp/37674/"
     }
@@ -194,7 +195,7 @@
     },
     {
       "name": "VueJs",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -204,7 +205,7 @@
     },
     {
       "name": "NodeJs",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Web Development",
         "Backend",
@@ -214,7 +215,7 @@
     },
     {
       "name": "MySQL",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Databases",
         "SQL",
@@ -224,7 +225,7 @@
     },
     {
       "name": "Git",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Version Control",
         "Collaboration",
@@ -233,7 +234,7 @@
     },
     {
       "name": "GitHub",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Version Control",
         "Collaboration",
@@ -243,7 +244,7 @@
     },
     {
       "name": "Symfony",
-      "level": "Intermediate",
+      "level": "Avancé",
       "keywords": [
         "Web Development",
         "Backend",
@@ -253,7 +254,7 @@
     },
     {
       "name": "PHP",
-      "level": "Intermediate",
+      "level": "Avancé",
       "keywords": [
         "Web Development",
         "Backend",
@@ -262,7 +263,7 @@
     },
     {
       "name": "Twig",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -271,7 +272,7 @@
     },
     {
       "name": "Webpack",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -280,7 +281,7 @@
     },
     {
       "name": "Plesk",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Web Development",
         "Server",
@@ -289,7 +290,7 @@
     },
     {
       "name": "Agile",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Project Management",
         "Scrum",
@@ -299,7 +300,7 @@
     },
     {
       "name": "Scrum",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Project Management",
         "Agile",
@@ -309,7 +310,7 @@
     },
     {
       "name": "Trello",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Project Management",
         "Agile",
@@ -319,7 +320,7 @@
     },
     {
       "name": "Teams",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Project Management",
         "Agile",
@@ -329,7 +330,7 @@
     },
     {
       "name": "REST APIs",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Web Development",
         "Backend",
@@ -339,7 +340,7 @@
     },
     {
       "name": "Mercure",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Web Development",
         "Backend",
@@ -349,7 +350,7 @@
     },
     {
       "name": "Server-Sent Events",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "interactions",
         "Web Development",
@@ -358,7 +359,7 @@
     },
     {
       "name": "Nuxt.js",
-      "level": "Intermediate",
+      "level": "Autonome",
       "keywords": [
         "Web Development",
         "Frontend",
@@ -399,7 +400,7 @@
   ],
   "projects": [
         {
-      "name": "Chrono-Connect - Symfony 7.2 - EasyAdmin et Stimulus",
+      "name": "Ch***Con*** - Symfony 7.2 - EasyAdmin 4.* - Stimulus - UxTurbo",
       "isActive": false,
       "description": "Réalisé en Entreprise, cette application web est un outil de gestion pour une Entreprise du domaine de l'Informatique.",
       "highlights": [
@@ -423,17 +424,17 @@
     {
       "name": "Ergo-Up - Appliaction PHP / JavaScript",
       "isActive": true,
-      "description": "Réalisé en Entreprise dans le cadre de mon contrat de professionnalisation, ce projet est une application web de gestion et de suivi d'autonomie des résidents en EHPAD",
+      "description": "Implementée au coeur du CMS de l'entreprise et réalisé en Entreprise dans le cadre de mon contrat de professionnalisation, ce projet est une application web de gestion et de suivi d'autonomie des résidents en EHPAD ",
       "highlights": [
-        "Apports des foncitonnalités dans le cpeurs du CMS custom de l'entreprise",
         "Gestion des établissement, des soigants et des résidents",
         "Gestion et administration du test de santé pour les résidents",
         "Gestion de l'évaluation des soins et du personnel requis en fonction des résulats des tests",
         "Gestion des équipements médicaux et personnel requis en fonction des résulats des tests",
         "Gestion de la durée de validités des résultats des tests",
-        "Gestion de l'achat de test pour les particuliers",
-        "Statistiques et rapports sur les résultats des tests",
-        "Historisation et statistiques",
+        "Gestion des valeurs de retour en fonciton des caractéristiques des résidents",
+        "Gestion de l'achat de test pour les particuliers, crédits et historique",
+        "Statistiques et rapports sur les résultats des tests, du personnel et des équipements requis",
+        "Historisation du suivi des statistiques et des rapports",
         "..."
       ],
       "url": "https://ergo-up.fr/"
@@ -444,11 +445,11 @@
       "description": "Une SPA de publication de contenu de type articles, réalisée dans le cadre de recherches personnelles pour approfondir mes compétences avec Node.js et Express.js.",
       "highlights": [
         "Gestion de l'authentification et de la session en utilisant Passport.js",
-        "Utilisation du pattern Clean Architecture pour organiser le code en couches",
+        "Utilisation du pattern Clean Architecture et organisation du code en couches à responsabilités uniques",
         "Séparation entre le FrontEnd Vue.js et le BackEnd Express.js",
         "Utilisation de l'ORM Sequelize pour la gestion des données",
         "Gestion et utilisation de JWT pour les autorisations",
-        "Utilisation de Mercure pour les mises à jour en temps réel",
+        "Utilisation de Mercure pour les mises à jour en temps réel - SSE",
         "Gestion de notifications par email",
         "Configuration de Quill pour l'édition de contenu riche",
         "..."
@@ -492,9 +493,10 @@
       "isActive": true,
       "description": "Réalisé avec Symfony et Javascript dans le cadre de mes recherches personnelles, ce projet est une application web e-commerce classique et pleinement fonctionnelle.",
       "highlights": [
-        "Organisation des produits par catégories",
+        "Gestion complète du catalogue de produits",
+        "Gestion des catégories et des sous-catégories",
         "Filtres de recherche et de tri dynqamiques sans rechargement de page",
-        "Intégration de paiement sécurisé",
+        "Intégration de paiement sécurisé - Stripe",
         "Gestion du panier d'achat en session et en persistance",
         "Gestion des stocks et des commandes",
         "..."
