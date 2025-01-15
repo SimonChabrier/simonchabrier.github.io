@@ -457,18 +457,37 @@
       "github": "https://github.com/SimonChabrier/ressourceManager"
     },
     {
+      "name": "Task Runner de Clone de projet Symfony avec Castor",
+      "isActive": false,
+      "description": "Réalisé dans le cadre de recherches personnelles pour cloner, nitialiser et lancer un projet Symfony en une seule commande : castor new-project.",
+      "highlights": [
+        "Création du scrit qui clone le repository depuis GitHub",
+        "Configuration de l'environnement de développement",
+        "Intalleation des dépendances composer",
+        "Intallation des dépendances npm si un package.json est présent",
+        "Configuration de la base de données",
+        "Création du .env.local à partir du .env",
+        "Injection du schema de base de données",
+        "Lancement du serveur de développement",
+        "Lancement du serveur pour monitorer les assets",
+        "Ouverture du navigateur par défaut",
+        "A la fin du run le projet est prêt à être développé",
+        "..."
+      ],
+      "github": "https://github.com/SimonChabrier/CastorCloneToRun"
+    },
+    {
       "name": "50 Règles d'éco-conception web - Symfony 5.4 & VueJs 3",
       "isActive": true,
       "description": "SPA qui référence 50 règles d'éco-conception web, réalisé dans le cadre de recherches personnelles pour approfondir mes compétences avec VueJs utilisé en SPA et Symfony pour l'API REST.",
       "highlights": [
-        "Filtre de recherche textuel sans rechargement de page",
-        "Filtre de recherche par Tags sans rechargement de page",
+        "Filtre de recherche textuel et par Tags",
         "Gestion d'une pagination dynamique",
-        "Developpement de composants réutilisables dans un thème général",
-        "Mix de l'environnement VueJs directement dans Symfony",
-        "COnfiguration de Webpack pour la compilation des assets",
-        "Gestion de l'API Controller avec Symfony pour une API REST légère et performante",
-        "Utilisation de Pinia pour la gestion de l'état global de l'application"
+        "Developpement d'un bibiilothèque de composants réutilisables",
+        "Configuration l'environnement VueJs au coeur de Symfony",
+        "Configuration de Webpack pour la compilation des assets",
+        "Création d'une API REST légère et performante",
+        "Utilisation de Pinia pour la gestion des états",
       ],
       "url": "https://ecoconception.simschab.cloud/#/api",
       "github": "https://github.com/SimonChabrier/EcoConcept-Symfony5.4-VueJs3"
@@ -476,14 +495,15 @@
     {
       "name": "Gestionnaire de tâches - Symfony 5.4 & Javascript Vanilla",
       "isActive": true,
-      "description": "Réalisé dans le cadre de recherches personnelles pour gérer mes tâches quotidiennes, ce projet est une application web de gestion de tâches classique et pleinement fonctionnelle.",
+      "description": "Réalisé dans le cadre de recherches personnelles pour gérer mes tâches de développement dans une interfce correspondant à mes besois.",
       "highlights": [
         "Back-end Symfony pour exposer une API REST",
         "Front-end Javascript vanilla pour consommer l'API dans un environnement SPA léger",
         "Drag and drop pour organiser les tâches",
-        "Gesiton des positions des tâches dasn les colonnes",
-        "Gestion du statu des tâches",
-        "..."
+        "Gestion des positions des tâches dans les colonnes",
+        "Gestion des statuts et de l'ordre des tâches",
+        "Création à la volée de nouvelles tâches et de nouvelles colonnes",
+        "Autorisation par token JWT"
       ],
       "url": "https://js.simschab.cloud/trello/",
       "github": "https://github.com/SimonChabrier/Trello-Front-End"
