@@ -487,7 +487,7 @@
         "Configuration l'environnement VueJs au coeur de Symfony",
         "Configuration de Webpack pour la compilation des assets",
         "Création d'une API REST légère et performante",
-        "Utilisation de Pinia pour la gestion des états",
+        "Utilisation de Pinia pour la gestion des états"
       ],
       "url": "https://ecoconception.simschab.cloud/#/api",
       "github": "https://github.com/SimonChabrier/EcoConcept-Symfony5.4-VueJs3"
