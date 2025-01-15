@@ -473,7 +473,7 @@
         "Lancement du serveur pour monitorer les assets",
         "Ouverture du navigateur par défaut",
         "A la fin du run le projet est prêt à être développé",
-        "Gestion des erruers et confirmation de l'installation",
+        "Messages confirmation à chaque étape",
         "..."
       ],
       "github": "https://github.com/SimonChabrier/CastorCloneToRun"
