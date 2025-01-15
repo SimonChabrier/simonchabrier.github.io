@@ -462,6 +462,7 @@
       "description": "Réalisé dans le cadre de recherches personnelles pour cloner, nitialiser et lancer un projet Symfony en une seule commande : castor new-project.",
       "highlights": [
         "Création du scrit qui clone le repository depuis GitHub",
+        "Demande l'url ou le ssh du repository",
         "Configuration de l'environnement de développement",
         "Intallation des dépendances composer",
         "Intallation des dépendances npm si un package.json est présent",
