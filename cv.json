@@ -463,15 +463,16 @@
       "highlights": [
         "Création du scrit qui clone le repository depuis GitHub",
         "Configuration de l'environnement de développement",
-        "Intalleation des dépendances composer",
+        "Intallation des dépendances composer",
         "Intallation des dépendances npm si un package.json est présent",
-        "Configuration de la base de données",
+        "Configuration de la base de données avec choix du driver",
         "Création du .env.local à partir du .env",
         "Injection du schema de base de données",
         "Lancement du serveur de développement",
         "Lancement du serveur pour monitorer les assets",
         "Ouverture du navigateur par défaut",
         "A la fin du run le projet est prêt à être développé",
+        "Gestion des erruers et confirmation de l'installation",
         "..."
       ],
       "github": "https://github.com/SimonChabrier/CastorCloneToRun"
