@@ -457,7 +457,7 @@
       "github": "https://github.com/SimonChabrier/ressourceManager"
     },
     {
-      "name": "Task Runner de Clone de projet Symfony avec Castor",
+      "name": "Task Runner de Clone de projet Symfony depuis GitHub avec Castor",
       "isActive": false,
       "description": "Réalisé dans le cadre de recherches personnelles pour cloner, nitialiser et lancer un projet Symfony en une seule commande : castor new-project.",
       "highlights": [
