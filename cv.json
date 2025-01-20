@@ -48,20 +48,20 @@
         "Module de gestion documentaire à haut niveau de permissions et de sécurité.",
         "Module de réservation avec gestion de plage horaire, confirmaion SMS - 2FA.",
         "Module de gestion d'Agences et de Franchisés avec historisation et statistiques.",
-        "Module de gestion d'offres d'emploi et candidatures dans le respect des normes RGPD.",  
+        "Module de gestion d'offres d'emploi et candidatures dans le respect des normes RGPD.",
         "Module de carte de points d'intérêts catégoriséss avec recherche et filtres.",
         "Module d'annuaire admistratif hiérarchisé à destination de groupes d'élus locaux.",
         "et +"
       ],
       "skills": [
-        "Symfony 7.* - MariaDb - Doctrine - SQL - DQL - PHP 8.*", 
+        "Symfony 7.* - MariaDb - Doctrine - SQL - DQL - PHP 8.*",
         "Twig - TwigComponents & LiveComponents - EasyAdmin 4.*",
         "JavaScript - UxTurbo - Stimulus - Webpack - Modules ES6",
         "Git & GitHub - CI/CD",
         "Agile/Scrum - Trello/Teams",
         "REST APIs - SSE",
         "VitrePress",
-        "Plesk - Nginx"
+        "Plesk - UbuntuServer - CaddyServer"
       ]
     },
     {
@@ -85,7 +85,7 @@
         "et +"
       ],
       "skills": [
-        "MariaDb - SQL - PHP 7.* et 8.*", 
+        "MariaDb - SQL - PHP 7.* et 8.*",
         "HTML - CSS",
         "JavaScript - Custom ES6",
         "Git & GitHub - CI/CD",
@@ -128,13 +128,13 @@
     }
   ],
   "certificates": [
-        {
+    {
       "name": "Titre Pro. Niveau VI - RNCP31678: Concepteur Développeur d'Applications.",
       "date": "01-01-24",
       "issuer": "France Compétences",
       "url": "https://www.francecompetences.fr/recherche/rncp/31678/"
     },
-        {
+    {
       "name": "Certification Opquast - Maîtrise de la qualité en projet web - Niveau Avancé (825/1000)",
       "date": "15-06-22",
       "issuer": "Opquast",
@@ -355,7 +355,8 @@
         "interactions",
         "Web Development",
         "Backend",
-        "API"]
+        "API"
+      ]
     },
     {
       "name": "Nuxt.js",
@@ -399,7 +400,7 @@
     }
   ],
   "projects": [
-        {
+    {
       "name": "Ch***Con*** - Symfony 7.2 - EasyAdmin 4.* - Stimulus - UxTurbo",
       "isActive": false,
       "description": "Réalisé en Entreprise, cette application web est un outil de gestion pour une Entreprise du domaine de l'Informatique.",
