@@ -56,12 +56,13 @@
       "skills": [
         "Symfony 7.* - MariaDb - Doctrine - SQL - DQL - PHP 8.*",
         "Twig - TwigComponents & LiveComponents - EasyAdmin 4.*",
-        "JavaScript - UxTurbo - Stimulus - Webpack - Modules ES6",
+        "JavaScript / NodeJs - UxTurbo - Stimulus - Webpack - Modules ES6",
         "Git & GitHub - CI/CD",
         "Agile/Scrum - Trello/Teams",
         "REST APIs - SSE",
         "VitrePress",
-        "Plesk - UbuntuServer - CaddyServer"
+        "Plesk - Cockpit",
+        "CaddyServer - Apache"
       ]
     },
     {
