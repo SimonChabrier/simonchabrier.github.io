@@ -2,7 +2,6 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import matomo from "@jop-software/astro-matomo";
 
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://simonchabrier.github.io", // URL principale
