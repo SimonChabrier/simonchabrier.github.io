@@ -41,14 +41,16 @@ const { image, summary, url, theme } = basics;
 		fetch("/tracking.json")
 			.then(response => response.json())
 			.then(trackingData => {
+			console.log("trackingData", trackingData);
 			const domain = window.location.hostname;
-			const scriptSrc = trackingData[domain];
-
-			if (scriptSrc) {
-				const script = document.createElement("script");
-				script.src = scriptSrc;
-				script.defer = true;
-				document.head.appendChild(script);
+			const trackingScript = trackingData[domain];
+			console.log("trackingScript", trackingScript);
+			if (trackingScript) {
+				const scriptElement = document.createElement("script");
+				scriptElement.type = "text/javascript";
+				scriptElement.async = true;
+				scriptElement.innerHTML = trackingScript;
+				document.head.appendChild(scriptElement);
 			}
 			})
 			.catch(error => console.error("Erreur chargement tracking.json :", error));
