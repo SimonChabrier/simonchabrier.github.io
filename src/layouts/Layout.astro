@@ -12,7 +12,7 @@ const { image, summary, url, theme } = basics;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<title>{title}</title>
@@ -37,7 +37,22 @@ const { image, summary, url, theme } = basics;
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim" />
 
 		<link rel="stylesheet" href={`${import.meta.env.BASE_URL}themes/themes.css`} />
-		<!-- <Vengeance /> -->
+		<script>
+		fetch("/tracking.json")
+			.then(response => response.json())
+			.then(trackingData => {
+			const domain = window.location.hostname;
+			const scriptSrc = trackingData[domain];
+
+			if (scriptSrc) {
+				const script = document.createElement("script");
+				script.src = scriptSrc;
+				script.defer = true;
+				document.head.appendChild(script);
+			}
+			})
+			.catch(error => console.error("Erreur chargement tracking.json :", error));
+		</script>
 	</head>
 	<body data-theme={theme} class="relative bg-skin-fill">
 		<div class="absolute top-0 -z-10 h-full w-full print:hidden">
