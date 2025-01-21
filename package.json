@@ -10,20 +10,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "0.4.1",
+    "@astrojs/check": "0.9.4",
     "@astrojs/tailwind": "^5.1.5",
     "@jop-software/astro-matomo": "^1.1.1",
-    "astro": "4.3.2",
+    "astro": "5.1.8",
     "astro-font-picker": "^0.2.2",
-    "hotkeypad": "0.1.0",
+    "hotkeypad": "0.1.1",
     "prettier-plugin-tailwindcss": "^0.6.10",
-    "shikiji-core": "0.9.19",
     "tailwindcss": "^3.4.17",
-    "typescript": "5.3.3"
+    "typescript": "5.7.3"
   },
   "devDependencies": {
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1"
   },
-  "packageManager": "pnpm@9.15.3"
+  "packageManager": "pnpm@9.15.4"
 }
