@@ -41,12 +41,9 @@ const { image, summary, url, theme } = basics;
 		fetch("/tracking.json")
 			.then(response => response.json())
 			.then(trackingData => {
-			console.log("trackingData", trackingData);
-			const domain = window.location.hostname;
-			const trackingScript = trackingData[domain];
-			console.log("trackingScript", trackingScript);
+			const trackingScript = trackingData[window.location.hostname]; // on récupère le code matomo correspondant à la clé du dmomaine dasn le fichier tracking.json.
 			if (trackingScript) {
-				const scriptElement = document.createElement("script");
+				const scriptElement = document.createElement("script"); // Je crée les balises script parce que si elle font partie de la sting du fichier json, elles ne seront pas exécutées.
 				scriptElement.type = "text/javascript";
 				scriptElement.async = true;
 				scriptElement.innerHTML = trackingScript;

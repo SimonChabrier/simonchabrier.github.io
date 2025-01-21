@@ -14,9 +14,6 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.5
         version: 5.1.5(astro@5.1.8(jiti@1.21.7)(rollup@4.31.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@3.4.17)
-      '@jop-software/astro-matomo':
-        specifier: ^1.1.1
-        version: 1.1.1
       astro:
         specifier: 5.1.8
         version: 5.1.8(jiti@1.21.7)(rollup@4.31.0)(typescript@5.7.3)(yaml@2.7.0)
@@ -392,9 +389,6 @@ packages:
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
-
-  '@jop-software/astro-matomo@1.1.1':
-    resolution: {integrity: sha512-NnDDTWZ54BehUabmg4O1B4jH7d+eLYQMeLarzCq6BytJjrGByi0Ih5I5YnNloJH3sT2Oh7k6x5QVyreuA2fM+w==}
 
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
@@ -2465,8 +2459,6 @@ snapshots:
       strip-ansi-cjs: strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
-
-  '@jop-software/astro-matomo@1.1.1': {}
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:

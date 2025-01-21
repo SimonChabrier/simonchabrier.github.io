@@ -12,7 +12,6 @@
   "dependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/tailwind": "^5.1.5",
-    "@jop-software/astro-matomo": "^1.1.1",
     "astro": "5.1.8",
     "astro-font-picker": "^0.2.2",
     "hotkeypad": "0.1.1",
