@@ -1,4 +1,6 @@
-Cv github page avec Astro 
+Page personnelle de Simon Chabrier
+
+- site perso en Astro pour présenter mes projets, mes compétences et mon parcours...
 
 - thème utilisé : https://github.com/Smilesharks/dev-portfolio
 
