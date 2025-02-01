@@ -105,9 +105,6 @@ const profilesInfo = profiles.map(({ network, url }) => {
 	);
 	const info = hotkeypad.instance.getAttribute("data-info") ?? "[]";
 	const parsedInfo = JSON.parse(info) as Info[];
-
-	console.log("INFO récupérées :", parsedInfo);
-
 	const data = parsedInfo.map(({ url, hotkey, icon, id, section, title }) => {
 		return {
 			id,
