@@ -61,7 +61,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 				}
 				{
 					phone && (
-						<a href={`tel:${phone}`} title={`Call ${name} at ${phone}`} target="_blank" rel="noopener noreferrer">
+						<a href={`tel:${phone}`} title={`Contacter ${name} au ${phone}`} target="_blank" rel="noopener noreferrer" aria-label={`Contacter ${name} au ${phone}`}>
 							<Phone />
 						</a>
 					)
@@ -71,7 +71,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 						const Icon = SOCIAL_ICONS[network];
 
 						return (
-							<a href={url} title={`Visit ${name} profile on ${network}`} target="_blank" rel="noopener noreferrer">
+							<a href={url} title={`Voir le profil de ${name}sur ${network}`} target="_blank" rel="noopener noreferrer" aria-label={`Voir le profil de ${name} sur ${network}`}>
 								<Icon />
 							</a>
 						);

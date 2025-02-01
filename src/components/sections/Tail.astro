@@ -1,10 +1,18 @@
 ---
+import { basics } from "@cv";
+const { name, profiles } = basics;
+
+const gitHub = profiles.find(({ network }) => network === "GitHub");
+const gitHubUrl = gitHub?.url;
+
 const currentYear = new Date().getFullYear();
 ---
 
 <div class="flex w-full max-w-7xl justify-center md:col-span-6 print:hidden">
-	<a href="https://github.com/SimonChabrier" 
-	   rel="noreferrer" 
+	<a href={gitHubUrl}
+	   rel="noopener noreferrer"
+	   aria-label={`Voir le profil ${gitHub} de ${name}`}
+	   title={`Voir le profil ${gitHub} de ${name}`}
 	   target="_blank" 
 	   class="group flex items-center space-x-1 text-xs">
 		<span class="hover:decoration- flex gap-1 underline decoration-dotted underline-offset-4 transition group-hover:underline-offset-4">
