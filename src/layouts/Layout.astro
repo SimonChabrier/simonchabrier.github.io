@@ -35,7 +35,17 @@ const { image, summary, url, theme } = basics;
 
 		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim" /> -->
 
-		<link rel="stylesheet" href={`${import.meta.env.BASE_URL}themes/themes.css`} />
+		<!-- <link rel="stylesheet" href={`${import.meta.env.BASE_URL}themes/themes.css`} /> -->
+		
+		<!-- @ts-ignore -->
+		<link 
+			rel="preload" 
+			as="style" 
+			href={`${import.meta.env.BASE_URL}themes/themes.css`} 
+			media="all" 
+			onload="this.onload=null;this.rel='stylesheet';" 
+		/>
+
 		<script>
 			fetch("/tracking.json")
 				.then(response => response.json())
