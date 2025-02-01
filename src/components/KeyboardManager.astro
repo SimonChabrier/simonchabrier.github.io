@@ -150,6 +150,7 @@ const profilesInfo = profiles.map(({ network, url }) => {
 		} else if(header.textContent === 'Social') {
 			header.setAttribute('aria-label', 'Social');
 		}
+		// header.querySelector('input')?.setAttribute('name', 'Rechercher');
 	});
 
 	const footerButtons = document.querySelectorAll(".footer-button");

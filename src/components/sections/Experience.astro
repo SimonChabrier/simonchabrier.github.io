@@ -17,6 +17,21 @@ import Swift from "@/icons/swift.astro"
 import SwiftUI from "@/icons/swiftui.astro"
 import Kotlin from "@/icons/kotlin.astro"
 import Flutter from "@/icons/flutter.astro"
+// import Alpine from 'alpinejs'
+// import collapse from '@alpinejs/collapse'
+
+
+// interface Window {
+//   Alpine: typeof Alpine;
+// }
+// Alpine.start();
+// Alpine.plugin(collapse)
+
+// (async () => {
+//   const Collapse = await import("@alpinejs/collapse");
+//   Alpine.plugin(Collapse.default);
+// })();
+
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -35,6 +50,7 @@ const SKILLS_ICONS: Record<string, any> = {
   Kotlin,
   Flutter,
 }
+
 ---
 <Section className={Astro.props.className} title="Expériences">
   <ul class="flex flex-col">
@@ -147,8 +163,19 @@ const SKILLS_ICONS: Record<string, any> = {
     })}
   </ul>  
 </Section>
-<script is:inline defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
-<script is:inline defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<!-- script pour Alpine et collapse côté client Alpine ne tourne que coté client et Astro se rend côté serveur donc je dois faire comme ça
+ et déclarer les modules dasn global.d.ts pour les modules que j'ajoute et que j eveux pouvoir importer en type script  -->
+<script>
+  import Alpine from 'alpinejs'
+  Alpine.start(); // on start alpine en lui passant collapse comme plugin 
+  (async () => {
+    const Collapse = await import("@alpinejs/collapse");
+    Alpine.plugin(Collapse.default);
+  })();
+</script>
+
+
 <style>
   li::marker {
     @apply text-skin-hue
