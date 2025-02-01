@@ -7,8 +7,10 @@
     --color-text-inverted: 255, 255, 255;
     /* --color-fill: 245, 245, 245;  */ /* overlay */
     --muted: 200, 200, 200;
-    --color: 249, 115, 22; /* orange */
-    --color-button-accent: 249, 115, 22;
+    /* orange */
+    /* --color: 249, 115, 22;  */
+    --color: 227, 77, 0;
+    /* --color-button-accent: 249, 115, 22; */
     --color-button-accent-hover: 55, 55, 55;
     --color-button-muted: 244, 239, 238;
     [data-theme="blue"] {
