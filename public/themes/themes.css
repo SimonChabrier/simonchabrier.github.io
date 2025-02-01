@@ -2,11 +2,12 @@
 @layer base {
   :root {
     --color-text-base: 0, 0, 0;
-    --color-text-muted: 120, 120, 120;
+    /* --color-text-muted: 120, 120, 120; */
+    --color-text-muted: 50, 50, 50;
     --color-text-inverted: 255, 255, 255;
-    --color-fill: 245, 245, 245;
+    /* --color-fill: 245, 245, 245;  */ /* overlay */
     --muted: 200, 200, 200;
-    --color: 249, 115, 22;
+    --color: 249, 115, 22; /* orange */
     --color-button-accent: 249, 115, 22;
     --color-button-accent-hover: 55, 55, 55;
     --color-button-muted: 244, 239, 238;
@@ -57,7 +58,8 @@
   }
   .dark {
     --color-text-base: 255, 255, 255;
-    --color-text-muted: 150, 150, 150;
+    /* --color-text-muted: 150, 150, 150; */
+    --color-text-muted: 180, 180, 180;
     --color-text-inverted: 255, 255, 255;
     --color-fill: 18, 18, 18;
     --muted: 36, 36, 36;
@@ -109,4 +111,5 @@
       --color-button-accent-hover: 0, 185, 255;
       --color-button-muted: 25, 81, 86;
     }
+}
 }
