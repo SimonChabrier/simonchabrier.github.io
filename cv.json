@@ -612,7 +612,7 @@
       "highlights": [
         "Gestion complète du catalogue de produits",
         "Gestion des catégories et des sous-catégories",
-        "Filtres de recherche et de tri dynqamiques sans rechargement de page",
+        "Filtres de recherche par critères cumulables sans rechargement de page",
         "Intégration de paiement sécurisé - Stripe",
         "Gestion du panier d'achat en session et en persistance",
         "Gestion des stocks et des commandes",
