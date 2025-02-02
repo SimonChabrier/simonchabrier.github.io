@@ -23,11 +23,11 @@ const currentYear = new Date().getFullYear();
                 </button>
             </div>
             <!-- Dialog Body -->
-           <div class="px-4 py-8"> 
+           <div class="px-4 py-8 overflow-y-auto max-h-[60vh]"> 
               <h2 class="text-lg font-bold">{site.intro}</h2>
               <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                 {typeof site.urls === 'object' && site.urls !== null ? (
-                  Object.entries(site.urls).map(([ext, url]) => (
+                  Object.entries(site.urls).map(([_, url]) => (
                       <li>
                         <a href={url} class="group flex items-center space-x-1 text-xs" target="_blank" rel="noopener noreferrer" aria-label={`Visiter le site ${url}`} title={`Visiter le site ${url}`}>
                           <span class="px:3 hover:text-skin-contact flex gap-1 underline decoration-dotted underline-offset-4 transition group-hover:underline-offset-4">
