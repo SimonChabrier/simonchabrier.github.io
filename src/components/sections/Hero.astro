@@ -48,7 +48,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 									</div>
 								</div>
 							</div>
-							<button @click="copyToClipboard();" class="group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-hue/100 hover:bg-skin-button-accent hover:text-skin-inverted [&>span]:hover:text-skin-inverted">
+							<button @click="copyToClipboard();" class="group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-contact hover:bg-skin-button-accent hover:text-skin-contactInverted [&>span]:hover:text-skin-contactInverted">
 								<svg x-show="copyNotification" class="h-4 w-4 stroke-current text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" x-cloak>
 									<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
 								</svg>
@@ -77,7 +77,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 						);
 					})
 				}
-				<div class="no-print footer-button max-sm:hidden group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-hue/100 hover:bg-skin-button-accent hover:text-skin-inverted [&>span]:hover:text-skin-inverted">
+				<div class="no-print footer-button max-sm:hidden group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-contact hover:bg-skin-button-accent [&>span]:hover:hover:bg-skin-button-accent">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6 icon-tabler icon-tabler-command"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
 						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 						<path d="M7 9a2 2 0 1 1 2 -2v10a2 2 0 1 1 -2 -2h10a2 2 0 1 1 -2 2v-10a2 2 0 1 1 2 2h-10"></path>
@@ -127,7 +127,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 	}
 
 	span {
-		@apply flex items-center gap-1 text-xs text-skin-hue ;
+		@apply flex items-center gap-1 text-xs text-skin-contact;
 	}
 
 	footer {
@@ -135,7 +135,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 	}
 
 	footer a, footer button {
-		@apply inline-flex size-8 items-center justify-center rounded-md p-1 transition-all duration-500 ease-linear text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted;
+		@apply inline-flex size-8 items-center justify-center rounded-md p-1 transition-all duration-500 ease-linear text-skin-contact hover:bg-skin-button-accent hover:text-skin-contactInverted;
 	}
 
 	@media (width <= 700px) {

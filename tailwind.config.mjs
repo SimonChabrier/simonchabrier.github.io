@@ -17,6 +17,9 @@ export default {
           base: withOpacity("--color-text-base"),
           muted: withOpacity("--color-text-muted"),
           inverted: withOpacity("--color-text-inverted"),
+          link: withOpacity("--color-link"), // Ajout de la couleur link ici
+          contact: withOpacity("--color-text-contact-icons"), // Ajout de la couleur link ici
+          contactInverted: withOpacity("--color-text-contact-icons-inverted"), // Ajout de la couleur link ici
         },
       },
       backgroundColor: {
