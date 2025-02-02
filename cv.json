@@ -155,6 +155,9 @@
   ],
   "skills": [
     {
+      "name": "..."
+    },
+    {
       "name": "MVC",
       "level": "Avancé",
       "keywords": [
@@ -423,6 +426,9 @@
         "Bundler",
         "Assets"
       ]
+    },
+    {
+      "name": "..."
     }
   ],
   "languages": [
