@@ -620,6 +620,20 @@
       ],
       "url": "https://storeproject.simschab.cloud/",
       "github": "https://github.com/SimonChabrier/StoreProject"
+    },
+    {
+      "name": "Utimate Doc's",
+      "isActive": true,
+      "description": "J'utilise VitePress pour documenter les projets réalisés dans le cadre professionnel et personnel.",
+      "highlights": [
+        "Ajout du suivi Matomo multi-domaines",
+        "Ajout des url canoniques pour le référencement",
+        "Auto-hébergement sur mon serveur Ubuntu",
+        "Suivi Matomo auto-hébergé aussi sur mon serveur",
+        "..."
+      ],
+      "url": "https://doc.simschab.cloud/",
+      "github": "https://github.com/SimonChabrier/MesDocs"
     }
   ]
 }
