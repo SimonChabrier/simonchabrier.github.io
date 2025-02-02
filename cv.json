@@ -104,7 +104,7 @@
   "education": [
     {
       "institution": "O'Clock",
-      "url": "https://oclock.io/",
+      "url": "https://oclock.io/formations/cda-alternance",
       "area": "Centre de formation - CDA",
       "studyType": "Titre Professionnel niveau VI RNCP31678 : Concepteur Développeur d'Applications.",
       "startDate": "03-10-22",
@@ -118,7 +118,7 @@
     },
     {
       "institution": "O'Clock",
-      "url": "https://oclock.io/",
+      "url": "https://oclock.io",
       "area": "Centre de formation - DWWM",
       "studyType": "Titre Professionnel niveau V RNCP37674 : Développeur Web et Web Mobile.",
       "startDate": "01-07-21",
