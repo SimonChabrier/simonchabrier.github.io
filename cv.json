@@ -267,6 +267,24 @@
       ]
     },
     {
+      "name": "Boostrap",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Framework"
+      ]
+    },
+    {
+      "name": "TailwindCSS",
+      "level": "Autonome",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Framework"
+      ]
+    },
+    {
       "name": "Swiper",
       "level": "Autonome",
       "keywords": [
