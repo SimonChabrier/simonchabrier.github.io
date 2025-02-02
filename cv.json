@@ -616,6 +616,8 @@
         "Intégration de paiement sécurisé - Stripe",
         "Gestion du panier d'achat en session et en persistance",
         "Gestion des stocks et des commandes",
+        "Mise en cache des requêtes SQL pour optimiser les performances",
+        "Si le contenu du catalogue produit n'a pas changé on ne refait pas de requête SQL",
         "..."
       ],
       "url": "https://storeproject.simschab.cloud/",
