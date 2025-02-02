@@ -460,7 +460,7 @@
   ],
   "projects": [
     {
-      "name": "Ch***Con*** - Symfony 7.2 - EasyAdmin 4.* - Stimulus - UxTurbo",
+      "name": "Ch***Con***",
       "isActive": false,
       "description": "Réalisé en Entreprise, cette application web est un outil de gestion pour une Entreprise du domaine de l'Informatique.",
       "highlights": [
@@ -469,20 +469,21 @@
         "Gestion des Commandes clients - Workflow d'états",
         "Gestion des prise en charge de matériel pour réparation - Workflow d'états",
         "Gestion des interventions techniques - Workflow d'états",
-        "Gestion des notifications SMS instantanées ou async + 1h + 4h ou lendemain à 9h",
+        "Gestion abonnements et des paiements",
+        "Gestion asynchrone d'envoie SMS instantanées + 1h + 4h",
         "Gestion de création de .pdf et de QRCode",
         "Historisation des actions et des modifications",
         "Automatisation des tâches récurrentes",
         "Geston avancée de la sécurité et des autorisations",
         "Optimisation de l'accès aux données avec des query DTO",
         "Mise en place d'un OCR pour la reconnaissance de texte des documents scannés",
-        "Tâches asynchrones",
+        "Sécurité et optimisation des performances",
         "..."
       ],
       "url": "https://ergo-up.fr/"
     },
     {
-      "name": "Ergo-Up - Appliaction PHP / JavaScript",
+      "name": "Ergo-Up",
       "isActive": true,
       "description": "Implementée au coeur du CMS de l'entreprise et réalisé en Entreprise dans le cadre de mon contrat de professionnalisation, ce projet est une application web de gestion et de suivi d'autonomie des résidents en EHPAD ",
       "highlights": [
@@ -500,7 +501,7 @@
       "url": "https://ergo-up.fr/"
     },
     {
-      "name": "Plateforme de publication de contenu de type Articles de documentation - NodeJs & ExpressJs + VueJs",
+      "name": "Publisher SPA",
       "isActive": false,
       "description": "Une SPA de publication de contenu de type articles, réalisée dans le cadre de recherches personnelles pour approfondir mes compétences avec Node.js et Express.js.",
       "highlights": [
@@ -517,11 +518,11 @@
       "github": "https://github.com/SimonChabrier/ressourceManager"
     },
     {
-      "name": "Task Runner de Clone de projet Symfony depuis GitHub avec Castor",
+      "name": "Task Runner",
       "isActive": false,
-      "description": "Réalisé dans le cadre de recherches personnelles pour cloner, nitialiser et lancer un projet Symfony en une seule commande : castor new-project.",
+      "description": "Réalisé dans le cadre de recherches personnelles pour cloner, initialiser et lancer un projet Symfony en une seule commande : castor new-project.",
       "highlights": [
-        "Création du scrit qui clone le repository depuis GitHub",
+        "Clone le repository depuis GitHub",
         "Demande l'url ou le ssh du repository",
         "Configuration de l'environnement de développement",
         "Intallation des dépendances composer",
@@ -539,9 +540,9 @@
       "github": "https://github.com/SimonChabrier/CastorCloneToRun"
     },
     {
-      "name": "50 Règles d'éco-conception web - Symfony 5.4 & VueJs 3",
+      "name": "Eco-Conception SPA",
       "isActive": true,
-      "description": "SPA qui référence 50 règles d'éco-conception web, réalisé dans le cadre de recherches personnelles pour approfondir mes compétences avec VueJs utilisé en SPA et Symfony pour l'API REST.",
+      "description": "Une application web qui référence 50 règles d'éco-conception web, réalisé dans le cadre de recherches personnelles pour approfondir mes compétences avec VueJs pour le fornt et Symfony pour l'API REST.",
       "highlights": [
         "Filtre de recherche textuel et par Tags",
         "Gestion d'une pagination dynamique",
@@ -555,7 +556,7 @@
       "github": "https://github.com/SimonChabrier/EcoConcept-Symfony5.4-VueJs3"
     },
     {
-      "name": "Gestionnaire de tâches - Symfony 5.4 & Javascript Vanilla",
+      "name": "Utimate Todo's",
       "isActive": true,
       "description": "Réalisé dans le cadre de recherches personnelles pour gérer mes tâches de développement dans une interfce correspondant à mes besois.",
       "highlights": [
@@ -565,13 +566,14 @@
         "Gestion des positions des tâches dans les colonnes",
         "Gestion des statuts et de l'ordre des tâches",
         "Création à la volée de nouvelles tâches et de nouvelles colonnes",
+        "Sauvegarde automatisée de l'état de l'UI",
         "Autorisation par token JWT"
       ],
       "url": "https://js.simschab.cloud/trello/",
       "github": "https://github.com/SimonChabrier/Trello-Front-End"
     },
     {
-      "name": "Application Web E-commerce - Symfony 5.4 & Twig",
+      "name": "Concept Store",
       "isActive": true,
       "description": "Réalisé avec Symfony et Javascript dans le cadre de mes recherches personnelles, ce projet est une application web e-commerce classique et pleinement fonctionnelle.",
       "highlights": [
