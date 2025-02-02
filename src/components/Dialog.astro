@@ -1,0 +1,68 @@
+---
+import { mentions } from "@mentions";
+const { site, responsable, hebergement, confidentialite, cookies, accessibilite } = mentions;
+const currentYear = new Date().getFullYear();
+---
+
+<div x-data="{modalIsOpen: false}">
+
+    <button x-on:click="modalIsOpen = true" type="button" class="group flex items-center space-x-1 text-xs">
+        <span class="px:3 hover:text-skin-contact flex gap-1 underline decoration-dotted underline-offset-4 transition group-hover:underline-offset-4">Mentions & Confidentialité</span>
+    </button>
+  
+    <div x-cloak x-show="modalIsOpen" x-transition.opacity.duration.200ms x-trap.inert.noscroll="modalIsOpen" x-on:keydown.esc.window="modalIsOpen = false" x-on:click.self="modalIsOpen = false" class="fixed inset-0 z-30 flex items-end justify-center bg-black/20 p-4 pb-8 backdrop-blur-md sm:items-center lg:p-8">
+        <!-- Modal Dialog -->
+        <div x-show="modalIsOpen" x-transition:enter="transition ease-out duration-200 delay-100 motion-reduce:transition-opacity" x-transition:enter-start="opacity-0 scale-50" x-transition:enter-end="opacity-100 scale-100" class="flex max-w-lg flex-col gap-4 overflow-hidden rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+            <!-- Dialog Header -->
+            <div class="flex items-center justify-between border-b border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 p-4">
+                <h3 class="font-semibold text-gray-900 dark:text-gray-100">Informations légales</h3>
+                <button x-on:click="modalIsOpen = false" aria-label="close modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="1.4" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Dialog Body -->
+           <div class="px-4 py-8"> 
+              <h2 class="text-lg font-bold">{site.intro}</h2>
+              <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
+                {typeof site.urls === 'object' && site.urls !== null ? (
+                  Object.entries(site.urls).map(([ext, url]) => (
+                      <li>
+                        <a href={url} class="group flex items-center space-x-1 text-xs" target="_blank" rel="noopener noreferrer" aria-label={`Visiter le site ${url}`} title={`Visiter le site ${url}`}>
+                          <span class="px:3 hover:text-skin-contact flex gap-1 underline decoration-dotted underline-offset-4 transition group-hover:underline-offset-4">
+                            {url}
+                          </span>
+                          </a>
+                      </li>
+                  ))
+                ) : (
+                  <li>{site.urls}</li>
+                )}
+              </ul>
+              <h2 class="mt-4 text-lg font-bold">{responsable.def}</h2>
+              <p>{responsable.text}</p>
+
+              <h2 class="mt-4 text-lg font-bold">{hebergement.def}</h2>
+              <p>{hebergement.nom}</p>
+
+              <h2 class="mt-4 text-lg font-bold">{confidentialite.def}</h2>
+              <p>{confidentialite.texte}</p>
+
+              <h2 class="mt-4 text-lg font-bold">{cookies.def}</h2>
+              <p>{cookies.texte}</p>
+
+              <h2 class="mt-4 text-lg font-bold">{accessibilite.def}</h2>
+              <p>{accessibilite.texte}</p>
+            </div>
+            <!-- Dialog Footer -->
+              <div class="flex flex-col-reverse justify-between gap-2 border-t border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 p-4 sm:flex-row sm:items-center md:justify-end">
+                  <p class="group flex items-center space-x-1 text-xs">
+                    <span class="hover:text-skin-contact flex gap-1 underline decoration-dotted underline-offset-4 transition group-hover:underline-offset-4">
+                      {currentYear} © SC
+                    </span>
+                  </p>
+            </div>
+        </div>
+    </div>
+</div>

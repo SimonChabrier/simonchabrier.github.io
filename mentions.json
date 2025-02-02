@@ -1,0 +1,32 @@
+{
+    "mentions": {
+        "site": {
+            "intro": "Domaines",
+            "urls": {
+                "fr": "https://simonchabrier.fr",
+                "com": "https://simonchabrier.com",
+                "io": "https://simonchabrier.github.io"
+            }
+        },
+        "responsable": {
+            "def": "Responsabilité",
+            "text": "Je suis le responsable de la publication de ce site. Vous pouvez me contacter par mail en utilisant le bouton de contact situé sous la photo de profil. En tant que responsable du traitement, je m'engage à respecter la confidentialité des données et à informer les utilisateurs de leur collecte, même lorsque celle-ci est limitée aux informations anonymisées."
+        },
+        "hebergement": {
+            "def": "Hébergement",
+            "nom": "Le site est hébergé sur mon serveur dédié à mon adresse personnelle au 168 Quai Baudin, 47000 Agen. Aucune donnée personnelle n'est stockée sur ce serveur en dehors de celles strictement nécessaires au bon fonctionnement du site."
+        },
+        "confidentialite": {
+            "def": "Confidentialité",
+            "texte": "Les technologies utilisées sur ce site ne collectent pas de données personnelles identifiables. Les données collectées (comme les URL de référence) sont anonymisées immédiatement et ne sont utilisées qu'à des fins statistiques pour améliorer le contenu et l'expérience du site. Vous pouvez refuser le suivi à tout moment. De plus, les données brutes collectées par Matomo sont supprimées tous les 356 jours."
+        },
+        "cookies": {
+            "def": "Cookies",
+            "texte": "Ce site n'utilise pas de cookies en dehors de ceux nécessaires au bon fonctionnement du site. Aucun cookie n'est déposé pour la collecte de données personnelles ou le suivi publicitaire."
+        },
+        "accessibilite": {
+            "def": "Accessibilité",
+            "texte": "J'ai conçu ce site pour être accessible au plus grand nombre. Si vous rencontrez des problèmes d'accessibilité, n'hésitez pas à me contacter. Je ferai tout mon possible pour vous aider."
+        }
+    }
+}

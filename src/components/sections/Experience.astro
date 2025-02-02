@@ -171,8 +171,11 @@ const SKILLS_ICONS: Record<string, any> = {
   Alpine.start(); // on start alpine en lui passant collapse comme plugin 
   (async () => {
     const Collapse = await import("@alpinejs/collapse");
+    const focus = await import("@alpinejs/focus");
     Alpine.plugin(Collapse.default);
+    Alpine.plugin(focus.default);
   })();
+  // console.log(Alpine)
 </script>
 
 
