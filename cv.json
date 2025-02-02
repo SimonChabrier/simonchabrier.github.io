@@ -393,6 +393,15 @@
       ]
     },
     {
+      "name": "GitHub Actions",
+      "level": "Autonome",
+      "keywords": [
+        "CI/CD",
+        "Déploiement",
+        "DevOps"
+      ]
+    },
+    {
       "name": "Vitepress",
       "level": "Autonome",
       "keywords": [
