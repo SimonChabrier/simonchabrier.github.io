@@ -8,7 +8,7 @@
     "phone": "06 63 24 45 87",
     "url": "https://www.linkedin.com/in/simon-chabrier/",
     "summary": "Développeur Full Stack passionné, Je conçois des applications web performantes, sécurisées et éco-responsables en respectant les normes d'accessibilité et le RGPD. Formé à l'Agilité, j'apprécie le travail en équipe, le partage de connaissances et relever des nouveaux challenges métiers en veillant toujours au respect des coûts et des délais. Mon code est systématiquement documenté, testé et déployé en continu, avec une gestion maîtrisée de la dette technique et des refactorisations régulières. À titre personnel, je déploie et optimise mes projets de recherche sur mon home serveur Ubuntu, pour affiner en continu mes compétences DevOps...",
-    "theme": "dark",
+    "theme": "default",
     "location": {
       "address": "168 Quai Baudin",
       "postalCode": "47000",
