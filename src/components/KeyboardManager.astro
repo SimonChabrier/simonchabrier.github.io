@@ -62,8 +62,8 @@ const profilesInfo = profiles.map(({ network, url }) => {
 		section: "Social",
 		title: `${network}`,
 		url,
-		// icon,
-		icon: icon.includes("<svg") ? icon.replace("<svg", `<svg aria-labelledby="${network}-title"><title id="${network}-title">${network}</title>`) : icon, // Générer un titre pour chaque icône dynamiquement parce que quand tabindex contruit l'afficga il gère mal l'accessibilité.
+		icon,
+		//icon: icon.includes("<svg") ? icon.replace("<svg", `<svg aria-labelledby="${network}-title"><title id="${network}-title">${network}</title>`) : icon, // Générer un titre pour chaque icône dynamiquement parce que quand tabindex contruit l'afficga il gère mal l'accessibilité.
 		hotkey: `ctrl+${firstLetter}`,
 	};
 });
@@ -135,13 +135,6 @@ const profilesInfo = profiles.map(({ network, url }) => {
 		...data,
 	]);
 
-	// correction de l'accessibilité des liens sans éléments interactifs dans la popup de hotkeypad
-	document.querySelectorAll('li').forEach((li) => {
-		if (!li.querySelector('a, button, [role="button"], input, textarea')) {
-			li.removeAttribute('tabindex');
-		}
-	});
-
 	// Fixer l'erreur de formatage des h4 de la popup de hotkeypad qui n'ont pas de titre ni de data-label
 	// Headings and anchors must have an accessible name, which can come from: inner text, aria-label, aria-labelledby, an img with alt property, or an svg with a tag <title></title>.
 	document.querySelectorAll('[data-container] h4').forEach((header) => {
@@ -150,7 +143,6 @@ const profilesInfo = profiles.map(({ network, url }) => {
 		} else if(header.textContent === 'Social') {
 			header.setAttribute('aria-label', 'Social');
 		}
-		// header.querySelector('input')?.setAttribute('name', 'Rechercher');
 	});
 
 	const footerButtons = document.querySelectorAll(".footer-button");

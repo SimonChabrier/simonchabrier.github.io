@@ -14,10 +14,10 @@
     "@astrojs/check": "0.9.4",
     "@astrojs/tailwind": "^5.1.5",
     "alpinejs": "^3.14.8",
-    "astro": "5.1.8",
+    "astro": "5.2.3",
     "astro-font-picker": "^0.2.2",
-    "hotkeypad": "0.1.1",
-    "prettier-plugin-tailwindcss": "^0.6.10",
+    "hotkeypad": "1.0.1",
+    "prettier-plugin-tailwindcss": "^0.6.11",
     "typescript": "5.7.3"
   },
   "devDependencies": {
