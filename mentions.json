@@ -14,7 +14,7 @@
         },
         "hebergement": {
             "def": "Hébergement",
-            "nom": "Le site est hébergé sur mon serveur dédié à mon adresse personnelle au 168 Quai Baudin, 47000 Agen. Aucune donnée personnelle n'est stockée sur ce serveur en dehors de celles strictement nécessaires au bon fonctionnement du site."
+            "nom": "Le site est hébergé sur mon serveur dédié à mon adresse personnelle au 168 Quai Baudin, 47000 Agen. Ce serveur héberge également les données collectées via Matomo, qui sont anonymisées immédiatement après collecte. Aucune donnée personnelle n'est stockée sur ce serveur en dehors de celles strictement nécessaires au bon fonctionnement du site et à la collecte statistique via Matomo."
         },
         "confidentialite": {
             "def": "Confidentialité",
