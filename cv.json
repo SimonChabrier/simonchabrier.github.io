@@ -55,15 +55,20 @@
         "et +"
       ],
       "skills": [
-        "Symfony 7.* - MariaDb - Doctrine - SQL - DQL - PHP 8.*",
-        "Twig - TwigComponents & LiveComponents - EasyAdmin 4.*",
-        "JavaScript / NodeJs - UxTurbo - Stimulus - Webpack - Modules ES6",
-        "Git & GitHub - CI/CD",
-        "Agile/Scrum - Trello/Teams",
-        "REST APIs - SSE - Mercure",
-        "VitrePress",
-        "Plesk - UbuntuServer - Cockpit",
-        "CaddyServer - Apache"
+        "Symfony & PHP",
+        "Doctrine & SQL",
+        "REST APIs & Mercure",
+        "NodeJs & ExpressJs",
+        "Twig & Components",
+        "VueJs",
+        "Bootstrap & SCSS",
+        "Stimulus & Turbo",
+        "UX/UI Design",
+        "CaddyServer & Nginx",
+        "Docker & Plesk",
+        "Git & GitHub",
+        "CI/CD",
+        "Agile/Scrum & Project Management"
       ]
     },
     {
@@ -87,13 +92,12 @@
         "et +"
       ],
       "skills": [
-        "MariaDb - SQL - PHP 7.* et 8.*",
-        "HTML - CSS",
-        "JavaScript - Custom ES6",
-        "Git & GitHub - CI/CD",
-        "Agile/Scrum - Trello/Teams",
+        "PHP & JavaScript",
         "REST APIs",
-        "Plesk - Nginx"
+        "CSS & SCSS",
+        "Git & GitHub",
+        "CI/CD",
+        "Agile/Scrum & Project Management"
       ]
     }
   ],
@@ -151,227 +155,274 @@
   ],
   "skills": [
     {
-      "name": "Figma",
-      "level": "Intermédiaire",
+      "name": "MVC",
+      "level": "Avancé",
       "keywords": [
-        "Design",
-        "UI"
+        "Backend",
+        "Architecture",
+        "Design Patterns"
       ]
     },
     {
-      "name": "HTML",
+      "name": "DDD",
       "level": "Avancé",
       "keywords": [
-        "Web Development",
+        "Backend",
+        "Architecture",
+        "Design Patterns"
+      ]
+    },
+    {
+      "name": "Clean Architecture",
+      "level": "Avancé",
+      "keywords": [
+        "Backend",
+        "Architecture",
+        "Design Patterns"
+      ]
+    },
+    {
+      "name": "Doctrine",
+      "level": "Avancé",
+      "keywords": [
+        "ORM",
+        "Backend",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "Mercure",
+      "level": "Avancé",
+      "keywords": [
+        "APIs",
+        "Backend",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "Messenger",
+      "level": "Autonome",
+      "keywords": [
+        "Tâches asynchrones",
+        "Backend",
+        "Messaging"
+      ]
+    },
+    {
+      "name": "JWT",
+      "level": "Autonome",
+      "keywords": [
+        "Sécurité",
+        "Authentification",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Symfony Security",
+      "level": "Avancé",
+      "keywords": [
+        "Sécurité",
+        "Authentification",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Nelmio Cors & Security",
+      "level": "Avancé",
+      "keywords": [
+        "Sécurité",
+        "CORS",
+        "Backend"
+      ]
+    },
+    {
+      "name": "ApiPlatform",
+      "level": "Autonome",
+      "keywords": [
+        "APIs",
+        "Backend",
+        "GraphQL",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "Axios & Fetch",
+      "level": "Autonome",
+      "keywords": [
+        "API",
+        "HTTP Requests",
         "Frontend"
       ]
     },
     {
-      "name": "CSS",
+      "name": "VueX",
       "level": "Avancé",
       "keywords": [
-        "Web Development",
+        "State Management",
         "Frontend",
-        "Responsive Design"
+        "VueJs"
       ]
     },
     {
-      "name": "JavaScript",
+      "name": "Swiper",
+      "level": "Autonome",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Slider"
+      ]
+    },
+    {
+      "name": "EasyAdmin",
       "level": "Avancé",
       "keywords": [
-        "Web Development",
-        "Frontend",
         "Backend",
-        "Fullstack"
+        "Admin Panel",
+        "Symfony"
       ]
     },
     {
-      "name": "Bootstrap",
+      "name": "FilePond",
       "level": "Avancé",
       "keywords": [
-        "Web Development",
+        "Gestion de fichiers",
         "Frontend",
-        "CSS Framework",
-        "Responsive Design"
+        "UI"
+      ]
+    },
+    {
+      "name": "Quill",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Editor"
+      ]
+    },
+    {
+      "name": "CkEditor",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Editor"
+      ]
+    },
+    {
+      "name": "ACE Code Editor",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Editor"
+      ]
+    },
+    {
+      "name": "SSE",
+      "level": "Avancé",
+      "keywords": [
+        "APIs",
+        "Backend",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "Plesk",
+      "level": "Avancé",
+      "keywords": [
+        "Serveur",
+        "Administration",
+        "Déploiement"
+      ]
+    },
+    {
+      "name": "CaddyServer",
+      "level": "Avancé",
+      "keywords": [
+        "Serveur",
+        "Administration",
+        "Déploiement"
+      ]
+    },
+    {
+      "name": "Ubuntu Server",
+      "level": "Avancé",
+      "keywords": [
+        "Serveur",
+        "Administration",
+        "Déploiement"
+      ]
+    },
+    {
+      "name": "Shell Scripting",
+      "level": "Avancé",
+      "keywords": [
+        "Automatisation",
+        "Déploiement",
+        "DevOps"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Avancé",
+      "keywords": [
+        "Containers",
+        "Déploiement",
+        "DevOps"
+      ]
+    },
+    {
+      "name": "Vitepress",
+      "level": "Autonome",
+      "keywords": [
+        "Documentation",
+        "Frontend",
+        "Static Site Generator"
+      ]
+    },
+    {
+      "name": "Castor",
+      "level": "Autonome",
+      "keywords": [
+        "Formulaires",
+        "Symfony",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Passport",
+      "level": "Avancé",
+      "keywords": [
+        "Authentification",
+        "Backend",
+        "NodeJs"
+      ]
+    },
+    {
+      "name": "Sequelize",
+      "level": "Avancé",
+      "keywords": [
+        "ORM",
+        "Backend",
+        "NodeJs"
       ]
     },
     {
       "name": "VueJs",
       "level": "Autonome",
       "keywords": [
-        "Web Development",
         "Frontend",
-        "Backend",
-        "JavaScript Superset"
+        "JavaScript Framework"
       ]
     },
     {
-      "name": "NodeJs",
-      "level": "Autonome",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Autonome",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Autonome",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Autonome",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
-    },
-    {
-      "name": "Symfony",
+      "name": "WebPack",
       "level": "Avancé",
       "keywords": [
-        "Web Development",
-        "Backend",
-        "PHP Framework",
-        "Fullstack"
-      ]
-    },
-    {
-      "name": "PHP",
-      "level": "Avancé",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "Server"
-      ]
-    },
-    {
-      "name": "Twig",
-      "level": "Autonome",
-      "keywords": [
-        "Web Development",
         "Frontend",
-        "PHP Template Engine"
+        "Bundler",
+        "Assets"
       ]
-    },
-    {
-      "name": "Webpack",
-      "level": "Autonome",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Module Bundler"
-      ]
-    },
-    {
-      "name": "Plesk",
-      "level": "Autonome",
-      "keywords": [
-        "Web Development",
-        "Server",
-        "Hosting"
-      ]
-    },
-    {
-      "name": "Agile",
-      "level": "Autonome",
-      "keywords": [
-        "Project Management",
-        "Scrum",
-        "Kanban",
-        "Lean"
-      ]
-    },
-    {
-      "name": "Scrum",
-      "level": "Autonome",
-      "keywords": [
-        "Project Management",
-        "Agile",
-        "Kanban",
-        "Lean"
-      ]
-    },
-    {
-      "name": "Trello",
-      "level": "Autonome",
-      "keywords": [
-        "Project Management",
-        "Agile",
-        "Kanban",
-        "Lean"
-      ]
-    },
-    {
-      "name": "Teams",
-      "level": "Autonome",
-      "keywords": [
-        "Project Management",
-        "Agile",
-        "Kanban",
-        "Lean"
-      ]
-    },
-    {
-      "name": "REST APIs",
-      "level": "Autonome",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "API",
-        "HTTP"
-      ]
-    },
-    {
-      "name": "Mercure",
-      "level": "Autonome",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "API",
-        "HTTP"
-      ]
-    },
-    {
-      "name": "Server-Sent Events",
-      "level": "Autonome",
-      "keywords": [
-        "interactions",
-        "Web Development",
-        "Backend",
-        "API"
-      ]
-    },
-    {
-      "name": "Nuxt.js",
-      "level": "Autonome",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    },
-    {
-      "name": "..."
     }
   ],
   "languages": [
