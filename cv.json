@@ -626,7 +626,7 @@
       "isActive": true,
       "description": "J'utilise VitePress pour documenter les projets réalisés dans le cadre professionnel et personnel.",
       "highlights": [
-        "Sur ma propre instance de VitePress j'ai ajouté des fonctionnalités spécifiques pour répondre à mes besoins",
+        "Sur ma documentation personnelle j'ai ajouté des fonctionnalités spécifiques pour répondre à mes besoins",
         "3 domaines différent pointent vers la même instance de la documentation",
         "Injection dynamique du script de suivi Matomo en fonction du domaine",
         "Injection dynamique d'url canonical en fonction du domaine",
