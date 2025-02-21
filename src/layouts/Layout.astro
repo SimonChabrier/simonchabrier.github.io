@@ -6,7 +6,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
-
+const canonicalUrl = Astro.request.url;
 const { image, summary, url, theme } = basics;
 ---
 
@@ -17,6 +17,7 @@ const { image, summary, url, theme } = basics;
 		<title>{title}</title>
 		<meta name="description" content={summary} />
 		<mata robots="index, follow" />
+		<link rel="canonical" href={canonicalUrl} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="preload" as="image" href={image} />
@@ -59,13 +60,13 @@ const { image, summary, url, theme } = basics;
 						document.head.appendChild(scriptElement);
 					}
 
-					// Injection du lien canonical
-					if (trackingData[url]) {
-						const linkElement = document.createElement("link");
-						linkElement.rel = "canonical";
-						linkElement.href = url;
-						document.head.appendChild(linkElement);
-					}
+					// // Injection du lien canonical
+					// if (trackingData[url]) {
+					// 	const linkElement = document.createElement("link");
+					// 	linkElement.rel = "canonical";
+					// 	linkElement.href = url;
+					// 	document.head.appendChild(linkElement);
+					// }
 				})
 				.catch(error => console.error("Erreur chargement tracking.json :", error));
 		</script>
