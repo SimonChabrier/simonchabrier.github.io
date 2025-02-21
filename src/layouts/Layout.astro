@@ -16,7 +16,6 @@ const { image, summary, url, theme } = basics;
 		<title>{title}</title>
 		<meta name="description" content={summary} />
 		<mata robots="index, follow" />
-		<link rel="canonical" href="https://simonchabrier.fr/" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="preload" as="image" href={image} />
@@ -60,12 +59,12 @@ const { image, summary, url, theme } = basics;
 					}
 
 					// Injection du lien canonical
-					// if (trackingData[url]) {
-					// 	const linkElement = document.createElement("link");
-					// 	linkElement.rel = "canonical";
-					// 	linkElement.href = url;
-					// 	document.head.appendChild(linkElement);
-					// }
+					if (trackingData[url]) {
+						const linkElement = document.createElement("link");
+						linkElement.rel = "canonical";
+						linkElement.href = url;
+						document.head.appendChild(linkElement);
+					}
 				})
 				.catch(error => console.error("Erreur chargement tracking.json :", error));
 		</script>
