@@ -52,7 +52,7 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1
       tailwindcss:
-        specifier: ^3.4.17
+        specifier: ~3.4.17
         version: 3.4.17
 
 packages:
