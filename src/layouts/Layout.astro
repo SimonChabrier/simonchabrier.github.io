@@ -6,7 +6,9 @@ interface Props {
 }
 
 const { title } = Astro.props;
-const { image, summary, url, theme } = basics;
+const { image, summary, theme } = basics;
+const canonical = Astro.url.href;
+const canonicalDomain = Astro.url.origin;
 ---
 
 <!doctype html>
@@ -17,26 +19,26 @@ const { image, summary, url, theme } = basics;
 		<meta name="description" content={summary} />
 		<!-- viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- robots -->
-		<mata robots="index, follow" />
-		<!-- url canonique -->
-		<link rel="canonical" href="https://simonchabrier.fr" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<link rel="preload" as="image" href={image} />
+                <!-- robots -->
+                <mata robots="index, follow" />
+                <!-- url canonique -->
+                <link rel="canonical" href={canonical} />
+                <meta name="viewport" content="width=device-width" />
+                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+                <link rel="preload" as="image" href={image} />
 
-		<meta property="og:url" content={url} />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={summary} />
-		<meta property="og:image" content="" />
+                <meta property="og:url" content={canonical} />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={summary} />
+                <meta property="og:image" content="" />
 
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta property="twitter:domain" content={url.split("//")[1] ?? ""} />
-		<meta property="twitter:url" content={url} />
-		<meta name="twitter:title" content={title} />
-		<meta name="twitter:description" content={summary} />
-		<meta name="twitter:image" content="" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="twitter:domain" content={canonicalDomain.split("//")[1] ?? ""} />
+                <meta property="twitter:url" content={canonical} />
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:description" content={summary} />
+                <meta name="twitter:image" content="" />
 		
 		<!-- @ts-ignore -->
 		<link 
@@ -50,26 +52,19 @@ const { image, summary, url, theme } = basics;
 		<script>
 			fetch("/tracking.json")
 				.then(response => response.json())
-				.then(trackingData => {
-					const url = window.location.href;
+                                .then(trackingData => {
+                                        const url = window.location.href;
+                                        const domain = new URL(url).origin + "/";
 
-					// Injection du script Matomo
-					const trackingScript = trackingData[url];
+                                        // Injection du script Matomo
+                                        const trackingScript = trackingData[domain];
 					if (trackingScript) {
 						const scriptElement = document.createElement("script");
 						scriptElement.type = "text/javascript";
 						scriptElement.async = true;
 						scriptElement.innerHTML = trackingScript;
 						document.head.appendChild(scriptElement);
-					}
-
-					// Injection du lien canonical
-					// if (trackingData[url]) {
-					// 	const linkElement = document.createElement("link");
-					// 	linkElement.rel = "canonical";
-					// 	linkElement.href = url;
-					// 	document.head.appendChild(linkElement);
-					// }
+					}					
 				})
 				.catch(error => console.error("Erreur chargement tracking.json :", error));
 		</script>
