@@ -1,0 +1,52 @@
+---
+import FlagFR from "@/icons/FlagFR.astro"
+import FlagEN from "@/icons/FlagEN.astro"
+interface Props {
+  lang?: string;
+}
+const { lang = 'fr' } = Astro.props as Props
+---
+<div class="no-print flex items-center">
+  <div class="group/lang flex items-center gap-2">
+    <label for="languageSwitch" aria-label="Changer la langue" class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base">
+      <span class="flag-fr" style="display:{lang === 'fr' ? 'inline-block' : 'none'}"><FlagFR /></span>
+      <span class="flag-en" style="display:{lang === 'en' ? 'inline-block' : 'none'}"><FlagEN /></span>
+      <span class="sr-only">Changer la langue</span>
+    </label>
+    <select id="languageSwitch" name="languageSwitch" class="block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset ring-skin-muted focus:ring-2 focus:ring-skin-hue dark:text-white sm:text-sm sm:leading-6">
+      <option value="fr" class="dark:text-white">Français</option>
+      <option value="en" class="dark:text-white">English</option>
+    </select>
+  </div>
+  <style>
+    .dark select option { color: white !important; }
+  </style>
+  <script>
+    const select = document.getElementById('languageSwitch');
+    const frIcon = document.querySelector('.flag-fr');
+    const enIcon = document.querySelector('.flag-en');
+    const stored = localStorage.getItem('lang') || '{lang}';
+    select.value = stored;
+    updateIcon(stored);
+    function updateIcon(value){
+      if(value === 'fr'){
+        frIcon.style.display = 'inline-block';
+        enIcon.style.display = 'none';
+      } else {
+        enIcon.style.display = 'inline-block';
+        frIcon.style.display = 'none';
+      }
+    }
+    function updateLang(value){
+      localStorage.setItem('lang', value);
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', value);
+      window.location.href = url.toString();
+    }
+    select.addEventListener('change', (e)=>{
+      const value = e.target.value;
+      updateIcon(value);
+      updateLang(value);
+    });
+  </script>
+</div>
