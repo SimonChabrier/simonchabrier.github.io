@@ -2,7 +2,6 @@
 @layer base {
   :root {
     --color-text-base: 0, 0, 0;
-    --color-text-muted: 120, 120, 120;
     --color-text-muted: 50, 50, 50;
     --color-text-inverted: 255, 255, 255;
     --color-fill: 245, 245, 245; /* lignes et contours */
@@ -27,6 +26,6 @@
     --color-button-accent-hover: 48, 115, 48; 
     --color-button-muted: 26, 26, 26; /* bg black */
     --color-text-contact-icons: 255, 115, 48; /* orange */
-    --color-text-contact-icons-inverted: 20, 20, 20; /* ligne des svg */
+    --color-text-contact-icons-inverted: 255, 255, 255; /* ligne des svg */
   }
 }
