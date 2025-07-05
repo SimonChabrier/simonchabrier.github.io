@@ -83,7 +83,7 @@ const { skills, lang = 'fr' } = Astro.props as Props;
                                                 >
                                                         <div class="font-semibold">Niveau : {level}</div>
                                                         <ul class="mt-1 flex flex-wrap gap-1">
-                                                                {keywords?.map(keyword => (
+                                                                {keywords?.map((keyword: string) => (
                                                                         <li class="rounded bg-skin-button-muted px-1 dark:bg-gray-700">{keyword}</li>
                                                                 ))}
                                                         </ul>
