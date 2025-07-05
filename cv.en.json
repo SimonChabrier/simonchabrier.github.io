@@ -1,0 +1,642 @@
+{
+  "basics": {
+    "name": "Simon Chabrier",
+    "label": "Développeur Full Stack",
+    "image": "./avatar_254.webp",
+    "imagesmall": "./avatar_128.webp",
+    "email": "simonchabrier@gmail.com",
+    "phone": "06 63 24 45 87",
+    "url": "https://www.linkedin.com/in/simon-chabrier/",
+    "summary": "Développeur Full Stack passionné, Je conçois des applications web performantes, sécurisées et éco-responsables en respectant les normes d'accessibilité et le RGPD. Formé à l'Agilité, j'apprécie le travail en équipe, le partage de connaissances et relever des nouveaux challenges métiers en veillant toujours au respect des coûts et des délais. Mon code est systématiquement documenté, testé et déployé en continu, avec une gestion maîtrisée de la dette technique et des refactorisations régulières. À titre personnel, je déploie et optimise mes projets de recherche sur mon home serveur Ubuntu, pour affiner en continu mes compétences DevOps...",
+    "theme": "default",
+    "location": {
+      "address": "168 Quai Baudin",
+      "postalCode": "47000",
+      "city": "Agen",
+      "countryCode": "FR",
+      "region": "France"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Simon Chabrier",
+        "url": "https://www.linkedin.com/in/simon-chabrier/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Simon Chabrier",
+        "url": "https://github.com/SimonChabrier"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Libre Sens",
+      "position": "Développeur Full Stack - CDI",
+      "location_type": "Sur site",
+      "location": "Agen, France",
+      "url": "https://libresens.com/",
+      "startDate": "01/02/24",
+      "endDate": null,
+      "summary": "Concevoir, développer et documenter des applications web.",
+      "responsibilities": [
+        "En collaboration avec le Product Owner et l’équipe, autour de l’étude du cahier des charges, j'établis les documents de conception des applications et/ou fonctionnalités qui me sont assignés en veillant à analyser les risques et à détailler/planifier les différentes phases de livraison du MVP jusqu'au produit fini."
+      ],
+      "achievements": [
+        "En charge de la refonte du CMS de l'entreprise.",
+        "Appplication Web de gestion et de suivi d'autonomie des résidents en EHPAD.",
+        "Application Web de type CRM pour une entreprise du domaine de l'informatique.",
+        "Module de gestion documentaire à haut niveau de permissions et de sécurité.",
+        "Module de réservation avec gestion de plage horaire, confirmaion SMS - 2FA.",
+        "Module de gestion d'Agences et de Franchisés avec historisation et statistiques.",
+        "Module de gestion d'offres d'emploi et candidatures dans le respect des normes RGPD.",
+        "Module de carte de points d'intérêts catégoriséss avec recherche et filtres.",
+        "Module d'annuaire admistratif hiérarchisé à destination de groupes d'élus locaux.",
+        "et +"
+      ],
+      "skills": [
+        "Symfony & PHP",
+        "Doctrine & SQL",
+        "REST APIs & Mercure",
+        "NodeJs & ExpressJs",
+        "Twig & Components",
+        "VueJs",
+        "Bootstrap & SCSS",
+        "Stimulus & Turbo",
+        "UX/UI Design",
+        "CaddyServer & Nginx",
+        "Docker & Plesk",
+        "Git & GitHub",
+        "CI/CD",
+        "Agile/Scrum & Project Management"
+      ]
+    },
+    {
+      "name": "Libre Sens",
+      "position": "Développeur BackEnd - Contrat Pro.",
+      "location_type": "Sur site",
+      "location": "Agen, France",
+      "url": "https://libresens.com/",
+      "startDate": "03/10/22",
+      "endDate": "31/01/24",
+      "summary": "Concevoir et développer des fontionnalités PHP et JavaScript",
+      "responsibilities": [
+        "Supervisé en distanciel par mon tuteur pédagogique, en collaboration avec le Product Owner et l’équipe, autour de l’étude du cahier des charges, j'établis les documents de conception des applications et/ou fonctionnalités qui me sont assignés en veillant à analyser les risques et à détailler/planifier les différentes phases de livraison du MVP jusqu'au produit fini."
+      ],
+      "achievements": [
+        "Création de modules PHP/JS implémetés dans le CMS de l'entreprise.",
+        "Refonte, optimisation et sécurisation de modules existants.",
+        "Design de thèmes en fonction des maquettes fournies par le service design/intégration.",
+        "Réalisation de modules sur mesure pour implémenter des fonctionnalités spécifiques à destination des clients.",
+        "Mise en production et suivi des performances et de la sécurité.",
+        "et +"
+      ],
+      "skills": [
+        "PHP & JavaScript",
+        "REST APIs",
+        "CSS & SCSS",
+        "Git & GitHub",
+        "CI/CD",
+        "Agile/Scrum & Project Management"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "O'Clock",
+      "url": "https://oclock.io/formations/cda-alternance",
+      "area": "Centre de formation - CDA",
+      "studyType": "Titre Professionnel niveau VI RNCP31678 : Concepteur Développeur d'Applications.",
+      "startDate": "03-10-22",
+      "endDate": "01-01-24",
+      "score": "Obtenu",
+      "courses": [
+        "NodeJs / Express",
+        "Dart / Flutter",
+        "UMl / Merise / Design Patterns"
+      ]
+    },
+    {
+      "institution": "O'Clock",
+      "url": "https://oclock.io",
+      "area": "Centre de formation - DWWM",
+      "studyType": "Titre Professionnel niveau V RNCP37674 : Développeur Web et Web Mobile.",
+      "startDate": "01-07-21",
+      "endDate": "01-06-22",
+      "score": "Obtenu",
+      "courses": [
+        "Spécialisation Symfony",
+        "Html",
+        "Css",
+        "Php",
+        "Javascript"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Titre Pro. Niveau VI - RNCP31678: Concepteur Développeur d'Applications.",
+      "date": "01-01-24",
+      "issuer": "France Compétences - Ministère du Travail",
+      "url": "https://www.francecompetences.fr/recherche/rncp/31678/"
+    },
+    {
+      "name": "Certification Opquast - Maîtrise de la qualité en projet web - Niveau Avancé",
+      "date": "15-06-22",
+      "issuer": "Opquast",
+      "url": "https://directory.opquast.com/fr/certificat/S07YEP/"
+    },
+    {
+      "name": "Titre Pro. Niveau V - RNCP37674: Développeur Web et Web Mobile.",
+      "date": "01-06-22",
+      "issuer": "France Compétences - Ministère du Travail",
+      "url": "https://www.francecompetences.fr/recherche/rncp/37674/"
+    },
+    {
+      "name": "Licence Arts-Plastiques option Infographie",
+      "date": "01-06-02",
+      "issuer": "Education Nationale",
+      "url": "https://formations.u-bordeaux-montaigne.fr/fr/catalogue-des-formations/licence-XA/licence-arts-plastiques-KQJ9IHSQ.html"
+    }
+  ],
+  "skills": [
+    {
+      "name": "..."
+    },
+    {
+      "name": "MVC",
+      "level": "Avancé",
+      "keywords": [
+        "Backend",
+        "Architecture",
+        "Design Patterns"
+      ]
+    },
+    {
+      "name": "DDD",
+      "level": "Avancé",
+      "keywords": [
+        "Backend",
+        "Architecture",
+        "Design Patterns"
+      ]
+    },
+    {
+      "name": "Clean Architecture",
+      "level": "Avancé",
+      "keywords": [
+        "Backend",
+        "Architecture",
+        "Design Patterns"
+      ]
+    },
+    {
+      "name": "Doctrine",
+      "level": "Avancé",
+      "keywords": [
+        "ORM",
+        "Backend",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "Mercure",
+      "level": "Avancé",
+      "keywords": [
+        "APIs",
+        "Backend",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "Messenger",
+      "level": "Autonome",
+      "keywords": [
+        "Tâches asynchrones",
+        "Backend",
+        "Messaging"
+      ]
+    },
+    {
+      "name": "JWT",
+      "level": "Autonome",
+      "keywords": [
+        "Sécurité",
+        "Authentification",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Symfony Security",
+      "level": "Avancé",
+      "keywords": [
+        "Sécurité",
+        "Authentification",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Nelmio Cors & Security",
+      "level": "Avancé",
+      "keywords": [
+        "Sécurité",
+        "CORS",
+        "Backend"
+      ]
+    },
+    {
+      "name": "ApiPlatform",
+      "level": "Autonome",
+      "keywords": [
+        "APIs",
+        "Backend",
+        "GraphQL",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "Axios & Fetch",
+      "level": "Autonome",
+      "keywords": [
+        "API",
+        "HTTP Requests",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "VueX",
+      "level": "Avancé",
+      "keywords": [
+        "State Management",
+        "Frontend",
+        "VueJs"
+      ]
+    },
+    {
+      "name": "Boostrap",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Framework"
+      ]
+    },
+    {
+      "name": "TailwindCSS",
+      "level": "Autonome",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Framework"
+      ]
+    },
+    {
+      "name": "Swiper",
+      "level": "Autonome",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Slider"
+      ]
+    },
+    {
+      "name": "EasyAdmin",
+      "level": "Avancé",
+      "keywords": [
+        "Backend",
+        "Admin Panel",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "FilePond",
+      "level": "Avancé",
+      "keywords": [
+        "Gestion de fichiers",
+        "Frontend",
+        "UI"
+      ]
+    },
+    {
+      "name": "Quill",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Editor"
+      ]
+    },
+    {
+      "name": "CkEditor",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Editor"
+      ]
+    },
+    {
+      "name": "ACE Code Editor",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "UI",
+        "Editor"
+      ]
+    },
+    {
+      "name": "SSE",
+      "level": "Avancé",
+      "keywords": [
+        "APIs",
+        "Backend",
+        "Symfony"
+      ]
+    },
+    {
+      "name": "Plesk",
+      "level": "Avancé",
+      "keywords": [
+        "Serveur",
+        "Administration",
+        "Déploiement"
+      ]
+    },
+    {
+      "name": "CaddyServer",
+      "level": "Avancé",
+      "keywords": [
+        "Serveur",
+        "Administration",
+        "Déploiement"
+      ]
+    },
+    {
+      "name": "Ubuntu Server",
+      "level": "Avancé",
+      "keywords": [
+        "Serveur",
+        "Administration",
+        "Déploiement"
+      ]
+    },
+    {
+      "name": "Shell Scripting",
+      "level": "Avancé",
+      "keywords": [
+        "Automatisation",
+        "Déploiement",
+        "DevOps"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Avancé",
+      "keywords": [
+        "Containers",
+        "Déploiement",
+        "DevOps"
+      ]
+    },
+    {
+      "name": "GitHub Actions",
+      "level": "Autonome",
+      "keywords": [
+        "CI/CD",
+        "Déploiement",
+        "DevOps"
+      ]
+    },
+    {
+      "name": "Vitepress",
+      "level": "Autonome",
+      "keywords": [
+        "Documentation",
+        "Frontend",
+        "Static Site Generator"
+      ]
+    },
+    {
+      "name": "Castor",
+      "level": "Autonome",
+      "keywords": [
+        "Formulaires",
+        "Symfony",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Passport",
+      "level": "Avancé",
+      "keywords": [
+        "Authentification",
+        "Backend",
+        "NodeJs"
+      ]
+    },
+    {
+      "name": "Sequelize",
+      "level": "Avancé",
+      "keywords": [
+        "ORM",
+        "Backend",
+        "NodeJs"
+      ]
+    },
+    {
+      "name": "VueJs",
+      "level": "Autonome",
+      "keywords": [
+        "Frontend",
+        "JavaScript Framework"
+      ]
+    },
+    {
+      "name": "WebPack",
+      "level": "Avancé",
+      "keywords": [
+        "Frontend",
+        "Bundler",
+        "Assets"
+      ]
+    },
+    {
+      "name": "..."
+    }
+  ],
+  "languages": [
+    {
+      "language": "Anglais",
+      "fluency": "Niveau professionnel"
+    },
+    {
+      "language": "Espagnol",
+      "fluency": "Niveau professionnel"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": [
+        "AI",
+        "Machine Learning",
+        "Web Development",
+        "Open Source"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "",
+      "reference": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Ch***Con***",
+      "isActive": false,
+      "description": "Réalisé en Entreprise, cette application web est un outil de gestion pour une Entreprise du domaine de l'Informatique.",
+      "highlights": [
+        "Gestion des Contacts et des Entreprises",
+        "Gestion des Produits et des Catégories (hiérarchie Doctrine Tree)",
+        "Gestion des Commandes clients - Workflow d'états",
+        "Gestion des prise en charge de matériel pour réparation - Workflow d'états",
+        "Gestion des interventions techniques - Workflow d'états",
+        "Gestion abonnements et des paiements",
+        "Gestion asynchrone d'envoie SMS instantanées + 1h + 4h",
+        "Gestion de création de .pdf et de QRCode",
+        "Historisation des actions et des modifications",
+        "Automatisation des tâches récurrentes",
+        "Geston avancée de la sécurité et des autorisations",
+        "Optimisation de l'accès aux données avec des query DTO",
+        "Mise en place d'un OCR pour la reconnaissance de texte des documents scannés",
+        "Sécurité et optimisation des performances",
+        "..."
+      ],
+      "url": "https://ergo-up.fr/"
+    },
+    {
+      "name": "Ergo-Up",
+      "isActive": true,
+      "description": "Implementée au coeur du CMS de l'entreprise dans le cadre de mon contrat de professionnalisation, ce projet est une application web de gestion et de suivi d'autonomie des résidents en EHPAD ",
+      "highlights": [
+        "Gestion des établissement, des soigants et des résidents",
+        "Gestion et administration du test de santé pour les résidents",
+        "Gestion de l'évaluation des soins et du personnel requis en fonction des résulats des tests",
+        "Gestion des équipements médicaux et personnel requis en fonction des résulats des tests",
+        "Gestion de la durée de validités des résultats des tests",
+        "Gestion des valeurs de retour en fonciton des caractéristiques des résidents",
+        "Gestion de l'achat de test pour les particuliers, crédits et historique",
+        "Statistiques et rapports sur les résultats des tests, du personnel et des équipements requis",
+        "Historisation du suivi des statistiques et des rapports",
+        "..."
+      ],
+      "url": "https://ergo-up.fr/"
+    },
+    {
+      "name": "Publisher SPA",
+      "isActive": false,
+      "description": "Une SPA de publication de contenu de type articles, réalisée dans le cadre de recherches personnelles pour approfondir mes compétences avec Node.js et Express.js.",
+      "highlights": [
+        "Gestion de l'authentification et de la session en utilisant Passport.js",
+        "Utilisation du pattern Clean Architecture et organisation du code en couches à responsabilités uniques",
+        "Séparation entre le FrontEnd Vue.js et le BackEnd Express.js",
+        "Utilisation de l'ORM Sequelize pour la gestion des données",
+        "Gestion et utilisation de JWT pour les autorisations",
+        "Utilisation de Mercure pour les mises à jour en temps réel - SSE",
+        "Gestion de notifications par email",
+        "Configuration de Quill pour l'édition de contenu riche",
+        "..."
+      ],
+      "github": "https://github.com/SimonChabrier/ressourceManager"
+    },
+    {
+      "name": "Task Runner",
+      "isActive": false,
+      "description": "Réalisé dans le cadre de recherches personnelles pour cloner, initialiser et lancer un projet Symfony en une seule commande : castor new-project.",
+      "highlights": [
+        "Clone le repository depuis GitHub",
+        "Demande l'url ou le ssh du repository",
+        "Configuration de l'environnement de développement",
+        "Intallation des dépendances composer",
+        "Intallation des dépendances npm si un package.json est présent",
+        "Configuration de la base de données avec choix du driver",
+        "Création du .env.local à partir du .env",
+        "Injection du schema de base de données",
+        "Lancement du serveur de développement",
+        "Lancement du serveur pour monitorer les assets",
+        "Ouverture du navigateur par défaut",
+        "A la fin du run le projet est prêt à être développé",
+        "Messages confirmation à chaque étape",
+        "..."
+      ],
+      "github": "https://github.com/SimonChabrier/CastorCloneToRun"
+    },
+    {
+      "name": "Eco-Conception SPA",
+      "isActive": true,
+      "description": "Une application web qui référence 50 règles d'éco-conception web, réalisé dans le cadre de recherches personnelles pour approfondir mes compétences avec VueJs pour le fornt et Symfony pour l'API REST.",
+      "highlights": [
+        "Filtre de recherche textuel et par Tags",
+        "Gestion d'une pagination dynamique",
+        "Developpement d'un bibiilothèque de composants réutilisables",
+        "Configuration l'environnement VueJs au coeur de Symfony",
+        "Configuration de Webpack pour la compilation des assets",
+        "Création d'une API REST légère et performante",
+        "Utilisation de Pinia pour la gestion des états"
+      ],
+      "url": "https://ecoconception.simschab.cloud/#/api",
+      "github": "https://github.com/SimonChabrier/EcoConcept-Symfony5.4-VueJs3"
+    },
+    {
+      "name": "Utimate Todo's",
+      "isActive": true,
+      "description": "Réalisé dans le cadre de recherches personnelles pour gérer mes tâches de développement dans une interfce correspondant à mes besois.",
+      "highlights": [
+        "Back-end Symfony pour exposer une API REST",
+        "Front-end Javascript vanilla pour consommer l'API dans un environnement SPA léger",
+        "Drag and drop pour organiser les tâches",
+        "Gestion des positions des tâches dans les colonnes",
+        "Gestion des statuts et de l'ordre des tâches",
+        "Création à la volée de nouvelles tâches et de nouvelles colonnes",
+        "Sauvegarde automatisée de l'état de l'UI",
+        "Autorisation par token JWT"
+      ],
+      "url": "https://js.simschab.cloud/trello/",
+      "github": "https://github.com/SimonChabrier/Trello-Front-End"
+    },
+    {
+      "name": "Concept Store",
+      "isActive": true,
+      "description": "Réalisé avec Symfony et Javascript dans le cadre de mes recherches personnelles, ce projet est une application web e-commerce classique et pleinement fonctionnelle.",
+      "highlights": [
+        "Gestion complète du catalogue de produits",
+        "Gestion des catégories et des sous-catégories",
+        "Filtres de recherche par critères cumulables sans rechargement de page",
+        "Intégration de paiement sécurisé - Stripe",
+        "Gestion du panier d'achat en session et en persistance",
+        "Gestion des stocks et des commandes",
+        "Gestion du cache, tant que le contenu du catalogue produit n'a pas changé on ne refait pas de requête SQL",
+        "..."
+      ],
+      "url": "https://storeproject.simschab.cloud/",
+      "github": "https://github.com/SimonChabrier/StoreProject"
+    },
+    {
+      "name": "Utimate Doc's",
+      "isActive": true,
+      "description": "J'utilise VitePress pour documenter les projets réalisés dans le cadre professionnel et personnel.",
+      "highlights": [
+        "Sur ma documentation personnelle j'ai ajouté des fonctionnalités spécifiques pour répondre à mes besoins",
+        "3 domaines différent pointent vers la même instance de la documentation",
+        "Injection dynamique du script de suivi Matomo en fonction du domaine",
+        "Injection dynamique d'url canonical en fonction du domaine",
+        "Auto-hébergement sur mon serveur Ubuntu",
+        "Suivi Matomo auto-hébergé aussi sur mon serveur",
+        "..."
+      ],
+      "url": "https://doc.simschab.cloud/",
+      "github": "https://github.com/SimonChabrier/MesDocs"
+    }
+  ]
+}

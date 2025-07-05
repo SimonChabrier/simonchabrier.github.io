@@ -1,11 +1,17 @@
 ---
 import Section from "../Section.astro";
 
-import { education } from "@cv";
-import { certificates } from "@cv";
+interface Props {
+  education: any[];
+  certificates: any[];
+  lang?: string;
+  className?: string;
+}
+
+const { education, certificates, lang = 'fr' } = Astro.props as Props;
 ---
 
-<Section className={Astro.props.className} title="Formations">
+<Section className={Astro.props.className} title={lang === 'fr' ? 'Formations' : 'Education'}>
 	<ul class="space-y-4 py-3 print:space-y-0">
 		{
 			education.map(({ institution, startDate, endDate, area, url }) => {
@@ -44,7 +50,7 @@ import { certificates } from "@cv";
 	{
 		certificates.length > 0 && (
 			<>
-				<h4>Diplômes et Certifications</h4>
+                                <h4>{lang === 'fr' ? 'Diplômes et Certifications' : 'Degrees & Certifications'}</h4>
 				<ul class="space-y-4 py-3 print:space-y-0">
 					{certificates.map(({ name, date, issuer, url }) => {
 						const certificateYear = new Date(date).getFullYear();

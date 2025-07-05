@@ -13,6 +13,7 @@
     "paths": {
       "@cv": ["./cv.json"],
       "@mentions": ["./mentions.json"],
+      "@cv-en": ["./cv.en.json"],
       "@/*": ["src/*"]
     }
   },

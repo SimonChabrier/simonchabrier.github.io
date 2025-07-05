@@ -3,11 +3,17 @@ import Git from "@/icons/git.astro";
 import Arrow from "@/icons/Arrow.astro";
 import Section from "../Section.astro";
 
-import { projects } from "@cv";
+interface Props {
+  projects: any[];
+  lang?: string;
+  className?: string;
+}
+
+const { projects, lang = 'fr' } = Astro.props as Props;
 ---
 
-<Section className={Astro.props.className} title="Réalisations" id="projects">
-	<span class="text-skin-muted" style="font-size: 14px;">Quelques projets représentatifs de ces deux dernières années...</span>
+<Section className={Astro.props.className} title={lang === 'fr' ? 'Réalisations' : 'Projects'} id="projects">
+        <span class="text-skin-muted" style="font-size: 14px;">{lang === 'fr' ? 'Quelques projets représentatifs de ces deux dernières années...' : 'Some representative projects from the last two years...'}</span>
 	<div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
 		{
 			projects.map(({ url, description, highlights, name, isActive, github }) => {

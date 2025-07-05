@@ -1,6 +1,12 @@
 ---
-import { basics } from "@cv";
 import Dialog from "@/components/Dialog.astro";
+
+interface Props {
+  basics: any;
+  lang?: string;
+}
+
+const { basics, lang = 'fr' } = Astro.props as Props;
 const { name, profiles } = basics;
 
 const gitHub = profiles.find(({ network }) => network === "GitHub");

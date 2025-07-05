@@ -12,26 +12,26 @@ import KeyboardManager from "@/components/KeyboardManager.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
 import LanguageSwitch from "@/components/LanguageSwitch.astro";
 
-import cv from "@cv";
+import cv from "@cv-en";
 const { basics } = cv;
 const { name, label } = basics;
 ---
 
-<Layout title={`${name} - ${label}`} lang="fr" basics={cv.basics}>
+<Layout title={`${name} - ${label}`} lang="en" basics={cv.basics}>
 	<main class="relative grid max-w-7xl gap-12 p-8 max-sm:py-16 md:grid-cols-6 md:p-16 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6">
 		<div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0">
-                        <Hero basics={cv.basics} lang="fr" />
-                        <About summary={cv.basics.summary} lang="fr" />
+                        <Hero basics={cv.basics} lang="en" />
+                        <About summary={cv.basics.summary} lang="en" />
                         <ThemeSwitch />
                         <LanguageSwitch />
 		</div>
 		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
-                        <Experience work={cv.work} className="print:col-span-3" lang="fr" />
-                        <Projects projects={cv.projects} className="print:hidden" lang="fr" />
-                        <Skills skills={cv.skills} className="print:hidden" lang="fr" />
-                        <Education education={cv.education} certificates={cv.certificates} className="order-first" lang="fr" />
+                        <Experience work={cv.work} className="print:col-span-3" lang="en" />
+                        <Projects projects={cv.projects} className="print:hidden" lang="en" />
+                        <Skills skills={cv.skills} className="print:hidden" lang="en" />
+                        <Education education={cv.education} certificates={cv.certificates} className="order-first" lang="en" />
                 </div>
-                <Tail basics={cv.basics} lang="fr" />
+                <Tail basics={cv.basics} lang="en" />
 
 	</main>
 

@@ -1,18 +1,18 @@
 ---
-import { basics } from "@cv";
-
 interface Props {
-	title: string;
+  title: string;
+  lang?: string;
+  basics: any;
 }
 
-const { title } = Astro.props;
+const { title, lang = 'fr', basics } = Astro.props as Props;
 const { image, summary, theme } = basics;
 const canonical = Astro.url.href;
 const canonicalDomain = Astro.url.origin;
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<title>{title}</title>

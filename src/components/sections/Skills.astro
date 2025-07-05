@@ -11,7 +11,13 @@ import Section from "../Section.astro";
 // import GitHub from "@/icons/GitHub.astro";
 // import Tailwind from "@/icons/tailwind.astro";
 // import Next from "@/icons/next.astro";
-import { skills } from "@cv";
+interface Props {
+  skills: any[];
+  lang?: string;
+  className?: string;
+}
+
+const { skills, lang = 'fr' } = Astro.props as Props;
 // import Swift from "@/icons/swift.astro";
 // import SwiftUI from "@/icons/swiftui.astro";
 // import Kotlin from "@/icons/kotlin.astro";
@@ -40,7 +46,7 @@ import { skills } from "@cv";
 // };
 ---
 
-<Section className={Astro.props.className} title="Technologies">
+<Section className={Astro.props.className} title={lang === 'fr' ? 'Technologies' : 'Skills'}>
         <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
                 {
                         skills.map(({ name, level, keywords }) => {

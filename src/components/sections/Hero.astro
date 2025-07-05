@@ -1,5 +1,10 @@
 ---
-import { basics } from "@cv";
+interface Props {
+  basics: any;
+  lang?: string;
+}
+
+const { basics, lang = 'fr' } = Astro.props as Props;
 import Section from "@/components/Section.astro";
 import Mail from "@/icons/Mail.astro";
 import Phone from "@/icons/Phone.astro";
