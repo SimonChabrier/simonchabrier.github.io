@@ -2,6 +2,9 @@
 import Section from "../Section.astro"
 const { locale, work } = Astro.props;
 
+import type { Work } from "@cvType";
+
+
 import HTML from "@/icons/html.astro"
 import CSS from "@/icons/css.astro"
 import JavaScript from "@/icons/javascript.astro"
@@ -43,10 +46,7 @@ const nowText = locale === "fr" ? "Actuel" : "Current";
 ---
 <Section className={Astro.props.className} title={sectionTitleText} id="experience">
   <ul class="flex flex-col">
-    {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
-      // const startYear = new Date(startDate).getFullYear()
-      // const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actuel"
-
+    {(work as Work[]).map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
       return (
         <li class="relative print:py-2">
           <div class="group relative grid pb-1 print:pb-0 transition-all print:grid-cols-1 print:gap-1 sm:grid-cols-12 sm:gap-8 md:gap-6 lg:hover:!opacity-100 ">

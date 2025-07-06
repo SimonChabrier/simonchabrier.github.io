@@ -1,10 +1,14 @@
 ---
 import Dialog from "@/components/Dialog.astro";
+import type { Profiles } from "@cvType";
+
 const { locale, name, profiles, mentions } = Astro.props;
 
-const gitHub = profiles.find(({ network }) => network === "GitHub");
+const gitHub = (profiles as Profiles[]).find(({ network }) => network === "GitHub");
 const gitHubUrl = gitHub?.url;
-const showProfileText = locale === "fr" && gitHubUrl ? `Voir le profil ${gitHub.network} de ${name}` : `See ${gitHub.network} profile of ${name}`;
+const showProfileText = locale === "fr" && gitHubUrl ? 
+	`Voir le profil ${gitHub?.network} de ${name}` : 
+	`See ${gitHub?.network} profile of ${name}`;
 
 const currentYear = new Date().getFullYear();
 ---

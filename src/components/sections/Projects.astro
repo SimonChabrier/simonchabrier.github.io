@@ -3,6 +3,9 @@ import Git from "@/icons/git.astro";
 import Arrow from "@/icons/Arrow.astro";
 import Section from "../Section.astro";
 
+// Importing types for projects
+import type { Projects } from "@cvType";
+
 const { projects, locale } = Astro.props;
 const showProjectText = locale === "fr" ? "Voir le projet" : "See project";
 const showSourceTextOf = locale === "fr" ? "Voir le code source de" : "See source code of";
@@ -14,7 +17,7 @@ const projectSubTitleText = locale === "fr" ? "Quelques projets représentatifs 
 	<span class="text-skin-muted" style="font-size: 14px;">{projectSubTitleText}</span>
 	<div class="grid grid-cols-1 gap-3 md:grid-cols-2 print:flex print:flex-col">
 		{
-			projects.map(({ url, description, highlights, name, isActive, github }) => {
+			(projects as Projects[]).map(({ url, description, highlights, name, isActive, github }) => {
 				return (
 					<div 
 						role="contentinfo" 

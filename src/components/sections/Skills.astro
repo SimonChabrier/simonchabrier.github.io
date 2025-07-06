@@ -39,6 +39,10 @@ import Section from "../Section.astro";
 // 	Gitlab,
 // };
 
+// Récupération de la locale depuis les props (toujours défini (fr ou en dasn index.astro)
+// const { skills, locale } = Astro.props;
+import type { Skills } from "@cvType";
+
 const { skills, locale } = Astro.props;
 const levelText = locale === "fr" ? "Niveau" : "Level";
 ---
@@ -46,7 +50,7 @@ const levelText = locale === "fr" ? "Niveau" : "Level";
 <Section className={Astro.props.className} title="Technologies">
         <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
                 {
-                        skills.map(({ name, level, keywords }) => {
+                        (skills as Skills[]).map(({ name, level, keywords }) => {
                                 // const iconName = name === "Next.js" ? "Next" : name;
                                 // const Icon = SKILLS_ICONS[iconName];
 

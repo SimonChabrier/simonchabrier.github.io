@@ -15,7 +15,8 @@
       "@cv-en": ["./cv-en.json"],
       "@mentions-fr": ["./mentions-fr.json"],
       "@mentions-en": ["./mentions-en.json"],
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@cvType": ["src/cv"]
     }
   },
   "include": ["src/**/*", "astro.config.mjs", "tsconfig.json"]
