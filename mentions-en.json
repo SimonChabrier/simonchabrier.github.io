@@ -1,0 +1,32 @@
+{
+    "mentions": {
+        "site": {
+            "intro": "Domains",
+            "urls": {
+                "fr": "https://simonchabrier.fr",
+                "com": "https://simonchabrier.com",
+                "io": "https://simonchabrier.github.io"
+            }
+        },
+        "responsable": {
+            "def": "Responsibility",
+            "text": "I am the person responsible for the publication of this site. You can contact me by email using the contact button located under the profile photo. As the data controller, I undertake to respect data confidentiality and to inform users of their collection, even when this is limited to anonymized information."
+        },
+        "hebergement": {
+            "def": "Hosting",
+            "nom": "The site is hosted on my dedicated server at my personal address at 168 Quai Baudin, 47000 Agen. This server also hosts data collected via Matomo, which is anonymized immediately after collection. No personal data is stored on this server except for that strictly necessary for the proper functioning of the site and statistical collection via Matomo."
+        },
+        "confidentialite": {
+            "def": "Confidentiality",
+            "texte": "The technologies used on this site do not collect any identifiable personal data. The collected data (such as referrer URLs) are anonymized immediately and are only used for statistical purposes to improve the site's content and user experience. You can refuse tracking at any time. In addition, raw data collected by Matomo is deleted every 356 days."
+        },
+        "cookies": {
+            "def": "Cookies",
+            "texte": "This site does not use cookies other than those necessary for the proper functioning of the site. No cookie is set for the collection of personal data or advertising tracking."
+        },
+        "accessibilite": {
+            "def": "Accessibility",
+            "texte": "I designed this site to be accessible to as many people as possible. If you encounter any accessibility issues, feel free to contact me. I will do my best to help you."
+        }
+    }
+}
