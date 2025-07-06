@@ -22,13 +22,13 @@ const { lang = 'fr' } = Astro.props as Props
     .dark select option { color: white !important; }
   </style>
   <script>
-    const select = document.getElementById('languageSwitch');
-    const frIcon = document.querySelector('.flag-fr');
-    const enIcon = document.querySelector('.flag-en');
+    const select = document.getElementById('languageSwitch') as HTMLSelectElement;
+    const frIcon = document.querySelector('.flag-fr') as HTMLElement;
+    const enIcon = document.querySelector('.flag-en') as HTMLElement;
     const stored = localStorage.getItem('lang') || "${lang}";
     select.value = stored;
     updateIcon(stored);
-    function updateIcon(value){
+    function updateIcon(value: string){
       if(value === 'fr'){
         frIcon.style.display = 'inline-block';
         enIcon.style.display = 'none';
@@ -37,16 +37,19 @@ const { lang = 'fr' } = Astro.props as Props
         frIcon.style.display = 'none';
       }
     }
-    function updateLang(value){
+    function updateLang(value: string){
       localStorage.setItem('lang', value);
       const url = new URL(window.location.href);
       url.searchParams.set('lang', value);
       window.location.href = url.toString();
     }
     select.addEventListener('change', (e)=>{
-      const value = e.target.value;
-      updateIcon(value);
-      updateLang(value);
+      const target = e.target as HTMLSelectElement | null;
+      if (target) {
+        const value = target.value;
+        updateIcon(value);
+        updateLang(value);
+      }
     });
   </script>
 </div>
