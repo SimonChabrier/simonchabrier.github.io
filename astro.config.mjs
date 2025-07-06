@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [tailwind()],
   i18n: {
     locales: ["fr", "en"],
-    defaultLocale: "fr",
+    defaultLocale: "en",
     routing: {
       prefixDefaultLocale: true, // Préfixe les URLs avec la locale par défaut
       trailingSlash: "always", // Toutes les URLs se terminent par un slash
