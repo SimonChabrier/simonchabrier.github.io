@@ -17,7 +17,7 @@ import * as legal from "@mentions-en";
 const { basics, work, projects, skills, education, certificates } = cv;
 ---
 
-<Layout title={`${basics.name} - ${basics.label}`}>
+<Layout title={`${basics.name} - ${basics.label}`} locale="en" image={basics.image} theme={basics.theme} summary={basics.summary}>
 	<main class="relative grid max-w-7xl gap-12 p-8 max-sm:py-16 md:grid-cols-6 md:p-16 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6">
 		<div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0">
 			<Hero locale="en" basics={basics}/>
