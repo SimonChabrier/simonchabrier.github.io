@@ -42,6 +42,7 @@ const SKILLS_ICONS: Record<string, any> = {
 const sectionTitleText = locale === "fr" ? "Expérience professionnelle" : "Professional Experience";
 const achievementsText = locale === "fr" ? "Réalisations" : "Achievements";
 const nowText = locale === "fr" ? "Actuel" : "Current";
+const visitSiteText = locale === "fr" ? "Visiter" : "Visit";
 
 ---
 <Section className={Astro.props.className} title={sectionTitleText} id="experience">
@@ -62,9 +63,9 @@ const nowText = locale === "fr" ? "Actuel" : "Current";
                     <a 
                       class="text-skin-link" 
                       rel="noopener noreferrer"
-                      aria-label={`Ver ${name}`}
+                      aria-label={`${visitSiteText} ${name}`}
                       href={url} 
-                      title={`Ver ${name}`} 
+                      title={`${visitSiteText} ${name}`} 
                       target="_blank">{name}
                     </a>
                   ) : (

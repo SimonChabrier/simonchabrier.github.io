@@ -1,8 +1,9 @@
 ---
 const { locale, mentions } = Astro.props;
+console.log("Locale:", locale);
 const { site, responsable, hebergement, confidentialite, cookies, accessibilite } = mentions;
 
-const legalNoticeText = locale === "fr" ? "Mentions & Confidentialalité" : "Legal Notice & Privacy Policy";
+const legalNoticeText = locale === "fr" ? "Mentions & Confidentialité" : "Legal Notice & Privacy Policy";
 const visitSiteText = locale === "fr" ? "Visiter le site" : "Visit the site";
 
 const currentYear = new Date().getFullYear();
