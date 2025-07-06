@@ -1,10 +1,6 @@
 ---
 import { basics } from "@cv";
 
-interface Props {
-	title: string;
-}
-
 const { title } = Astro.props;
 const { image, summary, theme } = basics;
 const canonical = Astro.url.href;
