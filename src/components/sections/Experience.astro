@@ -5,10 +5,9 @@ import { work } from "@cv"
 
 interface Props {
   lang?: string;
-  className?: string;
 }
 
-const { lang = 'fr', className } = Astro.props as Props
+const { lang = 'fr' } = Astro.props as Props
 
 import HTML from "@/icons/html.astro"
 import CSS from "@/icons/css.astro"
@@ -45,7 +44,7 @@ const SKILLS_ICONS: Record<string, any> = {
 }
 
 ---
-<Section className={className} title={t(lang, 'experienceTitle')} id="experience">
+<Section className={Astro.props.className} title={t(lang, 'experienceTitle')} id="experience">
   <ul class="flex flex-col">
     {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
       // const startYear = new Date(startDate).getFullYear()

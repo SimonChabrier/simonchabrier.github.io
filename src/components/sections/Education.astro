@@ -9,10 +9,10 @@ interface Props {
   lang?: string;
 }
 
-const { lang = 'fr', className } = Astro.props as Props & { className?: string };
+const { lang = 'fr' } = Astro.props as Props;
 ---
 
-<Section className={className} title={t(lang, 'educationTitle')}>
+<Section className={Astro.props.className} title={t(lang, 'educationTitle')}>
 	<ul class="space-y-4 py-3 print:space-y-0">
 		{
 			education.map(({ institution, startDate, endDate, area, url }) => {

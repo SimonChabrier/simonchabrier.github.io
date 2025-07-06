@@ -41,10 +41,10 @@ import { skills } from "@cv";
 // };
 ---
 
-interface Props { lang?: string; className?: string }
-const { lang = 'fr', className } = Astro.props as Props;
+interface Props { lang?: string }
+const { lang = 'fr' } = Astro.props as Props;
 
-<Section className={className} title={t(lang, 'skillsTitle')}>
+<Section className={Astro.props.className} title={t(lang, 'skillsTitle')}>
         <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
                 {
                         skills.map(({ name, level, keywords }) => {
