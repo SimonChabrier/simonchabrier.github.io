@@ -3,6 +3,7 @@ const { locale, mentions } = Astro.props;
 const { site, responsable, hebergement, confidentialite, cookies, accessibilite } = mentions;
 
 const legalNoticeText = locale === "fr" ? "Mentions & Confidentialalité" : "Legal Notice & Privacy Policy";
+const visitSiteText = locale === "fr" ? "Visiter le site" : "Visit the site";
 
 const currentYear = new Date().getFullYear();
 ---
@@ -32,7 +33,7 @@ const currentYear = new Date().getFullYear();
                 {typeof site.urls === 'object' && site.urls !== null ? (
                   Object.entries(site.urls).map(([_, url]) => (
                       <li>
-                        <a href={url} class="group flex items-center space-x-1 text-xs" target="_blank" rel="noopener noreferrer" aria-label={`Visiter le site ${url}`} title={`Visiter le site ${url}`}>
+                        <a href={String(url)} class="group flex items-center space-x-1 text-xs" target="_blank" rel="noopener noreferrer" aria-label={`${visitSiteText} ${url}`} title={`${visitSiteText} ${url}`}>
                           <span class="px:3 hover:text-skin-contact flex gap-1 underline decoration-dotted underline-offset-4 transition group-hover:underline-offset-4">
                             {url}
                           </span>
