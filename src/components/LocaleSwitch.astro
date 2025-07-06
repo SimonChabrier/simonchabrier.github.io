@@ -40,7 +40,7 @@ const isFr = locale === "fr";
 </style>
 
 <script>
-  const select = document.getElementById("localeSwitch");
+  const select = document.getElementById("localeSwitch") as HTMLSelectElement | null;
   if (select) {
     select.addEventListener("change", function () {
       const targetLocale = select.value;
@@ -51,3 +51,5 @@ const isFr = locale === "fr";
     });
   }
 </script>
+
+
