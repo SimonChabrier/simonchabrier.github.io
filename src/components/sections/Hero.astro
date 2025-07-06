@@ -1,5 +1,7 @@
 ---
-import { basics } from "@cv-fr";
+import * as cvFr from "@cv-fr";
+import * as cvEn from "@cv-en";
+
 import Section from "@/components/Section.astro";
 import Mail from "@/icons/Mail.astro";
 import Phone from "@/icons/Phone.astro";
@@ -7,6 +9,11 @@ import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
 import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
+
+// Récupération de la locale depuis les props (toujours défini (fr ou en dasn index.astro)
+const { locale } = Astro.props;
+// On choisit le bon "basics" selon la locale
+const basics = locale === "fr" ? cvFr.basics : cvEn.basics;
 
 const { name, label, image, imagesmall, location, profiles, phone, email } = basics;
 const { city, region } = location;

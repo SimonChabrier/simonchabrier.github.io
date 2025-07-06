@@ -12,7 +12,10 @@ import Tail from "@/components/sections/Tail.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
 
 import { basics } from "@cv-fr";
+
+console.log("basics", basics);
 const { name, label } = basics;
+
 ---
 
 <Layout title={`${name} - ${label}`}>
