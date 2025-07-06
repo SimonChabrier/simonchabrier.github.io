@@ -10,5 +10,11 @@ export default defineConfig({
   i18n: {
     locales: ["fr", "en"],
     defaultLocale: "fr",
+    routing: {
+      prefixDefaultLocale: true, // Préfixe les URLs avec la locale par défaut
+      trailingSlash: "always", // Toutes les URLs se terminent par un slash
+      localePath: "/:locale", // Chemin pour les locales
+      localePrefix: true, // Préfixe les URLs avec la locale
+    },
   },
 });

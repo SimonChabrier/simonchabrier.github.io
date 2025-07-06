@@ -11,7 +11,7 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@cv": ["./cv.json"],
+      "@cv": ["./cv-fr.json"],
       "@mentions": ["./mentions.json"],
       "@/*": ["src/*"]
     }
