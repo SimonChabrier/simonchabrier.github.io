@@ -2,6 +2,8 @@
 import { mentions } from "@mentions";
 import { useTranslations, type Lang } from "@/lib/i18n";
 
+const { site, responsable, hebergement, confidentialite, cookies, accessibilite } = mentions;
+
 const currentYear = new Date().getFullYear();
 interface Props { lang?: Lang }
 const { lang = 'fr' } = Astro.props as Props;

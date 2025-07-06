@@ -4,6 +4,7 @@ import { useTranslations, type Lang } from "@/lib/i18n";
 
 interface Props {
   lang?: Lang;
+  className?: string;
 }
 
 const { lang = 'fr' } = Astro.props as Props;

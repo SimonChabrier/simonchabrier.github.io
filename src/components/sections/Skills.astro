@@ -39,11 +39,10 @@ import { skills } from "@cv";
 // 	Figma,
 // 	Gitlab,
 // };
+interface Props { lang?: Lang; className?: string }
+const { lang = 'fr' } = Astro.props as Props
+const t = useTranslations(lang)
 ---
-
-interface Props { lang?: Lang }
-const { lang = 'fr' } = Astro.props as Props;
-const t = useTranslations(lang);
 
 <Section className={Astro.props.className} title={t('skillsTitle')}>
         <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">

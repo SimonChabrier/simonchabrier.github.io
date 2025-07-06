@@ -6,7 +6,7 @@ import { useTranslations, type Lang } from "@/lib/i18n";
 
 import { projects } from "@cv";
 
-interface Props { lang?: Lang }
+interface Props { lang?: Lang; className?: string }
 const { lang = 'fr' } = Astro.props as Props;
 const t = useTranslations(lang);
 ---
