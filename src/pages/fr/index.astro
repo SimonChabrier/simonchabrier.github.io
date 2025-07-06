@@ -4,6 +4,7 @@ import Layout from "@/layouts/Layout.astro";
 import Hero from "@/components/sections/Hero.astro";
 import About from "@/components/sections/About.astro";
 import ThemeSwitch from "@/components/ThemeSwitch.astro";
+import LocaleSwitch from "@/components/LocaleSwitch.astro";
 import Experience from "@/components/sections/Experience.astro";
 import Projects from "@/components/sections/Projects.astro";
 import Skills from "@/components/sections/Skills.astro";
@@ -22,6 +23,7 @@ const { basics, work, projects, skills, education, certificates } = cv;
 			<Hero locale="fr" basics={basics}/>
 			<About locale="fr" summary={basics.summary} title="About"/>
 			<ThemeSwitch locale="fr" />
+			<LocaleSwitch locale="fr" />
 		</div>
 		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
 			<Experience locale="fr" work={work} className="print:col-span-3" />

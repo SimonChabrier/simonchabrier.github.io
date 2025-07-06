@@ -1,0 +1,53 @@
+---
+import FlagFr from "@/icons/FlagFr.astro";
+import FlagEn from "@/icons/FlagEn.astro";
+
+const { locale } = Astro.props;
+const isFr = locale === "fr";
+---
+
+<div class="no-print inline-flex items-center">
+  <div class="group/lang flex items-center gap-2">
+    <label
+      for="localeSwitch"
+      aria-label={isFr ? "Changer la langue" : "Change language"}
+      aria-controls="localeSwitch"
+      class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out"
+    >
+      {isFr ? <FlagFr /> : <FlagEn />}
+      <span class="sr-only">{isFr ? "Changer la langue" : "Change language"}</span>
+    </label>
+    <select
+      id="localeSwitch"
+      name="localeSwitch"
+      class="block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset ring-skin-muted focus:ring-2 focus:ring-skin-hue dark:text-white sm:text-sm sm:leading-6"
+      aria-label={isFr ? "Changer la langue" : "Change language"}
+    >
+      <option value="fr" selected={isFr}>
+        Français
+      </option>
+      <option value="en" selected={!isFr}>
+        English
+      </option>
+    </select>
+  </div>
+</div>
+
+<style>
+  .dark select option {
+    color: white !important;
+  }
+</style>
+
+<script>
+  const select = document.getElementById("localeSwitch");
+  if (select) {
+    select.addEventListener("change", function () {
+      const targetLocale = select.value;
+      localStorage.setItem("locale", targetLocale);
+      const url = new URL(window.location.href);
+      url.pathname = url.pathname.replace(/\/(fr|en)\/?$/, `/${targetLocale}/`);
+      window.location.href = url.toString();
+    });
+  }
+</script>
