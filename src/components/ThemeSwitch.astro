@@ -1,26 +1,30 @@
 ---
 import Theme from "@/icons/themeSwitch.astro";
+import { t } from "@/lib/i18n";
+
+interface Props { lang?: string }
+const { lang = 'fr' } = Astro.props as Props;
 ---
 
 <div class="no-print flex items-center">
   <div class="group/theme flex items-center gap-2">
     <label
       for="themeSwitch"
-      aria-label="Changer le thème"
+      aria-label={t(lang, 'changeTheme')}
       aria-controls="themeSwitch"
       class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45"
     >
       <Theme />
-      <span class="sr-only">Changer le thème</span>
+      <span class="sr-only">{t(lang, 'changeTheme')}</span>
     </label>
     <select
       id="themeSwitch"
       name="themeSwitch"
       class="block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset ring-skin-muted focus:ring-2 focus:ring-skin-hue dark:text-white sm:text-sm sm:leading-6"
     >
-      <option value="system" class="dark:text-white">Système</option>
-      <option value="dark" class="dark:text-white">Sombre</option>
-      <option value="light" class="dark:text-white">Clair</option>
+      <option value="system" class="dark:text-white">{t(lang, 'system')}</option>
+      <option value="dark" class="dark:text-white">{t(lang, 'dark')}</option>
+      <option value="light" class="dark:text-white">{t(lang, 'light')}</option>
     </select>
   </div>
 

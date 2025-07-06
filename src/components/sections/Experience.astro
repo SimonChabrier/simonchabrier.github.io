@@ -1,5 +1,6 @@
 ---
 import Section from "../Section.astro"
+import { t } from "@/lib/i18n"
 import { work } from "@cv"
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
   className?: string;
 }
 
-const { lang = 'fr' } = Astro.props as Props
+const { lang = 'fr', className } = Astro.props as Props
 
 import HTML from "@/icons/html.astro"
 import CSS from "@/icons/css.astro"
@@ -44,7 +45,7 @@ const SKILLS_ICONS: Record<string, any> = {
 }
 
 ---
-<Section className={Astro.props.className} title={lang === 'fr' ? 'Expérience' : 'Experience'} id="experience">
+<Section className={className} title={t(lang, 'experienceTitle')} id="experience">
   <ul class="flex flex-col">
     {work.map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
       // const startYear = new Date(startDate).getFullYear()
@@ -54,7 +55,7 @@ const SKILLS_ICONS: Record<string, any> = {
         <li class="relative print:py-2">
           <div class="group relative grid pb-1 print:pb-0 transition-all print:grid-cols-1 print:gap-1 sm:grid-cols-12 sm:gap-8 md:gap-6 lg:hover:!opacity-100 ">
             <header class="relative mt-1 text-xs font-semibold sm:col-span-2">
-              <time datetime={startDate} data-title={startDate}>{startDate}</time> - <time datetime={endDate} data-title={endDate}>{endDate ?? (lang === 'fr' ? 'Actuel' : 'Current')}</time>
+              <time datetime={startDate} data-title={startDate}>{startDate}</time> - <time datetime={endDate} data-title={endDate}>{endDate ?? t(lang, 'current')}</time>
             </header>
             <div class="relative flex flex-col pb-6 print:pb-0 before:-ml-6 sm:col-span-10 before:w-px print:before:hidden before:absolute before:bg-skin-muted before:h-full before:mt-2">
               {/* petits ronds de l'historique */}
@@ -91,7 +92,7 @@ const SKILLS_ICONS: Record<string, any> = {
               <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm" x-data=`{ expanded: false, lang: '${lang}' }`>
                 {summary && (
                   <div class="flex flex-col gap-1">
-                    <h4>{lang === 'fr' ? 'Missions:' : 'Missions:'}</h4>
+                    <h4>{t(lang, 'missions')}</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {Array.isArray(summary) ? (
                         summary.map(item => (
@@ -108,7 +109,7 @@ const SKILLS_ICONS: Record<string, any> = {
                 <div class="md:after:from-skin-hue dark:md:after:to-skin-hue/0  flex relative flex-col max-sm:!h-auto print:!h-auto gap-4 print:gap-2 md:after:bg-gradient-to-t md:after:absolute md:after:bottom-0 md:after:w-full print:after:hidden md:after:h-12 md:after:content-[''] " :class="expanded ? 'after:hidden' : ''" x-show="expanded">
                 {responsibilities && (
                   <div class="flex flex-col gap-1">
-                    <h4>{lang === 'fr' ? 'Responsabilités:' : 'Responsibilities:'}</h4>
+                    <h4>{t(lang, 'responsibilities')}</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {responsibilities.map(responsibility => (
                         <li>{responsibility}</li>
@@ -119,7 +120,7 @@ const SKILLS_ICONS: Record<string, any> = {
 
                 {achievements && (
                   <div class="flex flex-col gap-1">
-                    <h4>{lang === 'fr' ? 'Réalisations:' : 'Achievements:'}</h4>
+                    <h4>{t(lang, 'achievements')}</h4>
                     <ul class="text-skin-muted [&>li]:ml-4 flex list-disc flex-col gap-2">
                       {achievements.map(achievement => (
                         <li>{achievement}</li>
@@ -130,7 +131,7 @@ const SKILLS_ICONS: Record<string, any> = {
                 </div>
                 
                 <button @click="expanded = ! expanded" class="print:hidden group/more w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-link/100 transition-all hover:text-skin-base flex">
-                  <span x-text="expanded ? (lang === 'fr' ? 'Voir moins' : 'Show less') : (lang === 'fr' ? 'Voir plus' : 'Show more')">{lang === 'fr' ? 'Voir plus' : 'Show more'}</span>
+                  <span x-text="expanded ? (lang === 'fr' ? 'Voir moins' : 'Show less') : (lang === 'fr' ? 'Voir plus' : 'Show more')">{t(lang, 'seeMore')}</span>
                   <svg class="w-4 h-4 group-hover/more:translate-y-0.5 duration-200 ease-out" :class="{ 'rotate-180': expanded }" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
 
