@@ -1,4 +1,19 @@
+# Sur simonchabrier.fr
 User-agent: *
 Allow: /
 Sitemap: https://simonchabrier.fr/sitemap.xml
 
+# Sur simonchabrier.com
+User-agent: *
+Allow: /
+Sitemap: https://simonchabrier.com/sitemap.xml
+
+# Sur simschab.cloud
+User-agent: *
+Allow: /
+Sitemap: https://simschab.cloud/sitemap.xml
+
+# Sur simonchabrier.github.io
+User-agent: *
+Allow: /
+Sitemap: https://simonchabrier.github.io/sitemap.xml
