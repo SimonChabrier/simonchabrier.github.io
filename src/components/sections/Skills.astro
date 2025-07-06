@@ -1,6 +1,6 @@
 ---
 import Section from "../Section.astro";
-import { t } from "@/lib/i18n";
+import { useTranslations, type Lang } from "@/lib/i18n";
 // import HTML from "@/icons/html.astro";
 // import CSS from "@/icons/css.astro";
 // import JavaScript from "@/icons/javascript.astro";
@@ -41,10 +41,11 @@ import { skills } from "@cv";
 // };
 ---
 
-interface Props { lang?: string }
+interface Props { lang?: Lang }
 const { lang = 'fr' } = Astro.props as Props;
+const t = useTranslations(lang);
 
-<Section className={Astro.props.className} title={t(lang, 'skillsTitle')}>
+<Section className={Astro.props.className} title={t('skillsTitle')}>
         <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
                 {
                         skills.map(({ name, level, keywords }) => {
@@ -79,7 +80,7 @@ const { lang = 'fr' } = Astro.props as Props;
                                                         x-cloak
                                                         class="tooltip absolute left-1/2 top-full z-10 mt-1 w-max -translate-x-1/2 rounded bg-white dark:bg-gray-800 p-2 text-xs shadow"
                                                 >
-                                                        <div class="font-semibold">{t(lang, 'level')} : {level}</div>
+                                                        <div class="font-semibold">{t('level')} : {level}</div>
                                                         <ul class="mt-1 flex flex-wrap gap-1">
                                                                 {keywords?.map(keyword => (
                                                                         <li class="rounded bg-skin-button-muted px-1 dark:bg-gray-700">{keyword}</li>

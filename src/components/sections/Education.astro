@@ -1,18 +1,19 @@
 ---
 import Section from "../Section.astro";
-import { t } from "@/lib/i18n";
+import { useTranslations, type Lang } from "@/lib/i18n";
 
 import { education } from "@cv";
 import { certificates } from "@cv";
 
 interface Props {
-  lang?: string;
+  lang?: Lang;
 }
 
 const { lang = 'fr' } = Astro.props as Props;
+const t = useTranslations(lang);
 ---
 
-<Section className={Astro.props.className} title={t(lang, 'educationTitle')}>
+<Section className={Astro.props.className} title={t('educationTitle')}>
 	<ul class="space-y-4 py-3 print:space-y-0">
 		{
 			education.map(({ institution, startDate, endDate, area, url }) => {
@@ -51,7 +52,7 @@ const { lang = 'fr' } = Astro.props as Props;
 	{
 		certificates.length > 0 && (
 			<>
-                                <h4>{t(lang, 'certificatesTitle')}</h4>
+                                <h4>{t('certificatesTitle')}</h4>
 				<ul class="space-y-4 py-3 print:space-y-0">
 					{certificates.map(({ name, date, issuer, url }) => {
 						const certificateYear = new Date(date).getFullYear();

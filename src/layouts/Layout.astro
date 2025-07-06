@@ -1,9 +1,10 @@
 ---
 import { basics } from "@cv";
+import type { Lang } from "@/lib/i18n";
 
 interface Props {
         title: string;
-        lang?: string;
+        lang?: Lang;
 }
 
 const { title, lang = 'fr' } = Astro.props as Props;

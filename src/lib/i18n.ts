@@ -1,3 +1,12 @@
+export const languages = {
+  fr: 'Français',
+  en: 'English',
+} as const
+
+export type Lang = keyof typeof languages
+
+export const defaultLang: Lang = 'fr'
+
 export const translations = {
   fr: {
     aboutTitle: "A propos",
@@ -55,6 +64,13 @@ export const translations = {
   }
 } as const;
 
-export function t(lang: keyof typeof translations, key: keyof typeof translations.fr): string {
-  return translations[lang][key] ?? translations.fr[key];
+export function getLangFromUrl(url: URL): Lang {
+  const lang = url.searchParams.get('lang');
+  return (lang === 'en' || lang === 'fr' ? lang : defaultLang) as Lang;
+}
+
+export function useTranslations(lang: Lang) {
+  return (key: keyof typeof translations.fr): string => {
+    return translations[lang][key] ?? translations[defaultLang][key];
+  };
 }
