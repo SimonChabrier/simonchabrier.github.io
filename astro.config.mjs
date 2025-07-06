@@ -6,7 +6,9 @@ export default defineConfig({
   site: "https://simonchabrier.github.io", // URL principale du site
   base: "/", // Racine du repository
   trailingSlash: "always", // Toutes les URLs se terminent par un slash
-  integrations: [
-    tailwind(),
-  ],
+  integrations: [tailwind()],
+  i18n: {
+    locales: ["fr", "en"],
+    defaultLocale: "fr",
+  },
 });

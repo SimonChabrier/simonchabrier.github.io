@@ -50,23 +50,24 @@ const canonicalDomain = Astro.url.origin;
 		/>
 
 		<script>
-			fetch("/tracking.json")
-				.then(response => response.json())
-                                .then(trackingData => {
-                                        const url = window.location.href;
-                                        const domain = new URL(url).origin + "/";
-
-                                        // Injection du script Matomo
-                                        const trackingScript = trackingData[domain];
-					if (trackingScript) {
-						const scriptElement = document.createElement("script");
-						scriptElement.type = "text/javascript";
-						scriptElement.async = true;
-						scriptElement.innerHTML = trackingScript;
-						document.head.appendChild(scriptElement);
-					}					
-				})
-				.catch(error => console.error("Erreur chargement tracking.json :", error));
+			try {
+				// Chargement du script de suivi Matomo
+				const response = await fetch("/tracking.json");
+				const trackingData = await response.json();
+				const url = window.location.href;
+				const domain = new URL(url).origin + "/";
+				// Injection du script Matomo
+				const trackingScript = trackingData[domain];
+				if (trackingScript) {
+					const scriptElement = document.createElement("script");
+					scriptElement.type = "text/javascript";
+					scriptElement.async = true;
+					scriptElement.innerHTML = trackingScript;
+					document.head.appendChild(scriptElement);
+				}
+			} catch (error) {
+				console.error("Erreur chargement tracking.json :", error);
+			}
 		</script>
 	</head>
         <body data-theme={theme} class="bg-white text-skin-base dark:bg-gray-900">
