@@ -6,8 +6,8 @@
     --color-text-inverted: 255, 255, 255;
     --color-fill: 245, 245, 245; /* lignes et contours */
     --muted: 220, 220, 220;
-    --color: 42, 111, 130; 
-    --color-link: 52, 121, 140; 
+    --color: 42, 111, 130;
+    --color-link: 52, 121, 140;
     --color-button-accent: 42, 111, 130; /* blue */
     --color-button-accent-hover: 55, 55, 55;
     --color-button-muted: 244, 239, 238;
@@ -18,12 +18,12 @@
     --color-text-base: 255, 255, 255;
     --color-text-muted: 200, 200, 200;
     --color-text-inverted: 255, 255, 255;
-    --color-fill: 100, 100, 100;  /* lignes et contours */
+    --color-fill: 100, 100, 100; /* lignes et contours */
     --muted: 50, 50, 50;
-    --color-link: 255, 115, 48;  /* orange */
+    --color-link: 255, 115, 48; /* orange */
     --color: 19, 48, 69; /* bg blue */
     --color-button-accent: 200, 200, 200; /* bg white */
-    --color-button-accent-hover: 48, 115, 48; 
+    --color-button-accent-hover: 48, 115, 48;
     --color-button-muted: 26, 26, 26; /* bg black */
     --color-text-contact-icons: 255, 115, 48; /* orange */
     --color-text-contact-icons-inverted: 255, 255, 255; /* ligne des svg */
