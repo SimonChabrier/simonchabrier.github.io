@@ -11,24 +11,25 @@ import Education from "@/components/sections/Education.astro";
 import Tail from "@/components/sections/Tail.astro";
 import KeyboardManager from "@/components/KeyboardManager.astro";
 
-import { basics } from "@cv-fr";
-const { name, label, summary } = basics;
+import * as cv from "@cv-fr"; // parce que pas d'export par défaut sur le fichier je fait un import global
+import * as legal from "@mentions-en";
+const { basics, work, projects, skills, education, certificates } = cv;
 ---
 
-<Layout title={`${name} - ${label}`}>
+<Layout title={`${basics.name} - ${basics.label}`}>
 	<main class="relative grid max-w-7xl gap-12 p-8 max-sm:py-16 md:grid-cols-6 md:p-16 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6">
 		<div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0">
-			<Hero locale="fr"/>
-			<About summary={summary} title="A Propos"/>
-			<ThemeSwitch locale="fr"/>
+			<Hero locale="fr" basics={basics}/>
+			<About locale="fr" summary={basics.summary} title="About"/>
+			<ThemeSwitch locale="fr" />
 		</div>
 		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
-			<Experience locale="fr" className="print:col-span-3" />
-			<Projects locale="fr" className="print:hidden" />
-			<Skills locale="fr" className="print:hidden" />
-			<Education locale="fr" className="order-first" />
+			<Experience locale="fr" work={work} className="print:col-span-3" />
+			<Projects locale="fr" projects={projects} className="print:hidden" />
+			<Skills locale="fr" skills={skills} className="print:hidden" />
+			<Education locale="fr" education={education} certificates={certificates} className="order-first" />
 		</div>
-		<Tail />
+		<Tail locale="fr" name={basics.name} profiles={basics.profiles} mentions={legal.mentions} />
 	</main>
 	<KeyboardManager />
 </Layout>

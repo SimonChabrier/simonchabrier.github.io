@@ -1,6 +1,6 @@
 ---
-import * as cvFr from "@cv-fr";
-import * as cvEn from "@cv-en";
+// import * as cvFr from "@cv-fr";
+// import * as cvEn from "@cv-en";
 
 import Section from "@/components/Section.astro";
 import Mail from "@/icons/Mail.astro";
@@ -11,19 +11,20 @@ import WorldMap from "@/icons/WorldMap.astro";
 import type { SocialIcon } from "@/types";
 
 // Récupération de la locale depuis les props (toujours défini (fr ou en dasn index.astro)
-const { locale } = Astro.props;
-// On choisit le bon "basics" selon la locale
-const basics = locale === "fr" ? cvFr.basics : cvEn.basics;
-
+const { basics, locale } = Astro.props;
 const { name, label, image, imagesmall, location, profiles, phone, email } = basics;
 const { city, region } = location;
+
+const showProfileText = locale === "fr" ? `Voir le profil de ${name} sur` : `See profile of ${name} on`;
+const phoneTitleText = locale === "fr" ? `Contacter ${name} au ${phone}` : `Contact ${name} at ${phone}`;
+const mailTitleText = locale === "fr" ? `Envoyer un e-mail à ${name}` : `Send an email to ${name}`;
 
 const SOCIAL_ICONS: SocialIcon = {
 	GitHub,
 	LinkedIn,
 };
 
-const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedInfo = profiles.find((profile: { network: string; url: string }) => profile.network === "LinkedIn");
 const linkedUrl = linkedInfo?.url;
 
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
@@ -58,7 +59,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 									<path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
 								</svg>
 								<span x-show="!copyNotification">
-									<Mail />
+									<Mail title={mailTitleText}/>
 								</span>
 							</button>
 						</div>
@@ -66,17 +67,18 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 				}
 				{
 					phone && (
-						<a href={`tel:${phone}`} title={`Contacter ${name} au ${phone}`} target="_blank" rel="noopener noreferrer" aria-label={`Contacter ${name} au ${phone}`}>
-							<Phone />
+						<a href={`tel:${phone}`} title={phoneTitleText} target="_blank" rel="noopener noreferrer" aria-label={phoneTitleText}>
+							<Phone title={phoneTitleText} />
 						</a>
 					)
 				}
 				{
-					profiles.map(({ network, url }) => {
+					profiles.map((profile: { network: keyof typeof SOCIAL_ICONS; url: string }) => {
+						const { network, url } = profile;
 						const Icon = SOCIAL_ICONS[network];
 
 						return (
-							<a href={url} title={`Voir le profil de ${name}sur ${network}`} target="_blank" rel="noopener noreferrer" aria-label={`Voir le profil de ${name} sur ${network}`}>
+							<a href={url} title={`${showProfileText} ${network}`} target="_blank" rel="noopener noreferrer" aria-label={`${showProfileText} ${network}`}>
 								<Icon />
 							</a>
 						);

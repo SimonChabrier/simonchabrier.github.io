@@ -1,10 +1,10 @@
 ---
-import { basics } from "@cv-fr";
 import Dialog from "@/components/Dialog.astro";
-const { name, profiles } = basics;
+const { locale, name, profiles, mentions } = Astro.props;
 
 const gitHub = profiles.find(({ network }) => network === "GitHub");
 const gitHubUrl = gitHub?.url;
+const showProfileText = locale === "fr" && gitHubUrl ? `Voir le profil ${gitHub.network} de ${name}` : `See ${gitHub.network} profile of ${name}`;
 
 const currentYear = new Date().getFullYear();
 ---
@@ -12,13 +12,13 @@ const currentYear = new Date().getFullYear();
 <div class="flex w-full max-w-7xl justify-center gap-3 md:col-span-6 print:hidden">
 	<a href={gitHubUrl}
 	   rel="noopener noreferrer"
-	   aria-label={`Voir le profil ${gitHub} de ${name}`}
-	   title={`Voir le profil ${gitHub} de ${name}`}
+	   aria-label={showProfileText}
+	   title={showProfileText}
 	   target="_blank" 
            class="group flex items-center space-x-1 text-xs">
                 <span class="hover:text-skin-contact flex gap-1 underline decoration-dotted underline-offset-4 transition group-hover:underline-offset-4 text-skin-base">
                         2021 - {currentYear} © SC
                 </span>
 	</a>
-	<Dialog />
+	<Dialog mentions={mentions} />
 </div>

@@ -1,6 +1,7 @@
 ---
 import Section from "../Section.astro";
-const { summary, title } = Astro.props;
+const { summary, locale } = Astro.props;
+const title = locale === "fr" ? "À propos" : "About";
 ---
 
 <Section title={title}>

@@ -1,11 +1,14 @@
 ---
 import Section from "../Section.astro";
 
-import { education } from "@cv-fr";
-import { certificates } from "@cv-fr";
+const { education, certificates, locale } = Astro.props;
+
+const showInstitutionText = locale === "fr" ? "Voir le site de l'établissement" : "See institution website";
+const showCertificateText = locale === "fr" ? "Voir le certificat" : "See certificate";
+const educationText = locale === "fr" ? "Formations" : "Education";
 ---
 
-<Section className={Astro.props.className} title="Formations">
+<Section className={Astro.props.className} title={educationText} id="education">
 	<ul class="space-y-4 py-3 print:space-y-0">
 		{
 			education.map(({ institution, startDate, endDate, area, url }) => {
@@ -25,8 +28,8 @@ import { certificates } from "@cv-fr";
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						aria-label={`Voir le site de l'établissement ${institution}`}
-						title={`Voir le site de l'établissement ${institution}`}
+						aria-label={`${showInstitutionText} ${institution}`}
+						title={`${showInstitutionText} ${institution}`}
 						href={url}
 						class="hover:text-skin-link group flex items-center gap-[6px] decoration-dotted underline-offset-[5px] hover:underline"
 					>
@@ -62,8 +65,8 @@ import { certificates } from "@cv-fr";
 										<a 
 											target="_blank"
 											rel="noopener noreferrer" 
-											title={`Voir le certificat ${name}`}
-											aria-label={`Voir le certificat ${name}`}
+											title={`${showCertificateText} ${name}`}
+											aria-label={`${showCertificateText} ${name}`}
 											href={url} 
 											class="hover:text-skin-link group flex items-center gap-[6px] text-skin-base decoration-dotted underline-offset-[5px] hover:underline" 
 										>

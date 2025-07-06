@@ -11,7 +11,7 @@ import Section from "../Section.astro";
 // import GitHub from "@/icons/GitHub.astro";
 // import Tailwind from "@/icons/tailwind.astro";
 // import Next from "@/icons/next.astro";
-import { skills } from "@cv-fr";
+// import { skills } from "@cv-fr";
 // import Swift from "@/icons/swift.astro";
 // import SwiftUI from "@/icons/swiftui.astro";
 // import Kotlin from "@/icons/kotlin.astro";
@@ -38,6 +38,9 @@ import { skills } from "@cv-fr";
 // 	Figma,
 // 	Gitlab,
 // };
+
+const { skills, locale } = Astro.props;
+const levelText = locale === "fr" ? "Niveau" : "Level";
 ---
 
 <Section className={Astro.props.className} title="Technologies">
@@ -75,7 +78,7 @@ import { skills } from "@cv-fr";
                                                         x-cloak
                                                         class="tooltip absolute left-1/2 top-full z-10 mt-1 w-max -translate-x-1/2 rounded bg-white dark:bg-gray-800 p-2 text-xs shadow"
                                                 >
-                                                        <div class="font-semibold">Niveau : {level}</div>
+                                                        <div class="font-semibold">{levelText} : {level}</div>
                                                         <ul class="mt-1 flex flex-wrap gap-1">
                                                                 {keywords?.map(keyword => (
                                                                         <li class="rounded bg-skin-button-muted px-1 dark:bg-gray-700">{keyword}</li>
