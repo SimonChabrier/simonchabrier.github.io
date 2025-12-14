@@ -1,0 +1,36 @@
+{
+  "about": {
+    "title": "À propos"
+  },
+  "hero": {
+    "showProfile": "Voir le profil de {{name}} sur",
+    "phoneTitle": "Contacter {{name}} au {{phone}}",
+    "mailTitle": "Envoyer un e-mail à {{name}}"
+  },
+  "experience": {
+    "title": "Expérience professionnelle",
+    "achievements": "Réalisations",
+    "now": "Actuel",
+    "visitSite": "Visiter",
+    "seeMore": "Voir plus",
+    "seeLess": "Voir moins"
+  },
+  "projects": {
+    "title": "Exemples de réalisations",
+    "subtitle": "Quelques projets représentatifs de ces deux dernières années...",
+    "showProject": "Voir le projet",
+    "showSource": "Voir le code source de"
+  },
+  "skills": {
+    "title": "Technologies",
+    "level": "Niveau"
+  },
+  "education": {
+    "title": "Formations",
+    "showInstitution": "Voir le site de l'établissement",
+    "showCertificate": "Voir le certificat"
+  },
+  "tail": {
+    "showProfile": "Voir le profil {{network}} de {{name}}"
+  }
+}

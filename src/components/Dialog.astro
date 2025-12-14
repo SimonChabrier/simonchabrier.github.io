@@ -1,10 +1,21 @@
 ---
+/**
+ * Dialog Component
+ *
+ * Modal dialog pour les mentions légales et politique de confidentialité.
+ * Utilise le système i18n custom pour toutes les traductions.
+ *
+ * @component
+ */
+
+import { t } from "@/utils/i18n";
+
 const { locale, mentions } = Astro.props;
-console.log("Locale:", locale);
 const { site, responsable, hebergement, confidentialite, cookies, accessibilite } = mentions;
 
-const legalNoticeText = locale === "fr" ? "Mentions & Confidentialité" : "Legal Notice & Privacy Policy";
-const visitSiteText = locale === "fr" ? "Visiter le site" : "Visit the site";
+// Récupérer les textes traduits
+const legalNoticeText = t("components:dialog.title", { lng: locale });
+const visitSiteText = t("components:dialog.visitSite", { lng: locale });
 
 const currentYear = new Date().getFullYear();
 ---

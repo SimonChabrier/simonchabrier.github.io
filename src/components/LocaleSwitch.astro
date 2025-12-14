@@ -1,27 +1,40 @@
 ---
+/**
+ * LocaleSwitch Component
+ *
+ * Sélecteur de langue (Français/English) avec redirection automatique.
+ * Utilise les utilitaires centralisés pour la gestion de la locale et les traductions.
+ *
+ * @component
+ */
+
+import { t } from "@/utils/i18n";
 import FlagFr from "@/icons/FlagFr.astro";
 import FlagEn from "@/icons/FlagEn.astro";
 
 const { locale } = Astro.props;
 const isFr = locale === "fr";
+
+// Récupérer le texte traduit
+const changeLanguageText = t("common:locale.change", { lng: locale });
 ---
 
 <div class="no-print inline-flex items-center">
   <div class="group/lang flex items-center gap-2">
     <label
       for="localeSwitch"
-      aria-label={isFr ? "Changer la langue" : "Change language"}
+      aria-label={changeLanguageText}
       aria-controls="localeSwitch"
       class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out"
     >
       {isFr ? <FlagFr /> : <FlagEn />}
-      <span class="sr-only">{isFr ? "Changer la langue" : "Change language"}</span>
+      <span class="sr-only">{changeLanguageText}</span>
     </label>
     <select
       id="localeSwitch"
       name="localeSwitch"
       class="block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset ring-skin-muted focus:ring-2 focus:ring-skin-hue dark:text-white sm:text-sm sm:leading-6"
-      aria-label={isFr ? "Changer la langue" : "Change language"}
+      aria-label={changeLanguageText}
     >
       <option value="fr" selected={isFr}>
         Français
@@ -40,14 +53,17 @@ const isFr = locale === "fr";
 </style>
 
 <script>
+  import { switchLocale } from "@/utils/locale";
+  import type { Locale } from "@/utils/locale";
+
+  // Récupérer l'élément select
   const select = document.getElementById("localeSwitch") as HTMLSelectElement | null;
+
   if (select) {
+    // Écouter les changements de locale
     select.addEventListener("change", function () {
-      const targetLocale = select.value;
-      localStorage.setItem("locale", targetLocale);
-      const url = new URL(window.location.href);
-      url.pathname = url.pathname.replace(/\/(fr|en)\/?$/, `/${targetLocale}/`);
-      window.location.href = url.toString();
+      const targetLocale = select.value as Locale;
+      switchLocale(targetLocale);
     });
   }
 </script>

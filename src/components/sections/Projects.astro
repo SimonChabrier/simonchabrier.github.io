@@ -1,16 +1,26 @@
 ---
+/**
+ * Projects Section Component
+ *
+ * Affiche une grille de projets avec liens vers le projet et le code source.
+ * Utilise le système i18n custom pour toutes les traductions.
+ *
+ * @component
+ */
+
+import { t } from "@/utils/i18n";
 import Git from "@/icons/git.astro";
 import Arrow from "@/icons/Arrow.astro";
 import Section from "../Section.astro";
-
-// Importing types for projects
 import type { Projects } from "@cvType";
 
 const { projects, locale } = Astro.props;
-const showProjectText = locale === "fr" ? "Voir le projet" : "See project";
-const showSourceTextOf = locale === "fr" ? "Voir le code source de" : "See source code of";
-const projectText = locale === "fr" ? "Exemples de réalisations" : "Achievements Examples";
-const projectSubTitleText = locale === "fr" ? "Quelques projets représentatifs de ces deux dernières années..." : "Some representative projects from the last two years...";	
+
+// Récupérer tous les textes traduits
+const showProjectText = t("sections:projects.showProject", { lng: locale });
+const showSourceTextOf = t("sections:projects.showSource", { lng: locale });
+const projectText = t("sections:projects.title", { lng: locale });
+const projectSubTitleText = t("sections:projects.subtitle", { lng: locale });
 ---
 
 <Section className={Astro.props.className} title={projectText} id="projects">

@@ -1,4 +1,14 @@
 ---
+/**
+ * Tail Section Component
+ *
+ * Section footer avec lien GitHub et dialog des mentions légales.
+ * Utilise le système i18n custom pour toutes les traductions.
+ *
+ * @component
+ */
+
+import { t } from "@/utils/i18n";
 import Dialog from "@/components/Dialog.astro";
 import type { Profiles } from "@cvType";
 
@@ -6,9 +16,13 @@ const { locale, name, profiles, mentions } = Astro.props;
 
 const gitHub = (profiles as Profiles[]).find(({ network }) => network === "GitHub");
 const gitHubUrl = gitHub?.url;
-const showProfileText = locale === "fr" && gitHubUrl ? 
-	`Voir le profil ${gitHub?.network} de ${name}` : 
-	`See ${gitHub?.network} profile of ${name}`;
+
+// Récupérer le texte traduit avec interpolation
+const showProfileText = t("sections:tail.showProfile", {
+	lng: locale,
+	network: gitHub?.network,
+	name: name
+});
 
 const currentYear = new Date().getFullYear();
 ---

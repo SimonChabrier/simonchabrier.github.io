@@ -1,21 +1,23 @@
 ---
+/**
+ * ThemeSwitch Component
+ *
+ * Sélecteur de thème (System, Dark, Light) avec persistance dans localStorage.
+ * Utilise les utilitaires centralisés pour la gestion du thème et les traductions.
+ *
+ * @component
+ */
+
+import { t } from "@/utils/i18n";
 import Theme from "@/icons/themeSwitch.astro";
 
-// Récupération de la locale depuis les props (toujours défini (fr ou en dasn index.astro)
 const { locale } = Astro.props;
 
-const changeText = locale === "fr"
-  ? "Changer le thème"
-  : "Change theme";
-  const systemText = locale === "fr"
-  ? "Système"
-  : "System";
-  const darkText = locale === "fr"
-  ? "Sombre"
-  : "Dark";
-  const lightText = locale === "fr"
-  ? "Clair"
-  : "Light";
+// Récupérer les textes traduits via le système i18n
+const changeText = t("common:theme.change", { lng: locale });
+const systemText = t("common:theme.system", { lng: locale });
+const darkText = t("common:theme.dark", { lng: locale });
+const lightText = t("common:theme.light", { lng: locale });
 ---
 
 <div class="no-print inline-flex items-center p-2">
@@ -47,31 +49,19 @@ const changeText = locale === "fr"
   </style>
 
   <script>
+    import { initializeTheme, updateTheme } from "@/utils/theme";
+    import type { Theme } from "@/utils/theme";
+
+    // Récupérer l'élément select
     const select = document.getElementById("themeSwitch") as HTMLSelectElement;
-    const theme = localStorage.getItem("theme");
-    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
 
-    if (theme !== null) {
-      select.value = theme;
-    } else {
-      select.value = systemTheme;
-    }
+    // Initialiser le thème au chargement de la page
+    initializeTheme(select);
 
-    function updateTheme(value: string) {
-      const theme = value === "system" ? systemTheme : value;
-      document.documentElement.classList.remove("light", "dark");
-      document.documentElement.classList.add(theme);
-      localStorage.setItem("theme", value);
-    }
-
-    updateTheme(select.value);
-
+    // Écouter les changements de thème
     select.addEventListener("change", (event: Event) => {
-      const select = event.target as HTMLSelectElement;
-      updateTheme(select.value);
+      const target = event.target as HTMLSelectElement;
+      updateTheme(target.value as Theme);
     });
   </script>
 </div>

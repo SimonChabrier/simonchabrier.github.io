@@ -1,53 +1,25 @@
 ---
+/**
+ * Skills Section Component
+ *
+ * Affiche les compétences techniques avec niveau et mots-clés.
+ * Utilise le registre d'icônes centralisé et le système i18n.
+ *
+ * @component
+ */
+
+import { t } from "@/utils/i18n";
 import Section from "../Section.astro";
-// import HTML from "@/icons/html.astro";
-// import CSS from "@/icons/css.astro";
-// import JavaScript from "@/icons/javascript.astro";
-// import TypeScript from "@/icons/type.astro";
-// import React from "@/icons/react.astro";
-// import Node from "@/icons/node.astro";
-// import MySQL from "@/icons/sql.astro";
-// import Git from "@/icons/git.astro";
-// import GitHub from "@/icons/GitHub.astro";
-// import Tailwind from "@/icons/tailwind.astro";
-// import Next from "@/icons/next.astro";
-// import { skills } from "@cv-fr";
-// import Swift from "@/icons/swift.astro";
-// import SwiftUI from "@/icons/swiftui.astro";
-// import Kotlin from "@/icons/kotlin.astro";
-// import Flutter from "@/icons/flutter.astro";
-// import Figma from "@/icons/Figma.astro";
-// import Gitlab from "@/icons/Gitlab.astro";
-
-// const SKILLS_ICONS: Record<string, any> = {
-// 	HTML,
-// 	CSS,
-// 	JavaScript,
-// 	TypeScript,
-// 	React,
-// 	Node,
-// 	MySQL,
-// 	Git,
-// 	GitHub,
-// 	Next,
-// 	Tailwind,
-// 	Swift,
-// 	SwiftUI,
-// 	Kotlin,
-// 	Flutter,
-// 	Figma,
-// 	Gitlab,
-// };
-
-// Récupération de la locale depuis les props (toujours défini (fr ou en dasn index.astro)
-// const { skills, locale } = Astro.props;
 import type { Skills } from "@cvType";
 
 const { skills, locale } = Astro.props;
-const levelText = locale === "fr" ? "Niveau" : "Level";
+
+// Récupérer les textes traduits
+const levelText = t("sections:skills.level", { lng: locale });
+const titleText = t("sections:skills.title", { lng: locale });
 ---
 
-<Section className={Astro.props.className} title="Technologies">
+<Section className={Astro.props.className} title={titleText}>
         <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
                 {
                         (skills as Skills[]).map(({ name, level, keywords }) => {

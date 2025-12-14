@@ -1,7 +1,22 @@
 ---
+/**
+ * About Section Component
+ *
+ * Affiche un résumé/bio du propriétaire du portfolio.
+ * Support contenu bilingue via le système i18n custom.
+ *
+ * @component
+ * @example
+ * <About locale="fr" summary="..." />
+ */
+
+import { t } from "@/utils/i18n";
 import Section from "../Section.astro";
+
 const { summary, locale } = Astro.props;
-const title = locale === "fr" ? "À propos" : "About";
+
+// Récupérer le titre traduit
+const title = t("sections:about.title", { lng: locale });
 ---
 
 <Section title={title}>

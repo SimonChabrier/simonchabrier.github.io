@@ -1,13 +1,24 @@
 ---
+/**
+ * Education Section Component
+ *
+ * Affiche les formations et certifications.
+ * Utilise le système i18n custom pour toutes les traductions.
+ *
+ * @component
+ */
+
+import { t } from "@/utils/i18n";
 import Section from "../Section.astro";
 import type { Education } from "@cvType";
 import type { Certificates } from "@cvType";
 
 const { education, certificates, locale } = Astro.props;
 
-const showInstitutionText = locale === "fr" ? "Voir le site de l'établissement" : "See institution website";
-const showCertificateText = locale === "fr" ? "Voir le certificat" : "See certificate";
-const educationText = locale === "fr" ? "Formations" : "Education";
+// Récupérer tous les textes traduits
+const showInstitutionText = t("sections:education.showInstitution", { lng: locale });
+const showCertificateText = t("sections:education.showCertificate", { lng: locale });
+const educationText = t("sections:education.title", { lng: locale });
 ---
 
 <Section className={Astro.props.className} title={educationText} id="education">

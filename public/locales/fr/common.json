@@ -1,0 +1,17 @@
+{
+  "theme": {
+    "change": "Changer le thème",
+    "system": "Système",
+    "dark": "Sombre",
+    "light": "Clair"
+  },
+  "locale": {
+    "change": "Changer la langue"
+  },
+  "keyboard": {
+    "press": "Presser",
+    "openCommands": "pour ouvrir les commandes",
+    "print": "Imprimer",
+    "search": "Rechercher"
+  }
+}
