@@ -1,7 +1,5 @@
 ---
-// import * as cvFr from "@cv-fr";
-// import * as cvEn from "@cv-en";
-
+import { t } from "@/utils/i18n";
 import Section from "@/components/Section.astro";
 import Mail from "@/icons/Mail.astro";
 import Phone from "@/icons/Phone.astro";
@@ -15,9 +13,10 @@ const { basics, locale } = Astro.props;
 const { name, label, image, imagesmall, location, profiles, phone, email } = basics;
 const { city, region } = location;
 
-const showProfileText = locale === "fr" ? `Voir le profil de ${name} sur` : `See profile of ${name} on`;
-const phoneTitleText = locale === "fr" ? `Contacter ${name} au ${phone}` : `Contact ${name} at ${phone}`;
-const mailTitleText = locale === "fr" ? `Envoyer un e-mail à ${name}` : `Send an email to ${name}`;
+// Récupérer les textes traduits avec interpolation de variables
+const showProfileText = t("sections:hero.showProfile", { lng: locale, name });
+const phoneTitleText = t("sections:hero.phoneTitle", { lng: locale, name, phone });
+const mailTitleText = t("sections:hero.mailTitle", { lng: locale, name });
 
 const SOCIAL_ICONS: SocialIcon = {
 	GitHub,

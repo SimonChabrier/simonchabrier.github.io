@@ -1,14 +1,17 @@
 ---
 import "hotkeypad/reset.css";
 import "hotkeypad/index.css";
+import { t } from "@/utils/i18n";
 import { type SocialIcon } from "@/types";
-// import { basics } from "@cv-fr";
 import type { Profiles } from "@cvType";
 
 const { profiles, locale } = Astro.props;
-const pressText = locale === "fr" ? "Presser" : "Press";
-const OpenCommandsText = locale === "fr" ? "pour ouvrir les commandes" : "to open commands";
-const printText = locale === "fr" ? "Imprimer" : "Print";
+
+// Récupérer les textes traduits
+const pressText = t("common:keyboard.press", { lng: locale });
+const OpenCommandsText = t("common:keyboard.openCommands", { lng: locale });
+const printText = t("common:keyboard.print", { lng: locale });
+const searchPlaceholder = t("common:keyboard.search", { lng: locale });
 
 const SOCIAL_ICONS: SocialIcon = {
 	GitHub: `<svg
@@ -90,7 +93,7 @@ const profilesInfo = (profiles as Profiles[]).map(({ network, url }) => {
      data-info={JSON.stringify(profilesInfo)}
      data-print-text={printText}
      data-locale={locale}
-	 data-search-placeholder={locale === "fr" ? "Rechercher" : "Search"}
+	 data-search-placeholder={searchPlaceholder}
 	 >
 </div>
 

@@ -1,4 +1,5 @@
 ---
+import { t } from "@/utils/i18n";
 import Section from "../Section.astro"
 const { locale, work } = Astro.props;
 
@@ -39,10 +40,13 @@ const SKILLS_ICONS: Record<string, any> = {
   Flutter,
 }
 
-const sectionTitleText = locale === "fr" ? "Expérience professionnelle" : "Professional Experience";
-const achievementsText = locale === "fr" ? "Réalisations" : "Achievements";
-const nowText = locale === "fr" ? "Actuel" : "Current";
-const visitSiteText = locale === "fr" ? "Visiter" : "Visit";
+// Récupérer les textes traduits
+const sectionTitleText = t("sections:experience.title", { lng: locale });
+const achievementsText = t("sections:experience.achievements", { lng: locale });
+const nowText = t("sections:experience.now", { lng: locale });
+const visitSiteText = t("sections:experience.visitSite", { lng: locale });
+const seeMoreText = t("sections:experience.seeMore", { lng: locale });
+const seeLessText = t("sections:experience.seeLess", { lng: locale });
 
 ---
 <Section className={Astro.props.className} title={sectionTitleText} id="experience">
@@ -127,11 +131,11 @@ const visitSiteText = locale === "fr" ? "Visiter" : "Visit";
                 )}
                 </div>
                 
-                <button @click="expanded = ! expanded" 
+                <button @click="expanded = ! expanded"
                 class="print:hidden group/more w-fit cursor-pointer items-center justify-center gap-1.5 text-xs underline text-skin-link/100 transition-all hover:text-skin-base flex">
                   <span
                     x-text="expanded ? less : more"
-                    x-data={`{ more: '${locale === "fr" ? "Voir plus" : "See more"}', less: '${locale === "fr" ? "Voir moins" : "See less"}' }`}
+                    x-data={`{ more: '${seeMoreText}', less: '${seeLessText}' }`}
                   ></span>
                   <svg class="w-4 h-4 group-hover/more:translate-y-0.5 duration-200 ease-out" :class="{ 'rotate-180': expanded }" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
