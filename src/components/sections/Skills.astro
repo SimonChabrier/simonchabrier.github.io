@@ -24,25 +24,21 @@ const titleText = t("sections:skills.title", { lng: locale });
 		{
 			(skills as Skills[]).map(({ name, level, keywords }) => {
 				return (
-					<div
+					<li
 						x-data="{ open: false }"
 						@mouseenter="open = true"
 						@mouseleave="open = false"
-						class="relative"
-					>
-						<li
-							class="
-							bg-skin-hue/100 border-skin-hue/20 text-skin-inverted
-							border-skin-hue/100
-							bg-skin-button-accent/80
-							flex items-center gap-1
-							rounded-md
-							px-2 py-0.5
-							text-xs
-							text-skin-base
-							print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
-							<span>{name}</span>
-						</li>
+						class="relative
+						bg-skin-hue/100 border-skin-hue/20 text-skin-inverted
+						border-skin-hue/100
+						bg-skin-button-accent/80
+						flex items-center gap-1
+						rounded-md
+						px-2 py-0.5
+						text-xs
+						text-skin-base
+						print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
+						<span>{name}</span>
 						<div
 							x-show="open"
 							x-cloak
@@ -55,7 +51,7 @@ const titleText = t("sections:skills.title", { lng: locale });
 								))}
 							</ul>
 						</div>
-					</div>
+					</li>
 				);
 			})
 		}
