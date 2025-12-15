@@ -14,29 +14,51 @@ import type { Profiles } from "@cvType";
 
 const { locale, name, profiles, mentions } = Astro.props;
 
-const gitHub = (profiles as Profiles[]).find(({ network }) => network === "GitHub");
+const gitHub = (profiles as Profiles[]).find(
+  ({ network }) => network === "GitHub",
+);
 const gitHubUrl = gitHub?.url;
 
 // Récupérer le texte traduit avec interpolation
 const showProfileText = t("sections:tail.showProfile", {
-	lng: locale,
-	network: gitHub?.network,
-	name: name
+  lng: locale,
+  network: gitHub?.network,
+  name: name,
 });
 
 const currentYear = new Date().getFullYear();
 ---
 
-<div class="flex w-full max-w-7xl justify-center gap-3 md:col-span-6 print:hidden">
-	<a href={gitHubUrl}
-	   rel="noopener noreferrer"
-	   aria-label={showProfileText}
-	   title={showProfileText}
-	   target="_blank" 
-           class="group flex items-center space-x-1 text-xs">
-                <span class="hover:text-skin-contact flex gap-1 underline decoration-dotted underline-offset-4 transition group-hover:underline-offset-4 text-skin-base">
-                        2021 - {currentYear} © SC
-                </span>
-	</a>
-	<Dialog mentions={mentions} locale={locale} />
+<div
+  class="flex w-full max-w-7xl justify-center gap-3 md:col-span-6 print:hidden"
+>
+  <a
+    href={gitHubUrl}
+    rel="noopener noreferrer"
+    aria-label={showProfileText}
+    title={showProfileText}
+    target="_blank"
+    class="group flex items-center space-x-1 text-xs"
+  >
+    <span
+      class="flex gap-1 text-skin-base underline decoration-dotted underline-offset-4 transition hover:text-skin-contact group-hover:underline-offset-4"
+    >
+      2021 - {currentYear} © SC
+    </span>
+  </a>
+  <Dialog mentions={mentions} locale={locale} />
+  <a
+    href="https://doc.simonchabrier.fr/"
+    rel="noopener noreferrer"
+    aria-label="lien vers la documentation"
+    title="lien vers la documentation"
+    target="_blank"
+    class="group flex items-center space-x-1 text-xs"
+  >
+    <span
+      class="flex gap-1 text-skin-base underline decoration-dotted underline-offset-4 transition hover:text-skin-contact group-hover:underline-offset-4"
+    >
+      Documentation
+    </span>
+  </a>
 </div>
