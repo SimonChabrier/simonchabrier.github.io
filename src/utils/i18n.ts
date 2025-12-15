@@ -80,20 +80,26 @@ export function t(
 
   // Si le format est invalide, retourner la clé
   if (!path || !namespace) {
-    console.warn(`Format de clé i18n invalide: ${key}`);
+    if (import.meta.env.DEV) {
+      console.warn(`Format de clé i18n invalide: ${key}`);
+    }
     return key;
   }
 
   // Vérifier que la locale est valide
   if (!translations[lng]) {
-    console.warn(`Locale invalide: ${lng}`);
+    if (import.meta.env.DEV) {
+      console.warn(`Locale invalide: ${lng}`);
+    }
     return key;
   }
 
   // Vérifier que le namespace est valide
   const nsTranslations = translations[lng][namespace as Namespace];
   if (!nsTranslations) {
-    console.warn(`Namespace invalide: ${namespace}`);
+    if (import.meta.env.DEV) {
+      console.warn(`Namespace invalide: ${namespace}`);
+    }
     return key;
   }
 
@@ -105,14 +111,18 @@ export function t(
     if (result && typeof result === "object" && k in result) {
       result = result[k];
     } else {
-      console.warn(`Clé de traduction introuvable: ${key}`);
+      if (import.meta.env.DEV) {
+        console.warn(`Clé de traduction introuvable: ${key}`);
+      }
       return key;
     }
   }
 
   // Si le résultat n'est pas une string, retourner la clé
   if (typeof result !== "string") {
-    console.warn(`La traduction n'est pas une string: ${key}`);
+    if (import.meta.env.DEV) {
+      console.warn(`La traduction n'est pas une string: ${key}`);
+    }
     return key;
   }
 
