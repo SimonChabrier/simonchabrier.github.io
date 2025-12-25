@@ -63,14 +63,13 @@ export function updateTheme(value: Theme): void {
  */
 export function initializeTheme(selectElement: HTMLSelectElement): void {
   const storedTheme = getStoredTheme();
-  const systemTheme = getSystemTheme();
 
   // Si un thème est stocké, l'utiliser
   if (storedTheme !== null) {
     selectElement.value = storedTheme;
   } else {
-    // Sinon, utiliser le thème système
-    selectElement.value = systemTheme;
+    // Sinon, forcer le thème dark par défaut
+    selectElement.value = "dark";
   }
 
   // Appliquer le thème

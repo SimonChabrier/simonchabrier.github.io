@@ -51,7 +51,7 @@ const seeLessText = t("sections:experience.seeLess", { lng: locale });
 ---
 <Section className={Astro.props.className} title={sectionTitleText} id="experience">
   <ul class="flex flex-col">
-    {(work as Work[]).map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }) => {
+    {(work as Work[]).map(({ name, startDate, endDate, position, summary, responsibilities, achievements, url, skills, location, location_type }, index) => {
       return (
         <li class="relative print:py-2">
           <div class="group relative grid pb-1 print:pb-0 transition-all print:grid-cols-1 print:gap-1 sm:grid-cols-12 sm:gap-8 md:gap-6 lg:hover:!opacity-100 ">
@@ -90,7 +90,7 @@ const seeLessText = t("sections:experience.seeLess", { lng: locale });
                   {location} {location && location_type && '-'} {location_type}
                 </div>
               )}
-              <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm" x-data="{ expanded: false }">
+              <div class="mt-4  print:gap-0 flex flex-col gap-4 print:text-xs text-sm" x-data={`{ expanded: ${index === 0 ? 'true' : 'false'} }`}>
                 {summary && (
                   <div class="flex flex-col gap-1">
                     <h4>Missions:</h4>
