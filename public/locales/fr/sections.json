@@ -8,7 +8,7 @@
     "mailTitle": "Envoyer un e-mail à {{name}}"
   },
   "experience": {
-    "title": "Expérience professionnelle",
+    "title": "Professionnel",
     "achievements": "Réalisations",
     "now": "Actuel",
     "visitSite": "Visiter",
@@ -16,7 +16,7 @@
     "seeLess": "Voir moins"
   },
   "projects": {
-    "title": "Exemples de réalisations",
+    "title": "Réalisations",
     "subtitle": "Quelques projets représentatifs de ces deux dernières années...",
     "showProject": "Voir le projet",
     "showSource": "Voir le code source de"
