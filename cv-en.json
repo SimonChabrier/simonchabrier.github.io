@@ -58,16 +58,17 @@
       "skills": [
         "Symfony & PHP",
         "Doctrine & SQL",
-        "REST APIs & Mercure",
-        "NodeJs & ExpressJs",
+        "REST APIs & SSE Mercure",
         "Twig & Components",
+        "Stimulus & UX Turbo",
         "VueJs",
         "Bootstrap & SCSS",
-        "Stimulus & Turbo",
         "UX/UI Design",
-        "CaddyServer & Nginx",
+        "NodeJs & ExpressJs",
+        "CaddyServer, Apache, Nginx",
         "Docker & Plesk",
-        "Git & GitHub",
+        "Ubuntu Server",
+        "Git, GitHub, GitHub Actions",
         "CI/CD",
         "Agile/Scrum & Project Management"
       ]
