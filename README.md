@@ -12,7 +12,7 @@ Page personnelle de Simon Chabrier
 
 
 - Github page :
-lien [simonchabrier.fr](https://simonchabrier.fr)
+lien [simonchabrier.github.io](https://simonchabrier.github.io)
 
 - Auto hébergé sur mon home serveur perso :
 
