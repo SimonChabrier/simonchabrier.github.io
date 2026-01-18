@@ -17,6 +17,6 @@ lien [simonchabrier.fr](https://simonchabrier.fr)
 - Auto hébergé sur mon home serveur perso :
 
 lien [simonchabrier.fr](https://simonchabrier.fr)
-lien [simonechabrier.com](https://simonchabrier.com)
+- lien [simonchabrier.github.io](https://simonchabrier.github.io)
 
 Package mis à jour et debug fait pour le thème de base qui avait des petites erreurs, des dépendances obsolètes, du .githuh/workflow avec son script de péploiement...Ajout d'un suivi mutidomaien avec matomo et une config custom pour tracker les 3 domaines où le site est déployé.
