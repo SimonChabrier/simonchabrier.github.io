@@ -597,14 +597,14 @@
     {
       "name": "Doc's",
       "isActive": true,
-      "description": "I systematically document my professional projects and personal research. VitePress was the obvious choice: static, fast, clean and maintainable — deployed and self-hosted with full autonomy.",
+      "description": "Documentation of my home server stack and the processes that keep it running. A personal reference that allows me to stay operational quickly — VitePress chosen for its lightness and simplicity. Public and consulted by other developers.",
       "highlights": [
-        "Professional projects and personal research documented in one place",
-        "VitePress: a pragmatic choice for its simplicity, speed and maintainability",
-        "A single instance serving 3 different domains",
-        "Progressively customized to fit my needs",
-        "Self-hosted and maintained with full autonomy",
-        "Analytics via self-hosted Matomo"
+        "Stack documented: Caddy, Mercure, N8N, Docker, SSH, shell scripts...",
+        "Installation and security processes kept up to date",
+        "Operational reference for fast and reliable interventions",
+        "Public and consulted by other developers",
+        "VitePress: a pragmatic choice for its simplicity and maintainability",
+        "Progressively customized to fit my needs"
       ],
       "url": "https://doc.simschab.cloud/",
       "github": "https://github.com/SimonChabrier/MesDocs"
