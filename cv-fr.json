@@ -597,14 +597,14 @@
     {
       "name": "Doc's",
       "isActive": true,
-      "description": "J'utilise VitePress pour documenter les projets réalisés dans le cadre professionnel et personnel.",
+      "description": "VitePress s'est imposé comme choix évident pour documenter systématiquement projets professionnels et recherches personnelles : statique, rapide, propre et maintenable — déployé et auto-hébergé en autonomie complète.",
       "highlights": [
-        "Sur ma documentation personnelle j'ai ajouté des fonctionnalités spécifiques pour répondre à mes besoins",
-        "3 domaines différent pointent vers la même instance de la documentation",
-        "Injection dynamique du script de suivi Matomo en fonction du domaine",
-        "Injection dynamique d'url canonical en fonction du domaine",
-        "Auto-hébergement sur mon serveur Ubuntu",
-        "Suivi Matomo auto-hébergé aussi sur mon serveur"
+        "Projets professionnels et recherches personnelles documentés au même endroit",
+        "VitePress : choix pragmatique pour sa simplicité, sa rapidité et sa maintenabilité",
+        "Une seule instance pour 3 domaines différents",
+        "Personnalisé progressivement selon les besoins",
+        "Auto-hébergé et maintenu en autonomie",
+        "Suivi analytique via Matomo auto-hébergé"
       ],
       "url": "https://doc.simschab.cloud/",
       "github": "https://github.com/SimonChabrier/MesDocs"

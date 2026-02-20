@@ -597,14 +597,14 @@
     {
       "name": "Doc's",
       "isActive": true,
-      "description": "I use VitePress to document projects carried out professionally and personally.",
+      "description": "I systematically document my professional projects and personal research. VitePress was the obvious choice: static, fast, clean and maintainable — deployed and self-hosted with full autonomy.",
       "highlights": [
-        "On my personal documentation I've added specific features to meet my needs",
-        "3 different domains point to the same documentation instance",
-        "Dynamic injection of the Matomo tracking script depending on the domain",
-        "Dynamic injection of canonical url depending on the domain",
-        "Self-hosting on my Ubuntu server",
-        "Matomo tracking also self-hosted on my server"
+        "Professional projects and personal research documented in one place",
+        "VitePress: a pragmatic choice for its simplicity, speed and maintainability",
+        "A single instance serving 3 different domains",
+        "Progressively customized to fit my needs",
+        "Self-hosted and maintained with full autonomy",
+        "Analytics via self-hosted Matomo"
       ],
       "url": "https://doc.simschab.cloud/",
       "github": "https://github.com/SimonChabrier/MesDocs"
