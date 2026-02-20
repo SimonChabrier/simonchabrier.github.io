@@ -7,7 +7,7 @@
     "email": "simonchabrier@gmail.com",
     "phone": "06 63 24 45 87",
     "url": "https://www.linkedin.com/in/simon-chabrier/",
-    "summary": "Je conçois des applications web performantes, sécurisées et éco-responsables en respectant les normes d'accessibilité et le RGPD. Formé à l'Agilité, j'apprécie le travail en équipe, le partage de connaissances et relever des nouveaux challenges métiers en veillant toujours au respect des coûts et des délais. Mon code est systématiquement documenté, testé et déployé en continu, avec une gestion maîtrisée de la dette technique et des refactorisations régulières. À titre personnel, je déploie et optimise mes projets de recherche sur mon home serveur Ubuntu, pour affiner en continu mes compétences DevOps...",
+    "summary": "Développeur Full Stack spécialisé Symfony, je conçois et livre des applications web métier complexes de bout en bout — de l'analyse du besoin jusqu'au déploiement. Mon code est documenté, testé et déployé en continu. Passionné par les défis techniques et le partage des connaissances, j'explore de nouvelles technologies sur mon serveur Ubuntu personnel pour affiner mes compétences DevOps.",
     "theme": "default",
     "location": {
       "address": "168 Quai Baudin",
@@ -38,7 +38,7 @@
       "url": "https://libresens.com/",
       "startDate": "01/02/24",
       "endDate": null,
-      "summary": "Concevoir, développer, sécuriser, tester, déployer et documenter des applications web.",
+      "summary": "Prise en charge complète de fonctionnalités et d'applications web Symfony sur-mesure, de la conception technique jusqu'à la mise en production.",
       "responsibilities": [
         "En collaboration avec le Product Owner et l’équipe, autour de l’étude du cahier des charges, j'établis les documents de conception des applications et/ou fonctionnalités qui me sont assignés en veillant à analyser les risques et à détailler/planifier les différentes phases de livraison du MVP jusqu'au produit fini."
       ],
@@ -53,8 +53,7 @@
         "Livré un module de gestion d’Agences et de Franchisés avec historisation et statistiques.",
         "Livré un module de gestion d’offres d’emploi et candidatures conforme RGPD.",
         "Livré un module de carte de points d’intérêt catégorisés avec recherche et filtres.",
-        "Livré un module d'annuaire administratif hiérarchisé pour des groupes d’élus locaux.",
-        "et +"
+        "Livré un module d'annuaire administratif hiérarchisé pour des groupes d’élus locaux."
       ],
       "skills": [
         "Symfony & PHP",
@@ -91,8 +90,7 @@
         "Refonte, optimisation et sécurisation de modules existants.",
         "Design de thèmes en fonction des maquettes fournies par le service design/intégration.",
         "Réalisation de modules sur mesure pour implémenter des fonctionnalités spécifiques à destination des clients.",
-        "Mise en production et suivi des performances et de la sécurité.",
-        "et +"
+        "Mise en production et suivi des performances et de la sécurité."
       ],
       "skills": [
         "PHP & JavaScript",
@@ -213,7 +211,7 @@
     },
     {
       "name": "Messenger",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "Tâches asynchrones",
         "Backend",
@@ -222,7 +220,7 @@
     },
     {
       "name": "JWT",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "Sécurité",
         "Authentification",
@@ -249,7 +247,7 @@
     },
     {
       "name": "ApiPlatform",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "APIs",
         "Backend",
@@ -259,7 +257,7 @@
     },
     {
       "name": "Axios & Fetch",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "API",
         "HTTP Requests",
@@ -286,7 +284,7 @@
     },
     {
       "name": "TailwindCSS",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "Frontend",
         "UI",
@@ -295,7 +293,7 @@
     },
     {
       "name": "Swiper",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "Frontend",
         "UI",
@@ -403,7 +401,7 @@
     },
     {
       "name": "GitHub Actions",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "CI/CD",
         "Déploiement",
@@ -412,7 +410,7 @@
     },
     {
       "name": "Vitepress",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "Documentation",
         "Frontend",
@@ -421,7 +419,7 @@
     },
     {
       "name": "Castor",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "Formulaires",
         "Symfony",
@@ -448,7 +446,7 @@
     },
     {
       "name": "VueJs",
-      "level": "Autonome",
+      "level": "Avancé",
       "keywords": [
         "Frontend",
         "JavaScript Framework"
@@ -564,7 +562,7 @@
     {
       "name": "Ch***Con***",
       "isActive": false,
-      "description": "Réalisé en Entreprise, cette application web est un outil de gestion pour une Entreprise du domaine de l'Informatique.",
+      "description": "Réalisé en Entreprise,CRM Symfony complet pour une ESN : gestion clients, commandes, équipements, interventions techniques avec workflows d'états, PDF/QRCode, OCR, SMS asynchrone et sécurité avancée.",
       "highlights": [
         "Gestion des Contacts et des Entreprises",
         "Gestion des Produits et des Catégories (hiérarchie Doctrine Tree)",
@@ -603,46 +601,7 @@
       "url": "https://ergo-up.fr/"
     },
     {
-      "name": "Publisher SPA",
-      "isActive": false,
-      "description": "Une SPA de publication de contenu de type articles, réalisée dans le cadre de recherches personnelles pour approfondir mes compétences avec Node.js et Express.js.",
-      "highlights": [
-        "Gestion de l'authentification et de la session en utilisant Passport.js",
-        "Utilisation du pattern Clean Architecture et organisation du code en couches à responsabilités uniques",
-        "Séparation entre le FrontEnd Vue.js et le BackEnd Express.js",
-        "Utilisation de l'ORM Sequelize pour la gestion des données",
-        "Gestion et utilisation de JWT pour les autorisations",
-        "Utilisation de Mercure pour les mises à jour en temps réel - SSE",
-        "Gestion de notifications par email",
-        "Configuration de Quill pour l'édition de contenu riche",
-        "..."
-      ],
-      "github": "https://github.com/SimonChabrier/ressourceManager"
-    },
-    {
-      "name": "Task Runner",
-      "isActive": false,
-      "description": "Réalisé dans le cadre de recherches personnelles pour cloner, initialiser et lancer un projet Symfony en une seule commande : castor new-project.",
-      "highlights": [
-        "Clone le repository depuis GitHub",
-        "Demande l'url ou le ssh du repository",
-        "Configuration de l'environnement de développement",
-        "Intallation des dépendances composer",
-        "Intallation des dépendances npm si un package.json est présent",
-        "Configuration de la base de données avec choix du driver",
-        "Création du .env.local à partir du .env",
-        "Injection du schema de base de données",
-        "Lancement du serveur de développement",
-        "Lancement du serveur pour monitorer les assets",
-        "Ouverture du navigateur par défaut",
-        "A la fin du run le projet est prêt à être développé",
-        "Messages confirmation à chaque étape",
-        "..."
-      ],
-      "github": "https://github.com/SimonChabrier/CastorCloneToRun"
-    },
-    {
-      "name": "Utimate Doc's",
+      "name": "Doc's",
       "isActive": true,
       "description": "J'utilise VitePress pour documenter les projets réalisés dans le cadre professionnel et personnel.",
       "highlights": [
