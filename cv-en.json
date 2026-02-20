@@ -67,7 +67,7 @@
         "NodeJs & ExpressJs",
         "CaddyServer, Apache, Nginx",
         "Docker & Plesk",
-        "Ubuntu Server",
+        "UbuntuServer",
         "Git, GitHub, GitHub Actions",
         "CI/CD",
         "Agile/Scrum & Project Management"
@@ -374,7 +374,7 @@
       ]
     },
     {
-      "name": "Ubuntu Server",
+      "name": "UbuntuServer",
       "level": "Advanced",
       "keywords": [
         "Server",
@@ -591,56 +591,6 @@
         "..."
       ],
       "github": "https://github.com/SimonChabrier/CastorCloneToRun"
-    },
-    {
-      "name": "Eco-Conception SPA",
-      "isActive": true,
-      "description": "A web application referencing 50 web eco-design rules, carried out as personal research to deepen my skills with VueJs for the front and Symfony for the REST API.",
-      "highlights": [
-        "Textual and Tag search filter",
-        "Dynamic pagination management",
-        "Development of a reusable components library",
-        "VueJs environment configuration at the heart of Symfony",
-        "Webpack configuration for asset compilation",
-        "Creation of a lightweight and high-performance REST API",
-        "Use of Pinia for state management"
-      ],
-      "url": "https://ecoconception.simschab.cloud/#/api",
-      "github": "https://github.com/SimonChabrier/EcoConcept-Symfony5.4-VueJs3"
-    },
-    {
-      "name": "Utimate Todo's",
-      "isActive": true,
-      "description": "Carried out as personal research to manage my development tasks in an interface matching my needs.",
-      "highlights": [
-        "Back-end Symfony to expose a REST API",
-        "Vanilla Javascript front-end to consume the API in a lightweight SPA environment",
-        "Drag and drop to organize tasks",
-        "Management of task positions in columns",
-        "Management of statuses and order of tasks",
-        "On-the-fly creation of new tasks and columns",
-        "Automated saving of UI state",
-        "Authorization by JWT token"
-      ],
-      "url": "https://js.simschab.cloud/trello/",
-      "github": "https://github.com/SimonChabrier/Trello-Front-End"
-    },
-    {
-      "name": "Concept Store",
-      "isActive": true,
-      "description": "Carried out with Symfony and Javascript as part of my personal research, this project is a classic and fully functional e-commerce web application.",
-      "highlights": [
-        "Complete product catalog management",
-        "Category and subcategory management",
-        "Search filters by cumulative criteria without page reload",
-        "Secure payment integration - Stripe",
-        "Shopping cart management in session and persistence",
-        "Stock and order management",
-        "Cache management, as long as the product catalog content hasn't changed no new SQL query is made",
-        "..."
-      ],
-      "url": "https://storeproject.simschab.cloud/",
-      "github": "https://github.com/SimonChabrier/StoreProject"
     },
     {
       "name": "Utimate Doc's",
