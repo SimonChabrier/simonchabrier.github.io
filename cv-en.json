@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Simon Chabrier",
-    "label": "Full Stack Developer",
+    "label": "Full Stack Application Developer Designer",
     "image": "./../avatar_254.webp",
     "imagesmall": "./../avatar_128.webp",
     "email": "simonchabrier@gmail.com",
@@ -31,8 +31,8 @@
   },
   "work": [
     {
-      "name": "Libre Sens",
-      "position": "Full Stack Developer - Permanent contract",
+      "name": "LibreSens",
+      "position": "Application Developer Designer",
       "location_type": "On-site",
       "location": "Agen, France",
       "url": "https://libresens.com/",
@@ -44,9 +44,10 @@
       ],
       "achievements": [
         "From scratch, realization of a full-featured proprietary Symfony CMS for the company.",
-        "Web application for managing and monitoring the autonomy of nursing home residents.",
+        "Symfony Web application for tracking bodywork interventions.",
         "Symfony Web CRM application for a tech company.",
         "Symfony Web application for client management and service tracking for a tech company.",
+        "Web application for managing and monitoring the autonomy of nursing home residents.",
         "Document management application with a high level of permissions and security.",
         "Reservation module with time slot management, SMS confirmation - 2FA.",
         "Agency and Franchise management module with history and statistics.",
@@ -74,7 +75,7 @@
       ]
     },
     {
-      "name": "Libre Sens",
+      "name": "LibreSens",
       "position": "BackEnd Developer - Apprenticeship contract",
       "location_type": "On-site",
       "location": "Agen, France",
@@ -513,6 +514,52 @@
       "url": "https://tendance-garonne.simschab.cloud/"
     },
     {
+      "name": "Edith Symfony CMS",
+      "isActive": true,
+      "description": "Developed within the company, Edith is a proprietary Symfony CMS whose development from scratch was entrusted to me. It enables the LibreSens agency to respond to its clients' specific needs with agility in a controlled and secure environment. Designed to be flexible and performant, Edith integrates advanced content management, administration and SEO optimization features, and complies with accessibility and GDPR standards.",
+      "highlights": [
+        "Modular and extensible architecture for custom personalization",
+        "Fully configurable from the administration panel",
+        "Microservices for certain specific features",
+        "Complete documentation and automated tests",
+        "Custom pages, articles, events, FAQ",
+        "Reusable and customizable content blocks",
+        "Shortcodes integrable into any type of content",
+        "Hierarchical content organization with drag and drop",
+        "Content publishing with advanced media management",
+        "Single or multilingual (fr, es, en, de, it, nl…)",
+        "Complete URL translation",
+        "Advanced roles and permissions management",
+        "Compliance with accessibility and GDPR standards",
+        "Integrated SEO optimization",
+        "Optimized performance on client and server side",
+        "Partial content reloading for performance and eco-design",
+        "Reduced project development and maintenance time",
+        "..."
+      ],
+      "url": "https://edith.fr/"
+    },
+    {
+      "name": "App Carrosserie Carioli",
+      "isActive": false,
+      "description": "Developed within the company, a B2C application for fleet management and technical intervention processes from vehicle intake to delivery. The application is used by the company's clients to track the progress of interventions on their vehicles in real time, and by technical teams to manage interventions and schedules.",
+      "highlights": [
+        "Advanced permissions management",
+        "Client portfolio management",
+        "Client vehicle fleet management",
+        "Technical intervention progress management",
+        "Customizable and historized client profile",
+        "Fluid and performant administrator interface for technical teams",
+        "Quote request system with 8-step guided client process",
+        "Distinct workshop view for technical teams",
+        "LOA contract end alerts",
+        "Advanced search filters",
+        "Eco-designed, accessible and fully secured",
+        "..."
+      ],
+      "url": "https://app.carrosseriecarioli.fr"
+    },
+    {
       "name": "Ch***Con***",
       "isActive": false,
       "description": "Carried out in a company, this web application is a management tool for a company in the IT sector.",
@@ -533,7 +580,7 @@
         "Security and performance optimization",
         "..."
       ],
-      "url": "https://ergo-up.fr/"
+      "url": ""
     },
     {
       "name": "Ergo-Up",

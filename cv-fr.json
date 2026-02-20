@@ -500,7 +500,7 @@
       "isActive": true,
       "description": "Réalisé dans le cadre de recherches personnelles, ce système de prévision hydrologique court terme couvre la Garonne et ses affluents. Nowcasting basé sur les données publiques Hub'Eau avec propagation de crue multi-stations.",
       "highlights": [
-        "Collecte automatisée des hauteurs d'eau sur 13 stations (Hub'Eau API)",
+        "Collecte automatisée des hauteurs d'eau sur 15 stations (Hub'Eau API)",
         "Analyse de tendance par régression linéaire sur fenêtre glissante",
         "Estimation des délais de propagation par corrélation croisée",
         "Propagation multi-saut : remontée automatique de la chaîne amont si une station est indisponible",
@@ -508,8 +508,9 @@
         "Amortissement intelligent de la tendance locale par les signaux amont",
         "Interface temps réel via Mercure SSE avec fallback polling",
         "Graphiques Canvas 2D : historique 24h et projections",
-        "Orchestration N8N (cron 15 min), calcul Python, affichage JS vanilla",
-        "Zéro framework frontend, stack minimale et éco-responsable"
+        "Orchestration N8N, calcul Python, affichage HTML et JS vanilla",
+        "Zéro framework frontend, stack minimale et éco-responsable",
+        "Objectif visé, fournir rapidement un outil convivial et utile."
       ],
       "url": "https://tendance-garonne.simschab.cloud/"
     },
