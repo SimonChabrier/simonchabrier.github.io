@@ -43,10 +43,10 @@
         "In collaboration with the Product Owner and the team, based on the study of the specifications, I establish the design documents for the applications and/or features assigned to me, ensuring risk analysis and detailing/planning the different delivery phases from the MVP to the finished product."
       ],
       "achievements": [
-        "From scratch, realization of a full-featured proprietary CMS for the company.",
+        "From scratch, realization of a full-featured proprietary Symfony CMS for the company.",
         "Web application for managing and monitoring the autonomy of nursing home residents.",
-        "Web CRM application for a tech company.",
-        "Web application for client management and service tracking for a tech company.",
+        "Symfony Web CRM application for a tech company.",
+        "Symfony Web application for client management and service tracking for a tech company.",
         "Document management application with a high level of permissions and security.",
         "Reservation module with time slot management, SMS confirmation - 2FA.",
         "Agency and Franchise management module with history and statistics.",
@@ -494,6 +494,24 @@
     }
   ],
   "projects": [
+    {
+      "name": "Tendance Garonne",
+      "isActive": true,
+      "description": "Carried out as personal research, this short-term hydrological forecasting system covers the Garonne River and its tributaries. Nowcasting based on public Hub'Eau data with multi-station flood propagation.",
+      "highlights": [
+        "Automated water level collection from 13 stations (Hub'Eau API)",
+        "Trend analysis via linear regression on a sliding window",
+        "Propagation delay estimation using cross-correlation",
+        "Multi-hop propagation: automatic upstream chain traversal when a station is unavailable",
+        "Forecasts at 1h, 2h, 3h and 6h with confidence index",
+        "Smart dampening of local trend based on upstream signals",
+        "Real-time interface via Mercure SSE with polling fallback",
+        "Canvas 2D charts: 24h history and projections",
+        "N8N orchestration (15 min cron), Python computation, vanilla JS display",
+        "Zero frontend framework, minimal and eco-friendly stack"
+      ],
+      "url": "https://tendance-garonne.simschab.cloud/"
+    },
     {
       "name": "Ch***Con***",
       "isActive": false,

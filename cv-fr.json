@@ -43,10 +43,10 @@
         "En collaboration avec le Product Owner et l’équipe, autour de l’étude du cahier des charges, j'établis les documents de conception des applications et/ou fonctionnalités qui me sont assignés en veillant à analyser les risques et à détailler/planifier les différentes phases de livraison du MVP jusqu'au produit fini."
       ],
       "achievements": [
-        "From scratch, réalisation d'un CMS propriétaire full option pour l'entreprise.",
+        "From scratch, réalisation d'un CMS Symfony propriétaire full option pour l'entreprise.",
         "Appplication Web de gestion et de suivi d'autonomie des résidents en EHPAD.",
-        "Application Web de type CRM pour une entreprise du domaine de l'informatique.",
-        "Application Web de gestion de clientèle et suivi de prestations pour une ESN.",
+        "Application Web Symfony de type CRM pour une entreprise du domaine de l'informatique.",
+        "Application Web Symfony de gestion de clientèle et suivi de prestations pour une ESN.",
         "Application de gestion documentaire à haut niveau de permissions et de sécurité.",
         "Module de réservation avec gestion de plage horaire, confirmaion SMS - 2FA.",
         "Module de gestion d'Agences et de Franchisés avec historisation et statistiques.",
@@ -494,6 +494,24 @@
     }
   ],
   "projects": [
+    {
+      "name": "Tendance Garonne",
+      "isActive": true,
+      "description": "Réalisé dans le cadre de recherches personnelles, ce système de prévision hydrologique court terme couvre la Garonne et ses affluents. Nowcasting basé sur les données publiques Hub'Eau avec propagation de crue multi-stations.",
+      "highlights": [
+        "Collecte automatisée des hauteurs d'eau sur 13 stations (Hub'Eau API)",
+        "Analyse de tendance par régression linéaire sur fenêtre glissante",
+        "Estimation des délais de propagation par corrélation croisée",
+        "Propagation multi-saut : remontée automatique de la chaîne amont si une station est indisponible",
+        "Prévisions à 1h, 2h, 3h et 6h avec indice de confiance",
+        "Amortissement intelligent de la tendance locale par les signaux amont",
+        "Interface temps réel via Mercure SSE avec fallback polling",
+        "Graphiques Canvas 2D : historique 24h et projections",
+        "Orchestration N8N (cron 15 min), calcul Python, affichage JS vanilla",
+        "Zéro framework frontend, stack minimale et éco-responsable"
+      ],
+      "url": "https://tendance-garonne.simschab.cloud/"
+    },
     {
       "name": "Ch***Con***",
       "isActive": false,
