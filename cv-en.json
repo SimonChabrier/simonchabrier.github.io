@@ -7,7 +7,7 @@
     "email": "simonchabrier@gmail.com",
     "phone": "+33663244587",
     "url": "https://www.linkedin.com/in/simon-chabrier/",
-    "summary": "Passionate Full Stack Developer, I design high-performance, secure and eco-friendly web applications while respecting accessibility standards and GDPR. Trained in Agility, I enjoy teamwork, knowledge sharing and taking on new business challenges while always respecting costs and deadlines. My code is systematically documented, tested and deployed continuously, with controlled management of technical debt and regular refactoring. Personally, I deploy and optimize my research projects on my home Ubuntu server to continuously refine my DevOps skills...",
+    "summary": "Full Stack Developer specializing in Symfony, I design and deliver complex business web applications end-to-end, from requirements analysis to deployment. My code is documented, tested and continuously deployed. Passionate about technical challenges, I continuously explore new technologies on my personal Ubuntu server to sharpen my DevOps skills. I also enjoy sharing knowledge and supporting skills development.",
     "theme": "default",
     "location": {
       "address": "168 Quai Baudin",
@@ -53,8 +53,7 @@
         "Delivered an Agency and Franchise management module with history and statistics.",
         "Delivered a job offers and applications management module compliant with GDPR.",
         "Delivered a categorized points of interest map module with search and filters.",
-        "Delivered a hierarchical administrative directory for groups of local elected officials.",
-        "and more"
+        "Delivered a hierarchical administrative directory for groups of local elected officials."
       ],
       "skills": [
         "Symfony & PHP",
@@ -91,8 +90,7 @@
         "Redesign, optimization and securing of existing modules.",
         "Design of themes according to the mockups provided by the design/integration department.",
         "Development of custom modules to implement client-specific features.",
-        "Production deployment and monitoring of performance and security.",
-        "and more"
+        "Production deployment and monitoring of performance and security."
       ],
       "skills": [
         "PHP & JavaScript",
