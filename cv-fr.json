@@ -7,7 +7,7 @@
     "email": "simonchabrier@gmail.com",
     "phone": "06 63 24 45 87",
     "url": "https://www.linkedin.com/in/simon-chabrier/",
-    "summary": "Développeur Full Stack spécialisé Symfony, je conçois et livre des applications web métier complexes de bout en bout. Mon code est documenté, testé et déployé en continu. Passionné par les défis techniques, j'explore de nouvelles technologies sur mon serveur Ubuntu personnel. J'apprécie également partager mes connaissances, recherches et les bonnes pratiques.",
+    "summary": "Développeur Full Stack spécialisé Symfony, je conçois et livre des applications web métier complexes de bout en bout. Mon code est documenté, testé et déployé en continu. Passionné par les défis techniques, j'explore de nouvelles technologies sur mon serveur Ubuntu personnel. J'apprécie également partager mes connaissances, recherches et bonnes pratiques.",
     "theme": "default",
     "location": {
       "address": "168 Quai Baudin",
@@ -507,8 +507,7 @@
         "Interface temps réel via Mercure SSE avec fallback polling",
         "Graphiques Canvas 2D : historique 24h et projections",
         "Orchestration N8N, calcul Python, affichage HTML et JS vanilla",
-        "Zéro framework frontend, stack minimale et éco-responsable",
-        "Objectif visé, fournir rapidement un outil convivial et utile."
+        "Zéro framework frontend, stack minimale et éco-responsable"
       ],
       "url": "https://tendance-garonne.simschab.cloud/"
     },
