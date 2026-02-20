@@ -7,7 +7,7 @@
     "email": "simonchabrier@gmail.com",
     "phone": "06 63 24 45 87",
     "url": "https://www.linkedin.com/in/simon-chabrier/",
-    "summary": "Développeur Full Stack spécialisé Symfony, je conçois et livre des applications web métier complexes de bout en bout. Mon code est documenté, testé et déployé en continu. Passionné par les défis techniques, j'explore de nouvelles technologies sur mon serveur Ubuntu personnel. J'apprécie également partager mes connaissances, recherches et bonnes pratiques.",
+    "summary": "Spécialisé Symfony, je conçois et livre des applications web métier avancées de bout en bout. Mon code est documenté, testé et déployé en continu. Passionné par les défis techniques, j'explore de nouvelles technologies sur mon serveur Ubuntu personnel. J'apprécie également partager mes connaissances, recherches et bonnes pratiques.",
     "theme": "default",
     "location": {
       "address": "168 Quai Baudin",
@@ -496,7 +496,7 @@
     {
       "name": "Tendance Garonne",
       "isActive": true,
-      "description": "Ce projet personnel concentre tout ce qui fait un bon concepteur : analyse d'un besoin réel, choix des technologies en autonomie et sous contrainte de temps, architecture d'une stack hétérogène (Python, N8N, Mercure SSE, IA), livraison rapide d'un MVP puis itérations. Il a suscité l'intérêt de la presse et de la radio régionale.",
+      "description": "Ce projet personnel représente l'approche type d'un concepteur : analyse d'un besoin réel, choix des technologies en autonomie et sous contrainte de temps, architecture d'une stack hétérogène (Python, N8N, Mercure SSE, IA), livraison rapide d'un MVP puis itérations. Il a suscité l'intérêt de la presse et radio régionale.",
       "highlights": [
         "Collecte automatisée des hauteurs d'eau sur 15 stations (Hub'Eau API)",
         "Analyse de tendance par régression linéaire sur fenêtre glissante",
@@ -504,6 +504,7 @@
         "Propagation multi-saut : remontée automatique de la chaîne amont si une station est indisponible",
         "Prévisions à 1h, 2h, 3h et 6h avec indice de confiance",
         "Amortissement intelligent de la tendance locale par les signaux amont",
+        "Dégradation des prévisions et des l'indices de confiance en fonction des relevés météo",
         "Interface temps réel via Mercure SSE avec fallback polling",
         "Graphiques Canvas 2D : historique 24h et projections",
         "Orchestration N8N, calcul Python, affichage HTML et JS vanilla",
