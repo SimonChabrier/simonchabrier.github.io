@@ -7,7 +7,7 @@
     "email": "simonchabrier@gmail.com",
     "phone": "06 63 24 45 87",
     "url": "https://www.linkedin.com/in/simon-chabrier/",
-    "summary": "Développeur Full Stack spécialisé Symfony, je conçois et livre des applications web métier complexes de bout en bout, de l'analyse du besoin jusqu'au déploiement. Mon code est documenté, testé et déployé en continu. Passionné par les défis techniques, j'explore de nouvelles technologies sur mon serveur Ubuntu personnel pour affiner mes compétences DevOps. J'apprécie également partager mes connaissances et accompagner la montée en compétences.",
+    "summary": "Développeur Full Stack spécialisé Symfony, je conçois et livre des applications web métier complexes de bout en bout. Mon code est documenté, testé et déployé en continu. Passionné par les défis techniques, j'explore de nouvelles technologies sur mon serveur Ubuntu personnel. J'apprécie également partager mes connaissances, recherches et les bonnes pratiques.",
     "theme": "default",
     "location": {
       "address": "168 Quai Baudin",
@@ -496,7 +496,7 @@
     {
       "name": "Tendance Garonne",
       "isActive": true,
-      "description": "Réalisé dans le cadre de recherches personnelles, ce système de prévision hydrologique court terme couvre la Garonne et ses affluents. Nowcasting basé sur les données publiques Hub'Eau avec propagation de crue multi-stations.",
+      "description": "Ce projet personnel concentre tout ce qui fait un bon concepteur : analyse d'un besoin réel, choix des technologies en autonomie et sous contrainte de temps, architecture d'une stack hétérogène (Python, N8N, Mercure SSE, IA), livraison rapide d'un MVP puis itérations. Il a suscité l'intérêt de la presse et de la radio régionale.",
       "highlights": [
         "Collecte automatisée des hauteurs d'eau sur 15 stations (Hub'Eau API)",
         "Analyse de tendance par régression linéaire sur fenêtre glissante",
@@ -508,8 +508,7 @@
         "Graphiques Canvas 2D : historique 24h et projections",
         "Orchestration N8N, calcul Python, affichage HTML et JS vanilla",
         "Zéro framework frontend, stack minimale et éco-responsable",
-        "Objectif visé, fournir rapidement un outil convivial et utile.",
-        "..."
+        "Objectif visé, fournir rapidement un outil convivial et utile."
       ],
       "url": "https://tendance-garonne.simschab.cloud/"
     },
@@ -534,8 +533,7 @@
         "Optimisation SEO intégrée",
         "Performances optimisées côté client et serveur",
         "Rechargement partiel du contenu pour performance et éco-conception",
-        "Réduction des temps de développement et de maintenance des projets",
-        "..."
+        "Réduction des temps de développement et de maintenance des projets"
       ],
       "url": "https://edith.fr/"
     },
@@ -554,8 +552,7 @@
         "Vue atelier distincte pour les équipes techniques",
         "Alertes de fin de contrat de LOA",
         "Filtres  de recherche avancés",
-        "Eco conçu, accessible et parfaitement sécurisé",
-        "..."
+        "Eco conçu, accessible et parfaitement sécurisé"
       ],
       "url": "https://app.carrosseriecarioli.fr"
     },
@@ -577,8 +574,7 @@
         "Geston avancée de la sécurité et des autorisations",
         "Optimisation de l'accès aux données avec des query DTO",
         "Mise en place d'un OCR pour la reconnaissance de texte des documents scannés",
-        "Sécurité et optimisation des performances",
-        "..."
+        "Sécurité et optimisation des performances"
       ],
       "url": ""
     },
@@ -595,8 +591,7 @@
         "Gestion des valeurs de retour en fonciton des caractéristiques des résidents",
         "Gestion de l'achat de test pour les particuliers, crédits et historique",
         "Statistiques et rapports sur les résultats des tests, du personnel et des équipements requis",
-        "Historisation du suivi des statistiques et des rapports",
-        "..."
+        "Historisation du suivi des statistiques et des rapports"
       ],
       "url": "https://ergo-up.fr/"
     },
@@ -610,8 +605,7 @@
         "Injection dynamique du script de suivi Matomo en fonction du domaine",
         "Injection dynamique d'url canonical en fonction du domaine",
         "Auto-hébergement sur mon serveur Ubuntu",
-        "Suivi Matomo auto-hébergé aussi sur mon serveur",
-        "..."
+        "Suivi Matomo auto-hébergé aussi sur mon serveur"
       ],
       "url": "https://doc.simschab.cloud/",
       "github": "https://github.com/SimonChabrier/MesDocs"

@@ -7,7 +7,7 @@
     "email": "simonchabrier@gmail.com",
     "phone": "+33663244587",
     "url": "https://www.linkedin.com/in/simon-chabrier/",
-    "summary": "Full Stack Developer specializing in Symfony, I design and deliver complex business web applications end-to-end, from requirements analysis to deployment. My code is documented, tested and continuously deployed. Passionate about technical challenges, I continuously explore new technologies on my personal Ubuntu server to sharpen my DevOps skills. I also enjoy sharing knowledge and supporting skills development.",
+    "summary": "Full Stack Developer specializing in Symfony, I design and deliver complex business web applications end-to-end. My code is documented, tested and continuously deployed. Passionate about technical challenges, I continuously explore new technologies on my personal Ubuntu server. I also enjoy sharing knowledge, research and best practices.",
     "theme": "default",
     "location": {
       "address": "168 Quai Baudin",
@@ -496,7 +496,7 @@
     {
       "name": "Tendance Garonne",
       "isActive": true,
-      "description": "Carried out as personal research, this short-term hydrological forecasting system covers the Garonne River and its tributaries. Nowcasting based on public Hub'Eau data with multi-station flood propagation.",
+      "description": "This personal project brings together everything that makes a good designer: real-world problem analysis, technology choices made autonomously under time pressure, architecture of a heterogeneous stack (Python, N8N, Mercure SSE, AI), fast MVP delivery then iterations. It attracted regional press and radio coverage.",
       "highlights": [
         "Automated water level collection from 13 stations (Hub'Eau API)",
         "Trend analysis via linear regression on a sliding window",
@@ -532,8 +532,7 @@
         "Integrated SEO optimization",
         "Optimized performance on client and server side",
         "Partial content reloading for performance and eco-design",
-        "Reduced project development and maintenance time",
-        "..."
+        "Reduced project development and maintenance time"
       ],
       "url": "https://edith.fr/"
     },
@@ -552,8 +551,7 @@
         "Distinct workshop view for technical teams",
         "LOA contract end alerts",
         "Advanced search filters",
-        "Eco-designed, accessible and fully secured",
-        "..."
+        "Eco-designed, accessible and fully secured"
       ],
       "url": "https://app.carrosseriecarioli.fr"
     },
@@ -575,8 +573,7 @@
         "Advanced security and authorization management",
         "Data access optimization with DTO queries",
         "OCR implementation for scanned documents text recognition",
-        "Security and performance optimization",
-        "..."
+        "Security and performance optimization"
       ],
       "url": ""
     },
@@ -593,8 +590,7 @@
         "Management of return values depending on the characteristics of the residents",
         "Test purchase management for individuals, credits and history",
         "Statistics and reports on test results, staff and required equipment",
-        "Follow-up history of statistics and reports",
-        "..."
+        "Follow-up history of statistics and reports"
       ],
       "url": "https://ergo-up.fr/"
     },
@@ -608,8 +604,7 @@
         "Dynamic injection of the Matomo tracking script depending on the domain",
         "Dynamic injection of canonical url depending on the domain",
         "Self-hosting on my Ubuntu server",
-        "Matomo tracking also self-hosted on my server",
-        "..."
+        "Matomo tracking also self-hosted on my server"
       ],
       "url": "https://doc.simschab.cloud/",
       "github": "https://github.com/SimonChabrier/MesDocs"
