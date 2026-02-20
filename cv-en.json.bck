@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Simon Chabrier",
-    "label": "Full Stack Application Developer Designer",
+    "label": "Full Stack Developer",
     "image": "./../avatar_254.webp",
     "imagesmall": "./../avatar_128.webp",
     "email": "simonchabrier@gmail.com",
@@ -31,8 +31,8 @@
   },
   "work": [
     {
-      "name": "LibreSens",
-      "position": "Application Developer Designer",
+      "name": "Libre Sens",
+      "position": "Full Stack Developer - Permanent contract",
       "location_type": "On-site",
       "location": "Agen, France",
       "url": "https://libresens.com/",
@@ -43,17 +43,16 @@
         "In collaboration with the Product Owner and the team, based on the study of the specifications, I establish the design documents for the applications and/or features assigned to me, ensuring risk analysis and detailing/planning the different delivery phases from the MVP to the finished product."
       ],
       "achievements": [
-        "Delivered from scratch a full-featured proprietary Symfony CMS for LibreSens.",
-        "Delivered a Symfony CRM for fleet management and bodywork interventions.",
-        "Delivered a Symfony CRM for an IT company.",
-        "Delivered a Symfony CRM for client management and service tracking for a tech company.",
-        "Delivered a Web App for managing and monitoring the autonomy of nursing home residents.",
-        "Delivered a Web App for document management with a high level of permissions and security.",
-        "Delivered a reservation module with time slot management, SMS confirmation and 2FA.",
-        "Delivered an Agency and Franchise management module with history and statistics.",
-        "Delivered a job offers and applications management module compliant with GDPR.",
-        "Delivered a categorized points of interest map module with search and filters.",
-        "Delivered a hierarchical administrative directory for groups of local elected officials.",
+        "From scratch, realization of a full-featured proprietary CMS for the company.",
+        "Web application for managing and monitoring the autonomy of nursing home residents.",
+        "Web CRM application for a tech company.",
+        "Web application for client management and service tracking for a tech company.",
+        "Document management application with a high level of permissions and security.",
+        "Reservation module with time slot management, SMS confirmation - 2FA.",
+        "Agency and Franchise management module with history and statistics.",
+        "Job offers and applications management module in compliance with GDPR standards.",
+        "Categorized points of interest map module with search and filters.",
+        "Hierarchical administrative directory module for groups of local elected officials.",
         "and more"
       ],
       "skills": [
@@ -75,7 +74,7 @@
       ]
     },
     {
-      "name": "LibreSens",
+      "name": "Libre Sens",
       "position": "BackEnd Developer - Apprenticeship contract",
       "location_type": "On-site",
       "location": "Agen, France",
@@ -375,7 +374,7 @@
       ]
     },
     {
-      "name": "UbuntuServer",
+      "name": "Ubuntu Server",
       "level": "Advanced",
       "keywords": [
         "Server",
@@ -496,70 +495,6 @@
   ],
   "projects": [
     {
-      "name": "Tendance Garonne",
-      "isActive": true,
-      "description": "Carried out as personal research, this short-term hydrological forecasting system covers the Garonne River and its tributaries. Nowcasting based on public Hub'Eau data with multi-station flood propagation.",
-      "highlights": [
-        "Automated water level collection from 13 stations (Hub'Eau API)",
-        "Trend analysis via linear regression on a sliding window",
-        "Propagation delay estimation using cross-correlation",
-        "Multi-hop propagation: automatic upstream chain traversal when a station is unavailable",
-        "Forecasts at 1h, 2h, 3h and 6h with confidence index",
-        "Smart dampening of local trend based on upstream signals",
-        "Real-time interface via Mercure SSE with polling fallback",
-        "Canvas 2D charts: 24h history and projections",
-        "N8N orchestration (15 min cron), Python computation, vanilla JS display",
-        "Zero frontend framework, minimal and eco-friendly stack"
-      ],
-      "url": "https://tendance-garonne.simschab.cloud/"
-    },
-    {
-      "name": "Edith Symfony CMS",
-      "isActive": true,
-      "description": "Developed within the company, Edith is a proprietary Symfony CMS whose development from scratch was entrusted to me. It enables the LibreSens agency to respond to its clients' specific needs with agility in a controlled and secure environment. Designed to be flexible and performant, Edith integrates advanced content management, administration and SEO optimization features, and complies with accessibility and GDPR standards.",
-      "highlights": [
-        "Modular and extensible architecture for custom personalization",
-        "Fully configurable from the administration panel",
-        "Microservices for certain specific features",
-        "Complete documentation and automated tests",
-        "Custom pages, articles, events, FAQ",
-        "Reusable and customizable content blocks",
-        "Shortcodes integrable into any type of content",
-        "Hierarchical content organization with drag and drop",
-        "Content publishing with advanced media management",
-        "Single or multilingual (fr, es, en, de, it, nl…)",
-        "Complete URL translation",
-        "Advanced roles and permissions management",
-        "Compliance with accessibility and GDPR standards",
-        "Integrated SEO optimization",
-        "Optimized performance on client and server side",
-        "Partial content reloading for performance and eco-design",
-        "Reduced project development and maintenance time",
-        "..."
-      ],
-      "url": "https://edith.fr/"
-    },
-    {
-      "name": "App Carrosserie Carioli",
-      "isActive": false,
-      "description": "Developed within the company, a B2C application for fleet management and technical intervention processes from vehicle intake to delivery. The application is used by the company's clients to track the progress of interventions on their vehicles in real time, and by technical teams to manage interventions and schedules.",
-      "highlights": [
-        "Advanced permissions management",
-        "Client portfolio management",
-        "Client vehicle fleet management",
-        "Technical intervention progress management",
-        "Customizable and historized client profile",
-        "Fluid and performant administrator interface for technical teams",
-        "Quote request system with 8-step guided client process",
-        "Distinct workshop view for technical teams",
-        "LOA contract end alerts",
-        "Advanced search filters",
-        "Eco-designed, accessible and fully secured",
-        "..."
-      ],
-      "url": "https://app.carrosseriecarioli.fr"
-    },
-    {
       "name": "Ch***Con***",
       "isActive": false,
       "description": "Carried out in a company, this web application is a management tool for a company in the IT sector.",
@@ -580,7 +515,7 @@
         "Security and performance optimization",
         "..."
       ],
-      "url": ""
+      "url": "https://ergo-up.fr/"
     },
     {
       "name": "Ergo-Up",
@@ -638,6 +573,56 @@
         "..."
       ],
       "github": "https://github.com/SimonChabrier/CastorCloneToRun"
+    },
+    {
+      "name": "Eco-Conception SPA",
+      "isActive": true,
+      "description": "A web application referencing 50 web eco-design rules, carried out as personal research to deepen my skills with VueJs for the front and Symfony for the REST API.",
+      "highlights": [
+        "Textual and Tag search filter",
+        "Dynamic pagination management",
+        "Development of a reusable components library",
+        "VueJs environment configuration at the heart of Symfony",
+        "Webpack configuration for asset compilation",
+        "Creation of a lightweight and high-performance REST API",
+        "Use of Pinia for state management"
+      ],
+      "url": "https://ecoconception.simschab.cloud/#/api",
+      "github": "https://github.com/SimonChabrier/EcoConcept-Symfony5.4-VueJs3"
+    },
+    {
+      "name": "Utimate Todo's",
+      "isActive": true,
+      "description": "Carried out as personal research to manage my development tasks in an interface matching my needs.",
+      "highlights": [
+        "Back-end Symfony to expose a REST API",
+        "Vanilla Javascript front-end to consume the API in a lightweight SPA environment",
+        "Drag and drop to organize tasks",
+        "Management of task positions in columns",
+        "Management of statuses and order of tasks",
+        "On-the-fly creation of new tasks and columns",
+        "Automated saving of UI state",
+        "Authorization by JWT token"
+      ],
+      "url": "https://js.simschab.cloud/trello/",
+      "github": "https://github.com/SimonChabrier/Trello-Front-End"
+    },
+    {
+      "name": "Concept Store",
+      "isActive": true,
+      "description": "Carried out with Symfony and Javascript as part of my personal research, this project is a classic and fully functional e-commerce web application.",
+      "highlights": [
+        "Complete product catalog management",
+        "Category and subcategory management",
+        "Search filters by cumulative criteria without page reload",
+        "Secure payment integration - Stripe",
+        "Shopping cart management in session and persistence",
+        "Stock and order management",
+        "Cache management, as long as the product catalog content hasn't changed no new SQL query is made",
+        "..."
+      ],
+      "url": "https://storeproject.simschab.cloud/",
+      "github": "https://github.com/SimonChabrier/StoreProject"
     },
     {
       "name": "Utimate Doc's",
