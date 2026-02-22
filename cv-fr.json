@@ -508,7 +508,7 @@
         "Interface temps réel via Mercure SSE avec fallback polling",
         "Graphiques Canvas 2D : historique 24h et projections",
         "Orchestration N8N, calcul Python isolé, affichage HTML et JS vanilla",
-        "Tracking d’actions UI pour analyse d’usage (CTR moyen 72,2%)",
+        "Tracking d’actions UI pour analyse d’usage",
         "Optimisation de l’UI/UX basée sur les données collectées",
         "Conformité légale et RGPD (minimisation des données, absence de tracking tiers)",
         "Zéro framework frontend : stack minimale, performante et éco-responsable"
