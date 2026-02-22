@@ -496,7 +496,7 @@
     {
       "name": "Tendance Garonne",
       "isActive": true,
-      "description": "This personal project represents the typical approach of a designer: real-world problem analysis, technology choices made autonomously under time pressure, architecture of a heterogeneous stack (Python, N8N, Mercure SSE, AI), fast MVP delivery then iterations. It attracted regional press and radio coverage.",
+      "description": "This personal project represents the typical approach of a designer: real-world problem analysis, technology choices under time constraints, architecture of a heterogeneous stack (Python, N8N, Mercure SSE, AI), fast MVP delivery then iterations. It attracted regional press and radio coverage.",
       "highlights": [
         "Automated water level collection from 13 stations (Hub'Eau API)",
         "Trend analysis via linear regression on a sliding window",
@@ -508,6 +508,11 @@
         "Real-time interface via Mercure SSE with polling fallback",
         "Canvas 2D charts: 24h history and projections",
         "N8N orchestration (15 min cron), Python computation, vanilla JS display",
+        "UI action tracking for usage analysis and interface optimization",
+        "CTR engagement analysis (72.2%)",
+        "User interface optimization based on collected data",
+        "Ensuring legal information and GDPR compliance",
+        "UI/UX design based on data analysis",
         "Zero frontend framework, minimal and eco-friendly stack"
       ],
       "url": "https://tendance-garonne.simschab.cloud/"

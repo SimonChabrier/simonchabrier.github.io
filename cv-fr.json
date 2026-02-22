@@ -496,7 +496,7 @@
     {
       "name": "Tendance Garonne",
       "isActive": true,
-      "description": "Ce projet personnel représente l'approche type d'un concepteur : analyse d'un besoin réel, choix des technologies en autonomie et sous contrainte de temps, architecture d'une stack hétérogène (Python, N8N, Mercure SSE, IA), livraison rapide d'un MVP puis itérations. Il a suscité l'intérêt de la presse et radio régionale.",
+      "description": "Ce projet personnel est représentatif de l'approche type d'un concepteur : analyse d'un besoin réel, choix des technologies sous contrainte de temps, architecture d'une stack hétérogène (Python, N8N, Mercure SSE), livraison rapide d'un MVP puis itérations. Il a suscité l'intérêt de la presse et radio régionale.",
       "highlights": [
         "Collecte automatisée des hauteurs d'eau sur 15 stations (Hub'Eau API)",
         "Analyse de tendance par régression linéaire sur fenêtre glissante",
@@ -508,6 +508,10 @@
         "Interface temps réel via Mercure SSE avec fallback polling",
         "Graphiques Canvas 2D : historique 24h et projections",
         "Orchestration N8N, calcul Python, affichage HTML et JS vanilla",
+        "Tracking d'actions UI pour analyse de l'usage et optimisation de l'interface",
+        "Analyse de l'engagement du CTR (72,2%)",
+        "Optimisation de l'UI/UX basée sur l'analyse des données collectées",
+        "Assurer les informations légales et la conformité RGPD",
         "Zéro framework frontend, stack minimale et éco-responsable"
       ],
       "url": "https://tendance-garonne.simschab.cloud/"
